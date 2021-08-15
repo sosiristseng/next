@@ -1,0 +1,274 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<title class=pjax-title>Roberts 2012 : Computational approaches to understand cardiac electrophysiology and arrhythmias - Something to Live</title><meta name=Description content="Tech Notes of Wen-Wei Tseng"><meta property="og:title" content="Roberts 2012 : Computational approaches to understand cardiac electrophysiology and arrhythmias">
+<meta property="og:description" content="Sciwheel1">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sosiristseng.github.io/roberts-2012-computational-approaches-to-understand-cardiac-electrophysiology-and-arrhythmias/"><meta property="og:image" content="https://sosiristseng.github.io/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2020-10-23T00:36:48+08:00">
+<meta property="article:modified_time" content="2021-08-15T22:37:56+08:00">
+<meta property="og:see_also" content="https://sosiristseng.github.io/yang-2018-mitochondrialmediated-oxidative-ca2-/calmodulindependent-kinase-ii-activation-induces-early-afterdepolarizations-in-guinea-pig-cardiomyocytes-an-in-silico-study/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhu-2016-doxorubicin-redox-biology-redox-cycling-topoisomerase-inhibition-and-oxidative-stress/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2014-effects-of-regional-mitochondrial-depolarization-on-electrical-propagation-implications-for-arrhythmogenesis/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2012-cardiac-mitochondrial-network-excitability-insights-from-computational-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2009-modeling-cardiac-action-potential-shortening-driven-by-oxidative-stress-induced-mitochondrial-oscillations-in-guinea-pig-cardiomyocytes/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhang-2016-multi-scale-modeling-of-the-cardiovascular-system-disease-development-progression-and-clinical-intervention/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2005-adenine-nucleotide-regulation-in-pancreatic-beta-cells-modeling-of-atp/adp-ca2-interactions/"><meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2010-glucose-sensing-in-the-pancreatic-beta-cell-a-computational-systems-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/kornick-2019-population-dynamics-of-mitochondria-in-cells-a-minimal-mathematical-model/"><meta property="og:see_also" content="https://sosiristseng.github.io/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/"><meta property="og:see_also" content="https://sosiristseng.github.io/hoffman-2017-a-multimethod-computational-simulation-approach-for-investigating-mitochondrial-dynamics-and-dysfunction-in-degenerative-aging/"><meta property="og:see_also" content="https://sosiristseng.github.io/saa-2013-modeling-the-atp-production-in-mitochondri/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/leung-2021-systems-modeling-predicts-that-mitochondria-er-contact-sites-regulate-the-postsynaptic-energy-landscape/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2014-effects-of-regional-mitochondrial-depolarization-on-electrical-propagation-implications-for-arrhythmogenesis/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2012-cardiac-mitochondrial-network-excitability-insights-from-computational-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/wang-2014-fast-acceleration-of-2d-wave-propagation-simulations-using-modern-computational-accelerators/"><meta property="og:see_also" content="https://sosiristseng.github.io/trayanova-2012-computational-cardiology-how-computer-simulations-could-be-used-to-develop-new-therapies-and-advance-existing-ones/"><meta property="og:see_also" content="https://sosiristseng.github.io/sachetto-2018-performance-evaluation-of-gpu-parallelization-space-time-adaptive-algorithms-and-their-combination-for-simulating-cardiac-electrophysiology/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/yang-2018-mitochondrialmediated-oxidative-ca2-/calmodulindependent-kinase-ii-activation-induces-early-afterdepolarizations-in-guinea-pig-cardiomyocytes-an-in-silico-study/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2014-effects-of-regional-mitochondrial-depolarization-on-electrical-propagation-implications-for-arrhythmogenesis/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2012-cardiac-mitochondrial-network-excitability-insights-from-computational-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2009-modeling-cardiac-action-potential-shortening-driven-by-oxidative-stress-induced-mitochondrial-oscillations-in-guinea-pig-cardiomyocytes/"><meta property="og:see_also" content="https://sosiristseng.github.io/yang-2014-mitochondria-and-arrhythmias/"><meta property="og:see_also" content="https://sosiristseng.github.io/sarkar-2010-regression-analysis-for-constraining-free-parameters-in-electrophysiological-models-of-cardiac-cells/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/chen-2017-mitochondrial-dynamics-in-regulating-the-unique-phenotypes-of-cancer-and-stem-cells/"><meta property="og:see_also" content="https://sosiristseng.github.io/dai-2019-dysregulated-mitochondrial-dynamics-and-metabolism-in-obesity-diabetes-and-cancer/"><meta property="og:see_also" content="https://sosiristseng.github.io/rovira-llopis-2017-mitochondrial-dynamics-in-type-2-diabetes-pathophysiological-implications/"><meta property="og:see_also" content="https://sosiristseng.github.io/twig-2008-mitochondrial-fusion-fission-and-autophagy-as-a-quality-control-axis-the-bioenergetic-view/"><meta property="og:see_also" content="https://sosiristseng.github.io/kondadi-2019-functional-interplay-between-cristae-biogenesis-mitochondrial-dynamics-and-mitochondrial-dna-integrity/"><meta property="og:see_also" content="https://sosiristseng.github.io/chan-2020-mitochondrial-dynamics-and-its-involvement-in-disease/">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://sosiristseng.github.io/">
+<meta name=twitter:title content="Roberts 2012 : Computational approaches to understand cardiac electrophysiology and arrhythmias">
+<meta name=twitter:description content="Sciwheel1">
+<meta name=application-name content="Los los los">
+<meta name=apple-mobile-web-app-title content="Los los los">
+<meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=parrot.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://sosiristseng.github.io/roberts-2012-computational-approaches-to-understand-cardiac-electrophysiology-and-arrhythmias/><link rel=prev href=https://sosiristseng.github.io/robb-2018-control-of-mitochondrial-superoxide-production-by-reverse-electron-transport-at-complex-i/><link rel=next href=https://sosiristseng.github.io/rocha-2011-accelerating-cardiac-excitation-spread-simulations-using-graphics-processing-units/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
+<noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/animate/animate.min.css>
+<noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Roberts 2012 : Computational approaches to understand cardiac electrophysiology and arrhythmias","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sosiristseng.github.io\/roberts-2012-computational-approaches-to-understand-cardiac-electrophysiology-and-arrhythmias\/"},"genre":"posts","wordcount":712,"url":"https:\/\/sosiristseng.github.io\/roberts-2012-computational-approaches-to-understand-cardiac-electrophysiology-and-arrhythmias\/","datePublished":"2020-10-23T00:36:48+08:00","dateModified":"2021-08-15T22:37:56+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx"},"author":{"@type":"Person","name":"Roberts et al."},"description":""}</script></head>
+<body header-desktop=fixed header-mobile=auto><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a)}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'auto'==='light'||'auto'==='dark'||'auto'==='black'?(setTheme('auto'),saveTheme('auto')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let themeColorMeta=getMeta('theme-color');document.body.getAttribute('theme')!='light'&&(themeColorMeta.content='#000000')</script>
+<div id=back-to-top></div>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Something to Live"><span class=header-title-pre><i class="fas fa-kiwi-bird fa-fw"></i></span>Something to Live</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/ title=Posts> Posts </a><a class=menu-item href=/categories/reading/ title=Reading> Reading </a><a class=menu-item href=/tags/ title=Tags> Tags </a><a class=menu-item href=/series/ title="Reading Topics"> Reading Topics </a><a class=menu-item href=/categories/ title=Categories> Categories </a><a class=menu-item href=/about/ title="About Me"> About </a><a class=menu-item href=https://github.com/sosiristseng/ title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github-alt fa-fw"></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=Search id=search-input-desktop>
+<a href=# onclick=return!1 class="search-button search-toggle" id=search-toggle-desktop title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=# onclick=return!1 class="search-button search-clear" id=search-clear-desktop title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</span><a href=# onclick=return!1 class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Something to Live"><span class=header-title-pre><i class="fas fa-kiwi-bird fa-fw"></i></span>Something to Live</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder=Search id=search-input-mobile>
+<a href=# onclick=return!1 class="search-button search-toggle" id=search-toggle-mobile title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=# onclick=return!1 class="search-button search-clear" id=search-clear-mobile title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=# onclick=return!1 class=search-cancel id=search-cancel-mobile>
+Cancel
+</a>
+</div><a class=menu-item href=/posts/ title=Posts>Posts</a><a class=menu-item href=/categories/reading/ title=Reading>Reading</a><a class=menu-item href=/tags/ title=Tags>Tags</a><a class=menu-item href=/series/ title="Reading Topics">Reading Topics</a><a class=menu-item href=/categories/ title=Categories>Categories</a><a class=menu-item href=/about/ title="About Me">About</a><a class=menu-item href=https://github.com/sosiristseng/ title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github-alt fa-fw"></i></a><a href=# onclick=return!1 class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Roberts 2012 : Computational approaches to understand cardiac electrophysiology and arrhythmias</h1><div class=post-meta>
+<div class=post-meta-line>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Roberts et al.</a>
+</span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/reading/><i class="far fa-folder fa-fw"></i>Reading</a></span>&nbsp;<span class=post-category>and</span>&nbsp;<span class=post-series>series <a href=/series/cardiomyocyte/><i class="far fa-list-alt fa-fw"></i>cardiomyocyte</a>&nbsp;<a href=/series/ode/><i class="far fa-list-alt fa-fw"></i>ODE</a>&nbsp;<a href=/series/pde/><i class="far fa-list-alt fa-fw"></i>PDE</a>&nbsp;<a href=/series/electrophysiology/><i class="far fa-list-alt fa-fw"></i>electrophysiology</a>&nbsp;<a href=/series/review/><i class="far fa-list-alt fa-fw"></i>review</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2020-10-23>2020-10-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-08-15>2021-08-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;712 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#models-to-address-ion-channel-based-mechanisms-of-cardiac-arrhythmia>Models to Address Ion Channel-Based Mechanisms of Cardiac Arrhythmia</a></li>
+<li><a href=#models-of-normal-and-pathological-cardiac-regulation-by-subcellular-signaling>Models of Normal and Pathological Cardiac Regulation by Subcellular Signaling</a></li>
+<li><a href=#models-of-ec-coupling>Models of EC Coupling</a></li>
+<li><a href=#metabolic-links-to-electrical-dysfunction>Metabolic Links to Electrical Dysfunction</a>
+<ul>
+<li><a href=#ros-induced-ros-release-rirr>ROS-induced ROS release (RIRR)</a></li>
+<li><a href=#metabolic-stress-that-results-from-myocardial-ischemia-and-reperfusion-ir>Metabolic stress that results from myocardial ischemia and reperfusion (I/R)</a></li>
+</ul>
+</li>
+<li><a href=#perturbations-in-channel-function-alter-cardiac-dynamics>Perturbations in Channel Function Alter Cardiac Dynamics</a></li>
+<li><a href=#source-sink-relationships-and-propagation-of-arrhythmia-triggers>Source-Sink Relationships and Propagation of Arrhythmia Triggers</a></li>
+<li><a href=#tissue-structure-and-the-role-of-geometry>Tissue Structure and the Role of Geometry</a></li>
+<li><a href=#models-to-predict-drug-therapy-effects>Models to Predict Drug Therapy Effects</a></li>
+<li><a href=#computational-models-to-guide-ablation-procedures-and-biological-pacemakers>Computational Models to Guide Ablation Procedures and Biological Pacemakers</a></li>
+<li><a href=#patient-specific-modeling>Patient-Specific Modeling</a></li>
+<li><a href=#validation-of-model-predictions-is-necessary>Validation of Model Predictions Is Necessary</a></li>
+<li><a href=#utility-of-computational-modeling-studies-in-the-clinical-setting>Utility of Computational Modeling Studies in the Clinical Setting</a></li>
+<li><a href=#reference>Reference</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content><p><a href=https://sciwheel.com/work/#/items/76000 target=_blank rel="noopener noreffer">Sciwheel</a><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<h2 id=introduction>Introduction</h2>
+<ul>
+<li>customizable modeling platforms: Continuity(404 NOT FOUND), CHASTE and OpenCMISS</li>
+</ul>
+<h2 id=models-to-address-ion-channel-based-mechanisms-of-cardiac-arrhythmia>Models to Address Ion Channel-Based Mechanisms of Cardiac Arrhythmia</h2>
+<ul>
+<li>For diseases like long-QT (LQT) syndrome (LQTS), Brugada syndrome (BrS), and isolated cardiac conduction disorder (ICCD)
+<ul>
+<li>Increase in late Na => prolongation of the AP duration (APD) and consequent QT interval prolongation</li>
+</ul>
+</li>
+<li>mutations at multiple loci can produce the same phenotype (56, 186), or a single mutation at a particular locus can surprisingly result in different phenotypes => need for Computational modeling</li>
+<li>potassium current defects: hERG (IKr) defect => longer QT interval</li>
+<li>estrogen also reduces Ikr => longer QT interval => arrythmia
+<img class=lazyload data-src=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410001.jpeg data-srcset="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410001.jpeg, https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410001.jpeg 1.5x, https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410001.jpeg 2x" data-sizes=auto alt=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410001.jpeg title=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410001.jpeg></li>
+<li>progesterone appears to shorten the QT interval and reduce arrhythmia incidence associated with LQTS</li>
+</ul>
+<h2 id=models-of-normal-and-pathological-cardiac-regulation-by-subcellular-signaling>Models of Normal and Pathological Cardiac Regulation by Subcellular Signaling</h2>
+<ul>
+<li>CaMKII signaling => multiple ion channels and pumps (HRd model)
+<img class=lazyload data-src=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410002.jpeg data-srcset="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410002.jpeg, https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410002.jpeg 1.5x, https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410002.jpeg 2x" data-sizes=auto alt=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410002.jpeg title=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410002.jpeg></li>
+<li>β-adrenergic signaling cascade => INa, IKs, RyRs, SERCA, the Na-K pump, troponin I, glycolysis, cross-bridge formation</li>
+<li>PKA and CaMKII-dependent modulation : β-adrenergic enhancement of calcium transients was assisted by a synergistic relationship between PKA and CaMKII-dependent phosphorylation of multiple targets (Soltis-Saucerman model)
+<img class=lazyload data-src=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410003.jpeg data-srcset="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410003.jpeg, https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410003.jpeg 1.5x, https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410003.jpeg 2x" data-sizes=auto alt=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410003.jpeg title=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410003.jpeg></li>
+</ul>
+<h2 id=models-of-ec-coupling>Models of EC Coupling</h2>
+<ul>
+<li>Arrhythmogenic phenomena including delayed afterdepolarizations (DADs) and EADs, premature ectopic beats, alternans, and initiation of ventricular tachycardias and fibrillation are all linked to aberrant calcium dynamics</li>
+<li>accurate representation of calcium dynamics and EC coupling is among the most complicated aspects of cardiac electrophysiology modeling
+<ul>
+<li>Negative feedback: VDI, CDI</li>
+<li>Positive feedback: RyR activation, EC coupling gain</li>
+<li>SR leak</li>
+</ul>
+</li>
+<li>cardiac diad where L-type calcium channels and RyRs are found in close proximity and even within the SR</li>
+<li>Trans' SERCA model<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup> includes dependence on myoplasmic and SR calcium concentrations and allows for variable calcium-proton transport ratios</li>
+<li>NCX: voltage, sodium and calcium concentration dependence, as well as slippage</li>
+<li>mechanisms of SR calcium release and the propagation of calcium waves?</li>
+</ul>
+<h2 id=metabolic-links-to-electrical-dysfunction>Metabolic Links to Electrical Dysfunction</h2>
+<ul>
+<li>defects in cell metabolism and mitochondrial function have also been implicated in the genesis of arrhythmias</li>
+</ul>
+<h3 id=ros-induced-ros-release-rirr>ROS-induced ROS release (RIRR)</h3>
+<ul>
+<li>The mitochondria also exhibit complex behavior such as traversing waves of membrane depolarization
+<ul>
+<li>ROS-induced ROS release (RIRR)</li>
+<li>altered intracellular calcium dynamics (via MCU)</li>
+<li>collapse of mitochondrial membrane potential (ΔΨ)</li>
+<li>mitochondrial permeability transition pore (mPTP)</li>
+<li>mitochondrial ATP-sensitive potassium channels (mKATP)
+<figure><a class=lightgallery href=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410004.jpeg title=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410004.jpeg data-thumbnail=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410004.jpeg data-sub-html="<h2>The ECME-RIRR model</h2>">
+<img class=lazyload data-src=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410004.jpeg data-srcset="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410004.jpeg, https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410004.jpeg 1.5x, https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410004.jpeg 2x" data-sizes=auto alt=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410004.jpeg>
+</a><figcaption class=image-caption>The ECME-RIRR model</figcaption>
+</figure></li>
+</ul>
+</li>
+</ul>
+<h3 id=metabolic-stress-that-results-from-myocardial-ischemia-and-reperfusion-ir>Metabolic stress that results from myocardial ischemia and reperfusion (I/R)</h3>
+<p><img class=lazyload data-src=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410005.jpeg data-srcset="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410005.jpeg, https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410005.jpeg 1.5x, https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410005.jpeg 2x" data-sizes=auto alt=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410005.jpeg title=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410005.jpeg></p>
+<ul>
+<li>Ion inbalance (Na, Ca, K, H)</li>
+<li>Increased mitochondrial-derived ROS from RET due to succinate accumulation during ischemia</li>
+</ul>
+<h2 id=perturbations-in-channel-function-alter-cardiac-dynamics>Perturbations in Channel Function Alter Cardiac Dynamics</h2>
+<ul>
+<li>Cell level alteration of ion dynamics related to arrythmia prediction</li>
+</ul>
+<h2 id=source-sink-relationships-and-propagation-of-arrhythmia-triggers>Source-Sink Relationships and Propagation of Arrhythmia Triggers</h2>
+<ul>
+<li>In a tissue level => PVCs, which serve as arrhythmia triggers</li>
+</ul>
+<h2 id=tissue-structure-and-the-role-of-geometry>Tissue Structure and the Role of Geometry</h2>
+<p><img class=lazyload data-src=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410006.jpeg data-srcset="https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410006.jpeg, https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410006.jpeg 1.5x, https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410006.jpeg 2x" data-sizes=auto alt=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410006.jpeg title=https://www.physiology.org/na101/home/literatum/publisher/physio/journals/content/ajpheart/2012/ajpheart.2012.303.issue-7/ajpheart.01081.2011/production/images/large/zh40201205410006.jpeg></p>
+<h2 id=models-to-predict-drug-therapy-effects>Models to Predict Drug Therapy Effects</h2>
+<ul>
+<li>computer-based drug screening</li>
+<li>flecainide => reduced excitability => Proarrhythmic conduction block. (lidocaine is safer in this case)</li>
+<li>atrial-specific sodium channel modeling (6, 153) and focusing on specific drugs such as lidocaine (147), flecainide (147), ranolazine (148, 153), and bupivacaine (212) in detailed models</li>
+<li>Models can be used to quickly survey a large range of drug compounds and concentrations under different conditions of pacing protocol, heart rate, and additional conditions</li>
+<li>An additional advantage of computational models is that many parameters can be monitored throughout a simulation</li>
+<li>many drugs are promiscuous and interact with proteins other than the intended targets and that biological systems exhibit many nonlinear dependencies across multiple scales of time and space</li>
+<li>Furthermore, computational approaches potentially allow certain problems associated with animal studies to be circumvented</li>
+</ul>
+<h2 id=computational-models-to-guide-ablation-procedures-and-biological-pacemakers>Computational Models to Guide Ablation Procedures and Biological Pacemakers</h2>
+<h2 id=patient-specific-modeling>Patient-Specific Modeling</h2>
+<h2 id=validation-of-model-predictions-is-necessary>Validation of Model Predictions Is Necessary</h2>
+<ul>
+<li>In silicon models not only reproduce previously observed physiological behavior but also yield predictions that are correct and can guide further experimental work</li>
+</ul>
+<h2 id=utility-of-computational-modeling-studies-in-the-clinical-setting>Utility of Computational Modeling Studies in the Clinical Setting</h2>
+<ul>
+<li>direct use of patient data and guiding procedures</li>
+<li>Making use of computational tools in a different way, a technique called noninvasive electrocardiographic imaging (ECGI), reconstructs an electrical activation map by merging ECGI data with a reconstruction of a patient&rsquo;s heart from CT scan images</li>
+</ul>
+<h2 id=reference>Reference</h2>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>Roberts BN, Yang P-C, Behrens SB, Moreno JD, Clancy CE. Computational approaches to understand cardiac electrophysiology and arrhythmias. Am. J. Physiol. Heart Circ. Physiol. 2012;303(7):H766-83. doi:10.1152/ajpheart.01081.2011. <a href=http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3774200 target=_blank rel="noopener noreffer">PMC3774200</a>.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:2 role=doc-endnote>
+<p>Tran K, Smith NP, Loiselle DS, Crampin EJ. A thermodynamic model of the cardiac sarcoplasmic/endoplasmic Ca(2+) (SERCA) pump. Biophys. J. 2009;96(5):2029-2042. doi:10.1016/j.bpj.2008.11.045.&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>Updated on 2021-08-15&nbsp;<a class=git-hash href=https://github.com/sosiristseng/sosiristseng.github.io/commit/49fa12fc36403fcb0fa727336c4825bda5d488ff target=_blank title="commit by Wen-Wei Tseng(sosiristseng@gmail.com) 49fa12fc36403fcb0fa727336c4825bda5d488ff: add paper reading" rel="noopener noreferrer">
+<i class="fas fa-hashtag fa-fw"></i>49fa12f</a></span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md><span>
+<a class=link-to-markdown href=/roberts-2012-computational-approaches-to-understand-cardiac-electrophysiology-and-arrhythmias/index.md target=_blank rel="noopener noreferrer">Read Markdown</a>
+</span></div>
+<div class=post-info-share>
+<span><a href=# onclick=return!1 title="Share on Twitter" data-sharer=twitter data-url=https://sosiristseng.github.io/roberts-2012-computational-approaches-to-understand-cardiac-electrophysiology-and-arrhythmias/ data-title="Roberts 2012 : Computational approaches to understand cardiac electrophysiology and arrhythmias" data-via=sosiristseng><i class="fab fa-twitter fa-fw"></i></a><a href=# onclick=return!1 title="Share on Facebook" data-sharer=facebook data-url=https://sosiristseng.github.io/roberts-2012-computational-approaches-to-understand-cardiac-electrophysiology-and-arrhythmias/><i class="fab fa-facebook-square fa-fw"></i></a><a href=# onclick=return!1 title="Share on Linkedin" data-sharer=linkedin data-url=https://sosiristseng.github.io/roberts-2012-computational-approaches-to-understand-cardiac-electrophysiology-and-arrhythmias/><i class="fab fa-linkedin fa-fw"></i></a><a href=# onclick=return!1 title="Share on Hacker News" data-sharer=hackernews data-url=https://sosiristseng.github.io/roberts-2012-computational-approaches-to-understand-cardiac-electrophysiology-and-arrhythmias/ data-title="Roberts 2012 : Computational approaches to understand cardiac electrophysiology and arrhythmias"><i class="fab fa-hacker-news fa-fw"></i></a><a href=# onclick=return!1 title="Share on Reddit" data-sharer=reddit data-url=https://sosiristseng.github.io/roberts-2012-computational-approaches-to-understand-cardiac-electrophysiology-and-arrhythmias/><i class="fab fa-reddit fa-fw"></i></a><a href=# onclick=return!1 title="Share on Line" data-sharer=line data-url=https://sosiristseng.github.io/roberts-2012-computational-approaches-to-understand-cardiac-electrophysiology-and-arrhythmias/ data-title="Roberts 2012 : Computational approaches to understand cardiac electrophysiology and arrhythmias"><i data-svg-src=/lib/simple-icons/icons/line.min.svg></i></a></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags></section>
+<section>
+<span><a href=# onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/robb-2018-control-of-mitochondrial-superoxide-production-by-reverse-electron-transport-at-complex-i/ class=prev rel=prev title="Robb 2018 : Control of mitochondrial superoxide production by reverse electron transport at complex I"><i class="fas fa-angle-left fa-fw"></i>Robb 2018 : Control of mitochondrial superoxide production by reverse electron transport at complex I</a>
+<a href=/rocha-2011-accelerating-cardiac-excitation-spread-simulations-using-graphics-processing-units/ class=next rel=next title="Rocha 2011 : Accelerating cardiac excitation spread simulations using graphics processing units">Rocha 2011 : Accelerating cardiac excitation spread simulations using graphics processing units<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.87.0">Hugo</a> | Theme - <a href=https://github.com/HEIGE-PCloud/DoIt target=_blank rel="noopener noreffer" title="DoIt 0.2.10"><i class="far fa-edit fa-fw"></i> DoIt</a>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2020 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://sosiristseng.github.io/ target=_blank rel="noopener noreferrer">Wen-Wei Tseng</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreferrer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div><script>'serviceWorker'in navigator&&(navigator.serviceWorker.register('/sw.min.js',{scope:'/'}).then(function(a){}),navigator.serviceWorker.ready.then(function(a){}))</script></footer></div>
+<div id=fixed-buttons><a href=#back-to-top id=back-to-top-button class=fixed-button title="Back to Top">
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments">
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><div class=assets><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/fuse/fuse.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/topbar/topbar.min.js></script><script type=text/javascript src=/lib/pjax/pjax.min.js></script><script type=text/javascript src=/js/theme.min.js></script></div>
+<div class=pjax-assets><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:15},comment:{},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},search:{distance:100,findAllMatches:!1,fuseIndexURL:"/index.json",highlightTag:"em",ignoreFieldNorm:!1,ignoreLocation:!1,isCaseSensitive:!1,location:0,maxResultLength:10,minMatchCharLength:2,noResultsFound:"No results found",snippetLength:30,threshold:.3,type:"fuse",useExtendedSearch:!1},sharerjs:!0}</script><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css></div>
+</body>
+</html>

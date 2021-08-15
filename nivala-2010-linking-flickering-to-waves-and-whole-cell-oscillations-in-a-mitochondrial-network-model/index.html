@@ -1,0 +1,436 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<title class=pjax-title>Nivala 2010 : Linking flickering to waves and whole-cell oscillations in a mitochondrial network model - Something to Live</title><meta name=Description content="Tech Notes of Wen-Wei Tseng"><meta property="og:title" content="Nivala 2010 : Linking flickering to waves and whole-cell oscillations in a mitochondrial network model">
+<meta property="og:description" content="Sciwheel1">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sosiristseng.github.io/nivala-2010-linking-flickering-to-waves-and-whole-cell-oscillations-in-a-mitochondrial-network-model/"><meta property="og:image" content="https://sosiristseng.github.io/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2020-10-23T00:27:15+08:00">
+<meta property="article:modified_time" content="2021-08-15T22:37:56+08:00">
+<meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2005-adenine-nucleotide-regulation-in-pancreatic-beta-cells-modeling-of-atp/adp-ca2-interactions/"><meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2010-glucose-sensing-in-the-pancreatic-beta-cell-a-computational-systems-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/kornick-2019-population-dynamics-of-mitochondria-in-cells-a-minimal-mathematical-model/"><meta property="og:see_also" content="https://sosiristseng.github.io/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/"><meta property="og:see_also" content="https://sosiristseng.github.io/hoffman-2017-a-multimethod-computational-simulation-approach-for-investigating-mitochondrial-dynamics-and-dysfunction-in-degenerative-aging/"><meta property="og:see_also" content="https://sosiristseng.github.io/saa-2013-modeling-the-atp-production-in-mitochondri/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/hoffman-2017-a-multimethod-computational-simulation-approach-for-investigating-mitochondrial-dynamics-and-dysfunction-in-degenerative-aging/"><meta property="og:see_also" content="https://sosiristseng.github.io/yu-2006-increased-production-of-reactive-oxygen-species-in-hyperglycemic-conditions-requires-dynamic-change-of-mitochondrial-morphology/"><meta property="og:see_also" content="https://sosiristseng.github.io/zorov-2014-mitochondrial-reactive-oxygen-species-ros-and-ros-induced-ros-release/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhu-2016-doxorubicin-redox-biology-redox-cycling-topoisomerase-inhibition-and-oxidative-stress/"><meta property="og:see_also" content="https://sosiristseng.github.io/vinogradov-2016-oxidation-of-nadh-and-ros-production-by-respiratory-complex-i/"><meta property="og:see_also" content="https://sosiristseng.github.io/scialo-2017-role-of-mitochondrial-reverse-electron-transport-in-ros-signaling-potential-roles-in-health-and-disease/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/patel-2013-optimal-dynamics-for-quality-control-in-spatially-distributed-mitochondrial-networks/"><meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2005-adenine-nucleotide-regulation-in-pancreatic-beta-cells-modeling-of-atp/adp-ca2-interactions/"><meta property="og:see_also" content="https://sosiristseng.github.io/miyamoto-2015-compartmentalized-ampk-signaling-illuminated-by-genetically-encoded-molecular-sensors-and-actuators/"><meta property="og:see_also" content="https://sosiristseng.github.io/toyama-2016-metabolism.-amp-activated-protein-kinase-mediates-mitochondrial-fission-in-response-to-energy-stress/"><meta property="og:see_also" content="https://sosiristseng.github.io/montemurro-2017-cell-cycle-related-metabolism-and-mitochondrial-dynamics-in-a-replication-competent-pancreatic-beta-cell-line/"><meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2010-glucose-sensing-in-the-pancreatic-beta-cell-a-computational-systems-analysis/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/yang-2018-mitochondrialmediated-oxidative-ca2-/calmodulindependent-kinase-ii-activation-induces-early-afterdepolarizations-in-guinea-pig-cardiomyocytes-an-in-silico-study/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhu-2016-doxorubicin-redox-biology-redox-cycling-topoisomerase-inhibition-and-oxidative-stress/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2014-effects-of-regional-mitochondrial-depolarization-on-electrical-propagation-implications-for-arrhythmogenesis/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2012-cardiac-mitochondrial-network-excitability-insights-from-computational-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2009-modeling-cardiac-action-potential-shortening-driven-by-oxidative-stress-induced-mitochondrial-oscillations-in-guinea-pig-cardiomyocytes/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhang-2016-multi-scale-modeling-of-the-cardiovascular-system-disease-development-progression-and-clinical-intervention/">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://sosiristseng.github.io/">
+<meta name=twitter:title content="Nivala 2010 : Linking flickering to waves and whole-cell oscillations in a mitochondrial network model">
+<meta name=twitter:description content="Sciwheel1">
+<meta name=application-name content="Los los los">
+<meta name=apple-mobile-web-app-title content="Los los los">
+<meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=parrot.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://sosiristseng.github.io/nivala-2010-linking-flickering-to-waves-and-whole-cell-oscillations-in-a-mitochondrial-network-model/><link rel=prev href=https://sosiristseng.github.io/mustroph-2014-camkii-regulation-of-cardiac-k-channels/><link rel=next href=https://sosiristseng.github.io/nobile-2016-graphics-processing-units-in-bioinformatics-computational-biology-and-systems-biology/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
+<noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/animate/animate.min.css>
+<noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Nivala 2010 : Linking flickering to waves and whole-cell oscillations in a mitochondrial network model","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sosiristseng.github.io\/nivala-2010-linking-flickering-to-waves-and-whole-cell-oscillations-in-a-mitochondrial-network-model\/"},"genre":"posts","wordcount":1239,"url":"https:\/\/sosiristseng.github.io\/nivala-2010-linking-flickering-to-waves-and-whole-cell-oscillations-in-a-mitochondrial-network-model\/","datePublished":"2020-10-23T00:27:15+08:00","dateModified":"2021-08-15T22:37:56+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx"},"author":{"@type":"Person","name":"Nivala et al."},"description":""}</script></head>
+<body header-desktop=fixed header-mobile=auto><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a)}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'auto'==='light'||'auto'==='dark'||'auto'==='black'?(setTheme('auto'),saveTheme('auto')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let themeColorMeta=getMeta('theme-color');document.body.getAttribute('theme')!='light'&&(themeColorMeta.content='#000000')</script>
+<div id=back-to-top></div>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Something to Live"><span class=header-title-pre><i class="fas fa-kiwi-bird fa-fw"></i></span>Something to Live</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/ title=Posts> Posts </a><a class=menu-item href=/categories/reading/ title=Reading> Reading </a><a class=menu-item href=/tags/ title=Tags> Tags </a><a class=menu-item href=/series/ title="Reading Topics"> Reading Topics </a><a class=menu-item href=/categories/ title=Categories> Categories </a><a class=menu-item href=/about/ title="About Me"> About </a><a class=menu-item href=https://github.com/sosiristseng/ title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github-alt fa-fw"></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=Search id=search-input-desktop>
+<a href=# onclick=return!1 class="search-button search-toggle" id=search-toggle-desktop title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=# onclick=return!1 class="search-button search-clear" id=search-clear-desktop title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</span><a href=# onclick=return!1 class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Something to Live"><span class=header-title-pre><i class="fas fa-kiwi-bird fa-fw"></i></span>Something to Live</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder=Search id=search-input-mobile>
+<a href=# onclick=return!1 class="search-button search-toggle" id=search-toggle-mobile title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=# onclick=return!1 class="search-button search-clear" id=search-clear-mobile title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=# onclick=return!1 class=search-cancel id=search-cancel-mobile>
+Cancel
+</a>
+</div><a class=menu-item href=/posts/ title=Posts>Posts</a><a class=menu-item href=/categories/reading/ title=Reading>Reading</a><a class=menu-item href=/tags/ title=Tags>Tags</a><a class=menu-item href=/series/ title="Reading Topics">Reading Topics</a><a class=menu-item href=/categories/ title=Categories>Categories</a><a class=menu-item href=/about/ title="About Me">About</a><a class=menu-item href=https://github.com/sosiristseng/ title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github-alt fa-fw"></i></a><a href=# onclick=return!1 class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Nivala 2010 : Linking flickering to waves and whole-cell oscillations in a mitochondrial network model</h1><div class=post-meta>
+<div class=post-meta-line>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Nivala et al.</a>
+</span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/reading/><i class="far fa-folder fa-fw"></i>Reading</a></span>&nbsp;<span class=post-category>and</span>&nbsp;<span class=post-series>series <a href=/series/ode/><i class="far fa-list-alt fa-fw"></i>ODE</a>&nbsp;<a href=/series/ros/><i class="far fa-list-alt fa-fw"></i>ROS</a>&nbsp;<a href=/series/mitochondria/><i class="far fa-list-alt fa-fw"></i>mitochondria</a>&nbsp;<a href=/series/cardiomyocyte/><i class="far fa-list-alt fa-fw"></i>cardiomyocyte</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2020-10-23>2020-10-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-08-15>2021-08-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1239 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#methods>Methods</a>
+<ul>
+<li><a href=#single-mitochondrion-model>Single-mitochondrion model</a>
+<ul>
+<li><a href=#superoxide-production-and-diffusion-rate>Superoxide production and diffusion rate</a></li>
+<li><a href=#markov-model-of-imac-dynamics>Markov model of IMAC dynamics</a></li>
+</ul>
+</li>
+<li><a href=#2d-mitochondrial-network-model>2D mitochondrial network model</a></li>
+<li><a href=#numerical-methods>Numerical methods</a></li>
+</ul>
+</li>
+<li><a href=#results>Results</a>
+<ul>
+<li><a href=#dynamics-of-a-single-imac>Dynamics of a single IMAC</a></li>
+<li><a href=#depolarization-dynamics-of-a-single-mitochondrion>Depolarization dynamics of a single mitochondrion</a></li>
+<li><a href=#spatiotemporal-dynamics-of-the-mitochondrial-network>Spatiotemporal dynamics of the mitochondrial network</a>
+<ul>
+<li><a href=#the-conduction-velocity-of-mitochondrial-depolarization-waves>The conduction velocity of mitochondrial depolarization waves</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#discussion>Discussion</a>
+<ul>
+<li><a href=#mechanisms>Mechanisms?</a></li>
+<li><a href=#model-critique>Model critique</a></li>
+</ul>
+</li>
+</ul>
+</nav></div>
+</div><div class=content id=content><p><a href=https://sciwheel.com/work/#/items/1240136 target=_blank rel="noopener noreffer">Sciwheel</a><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<h2 id=introduction>Introduction</h2>
+<ul>
+<li>
+<p>In contrast to the cell-wide waves, spontaneous transient depolarizations of individual mitochondria, called flickers, have been widely observed, and tend to occur randomly with variable depolarization durations</p>
+</li>
+<li>
+<p>In previous studies Aon et al. coined the term <em>mitochondrial criticality</em>, in which the mitochondrial network becomes very sensitive to small perturbations of ROS at the critical state</p>
+</li>
+</ul>
+<h2 id=methods>Methods</h2>
+<h3 id=single-mitochondrion-model>Single-mitochondrion model</h3>
+<p><img class=lazyload data-src=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/caf7b2e6-4c7f-4253-9631-8886f261972b/gr1_lrg.jpg data-srcset="https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/caf7b2e6-4c7f-4253-9631-8886f261972b/gr1_lrg.jpg, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/caf7b2e6-4c7f-4253-9631-8886f261972b/gr1_lrg.jpg 1.5x, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/caf7b2e6-4c7f-4253-9631-8886f261972b/gr1_lrg.jpg 2x" data-sizes=auto alt=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/caf7b2e6-4c7f-4253-9631-8886f261972b/gr1_lrg.jpg title=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/caf7b2e6-4c7f-4253-9631-8886f261972b/gr1_lrg.jpg></p>
+<ul>
+<li>
+<p>(A) The single-mitochondrion model</p>
+</li>
+<li>
+<p>(B) Four-state Markov model of the IMAC: closed (C), open (O), inactivated (I), and refractory (R)</p>
+</li>
+<li>
+<p>(C) The network model</p>
+</li>
+<li>
+<p>(D) Representation of a single mitochondrion as a 3 × 3 grid</p>
+</li>
+<li>
+<p>(E) Two-state Markov model of shunt parameter.</p>
+</li>
+<li>
+<p>Including matrix, intermembrane space, and cytosol</p>
+</li>
+<li>
+<p>Ordinary differential equations (ODEs) are used to describe the membrane potential (Ψ) across the inner membrane and the superoxide concentrations</p>
+</li>
+<li>
+<p>superoxide released into the matrix and intermembrane spaces at 85% and 15%, respectively</p>
+</li>
+<li>
+<p>Superoxide diffuses freely across the outer membrane at the rate VSO,IC. However, superoxide cannot diffuse across the inner membrane except through the opening of IMACs</p>
+</li>
+</ul>
+<h4 id=superoxide-production-and-diffusion-rate>Superoxide production and diffusion rate</h4>
+<ul>
+<li>the Nerst potential component has been replaced with the more
+general formulation of the Goldman-Hodgkin-Katz equation</li>
+</ul>
+<p>$$
+\begin{aligned}
+V_{sox} &= shunt * 0.85 * (1 - 0.4 \cdot Hill(SO_m, 0.45, 2)) * 6 * Hill(\Delta\Psi, 250, 5) \cr
+V_{IMAC} &= 800 \frac{N_O}{N_{IMAC}} * (0.0782 + \frac{7.82}{1 + e^{0.07 (4 + \Delta\Psi)}}) * \Delta\Psi \cr
+V_{ROS}^{tr} &= 0.5 * V_{IMAC} * (SO_{i} * \frac{SO_{m} - e^{F \Psi / RT}}{1 - e^{F \Psi / RT}}) \cr
+V_{S O, I C}&=k_{S O I, C}\left(4 S O_{I}-\sum_{j=1}^{4} S O_{C, j}\right)
+\end{aligned}
+$$</p>
+<ul>
+<li>we modeled the rate r->c to have a second-order dependence on the concentration of superoxide in the matrix: when SOM is high, the IMAC is more likely to be in state C</li>
+</ul>
+<h4 id=markov-model-of-imac-dynamics>Markov model of IMAC dynamics</h4>
+<p>Units in Hz. α=0.4 and β=10,000 (1/ mM^2 s)
+$$
+\begin{array}{l}{k_{R \rightarrow C}=k_{I \rightarrow O}=\alpha^{*} S O_{M}^{2}} \cr {k_{C \rightarrow O}=k_{R \rightarrow I}=\beta * S O_{I}^{2}} \cr {k_{O \rightarrow I}=k_{C \rightarrow R}=0.1} \cr {k_{I \rightarrow R}=k_{O \rightarrow C}=100.0}
+\end{array}
+$$</p>
+<p>$$
+\begin{array}{l}{\frac{d p_{C}}{d t}=-\left(k_{C \rightarrow O}+k_{C \rightarrow R}\right) * p_{C}+k_{R \rightarrow C} * p_{R}+k_{O \rightarrow C} * p_{O}} \cr {\frac{d p_{O}}{d t}=-\left(k_{O \rightarrow I}+k_{O \rightarrow C}\right) * p_{O}+k_{C \rightarrow O} * p_{C}+k_{I \rightarrow O} * p_{I}} \cr {\frac{d p_{I}}{d t}=-\left(k_{I \rightarrow O}+k_{I \rightarrow C}\right) * p_{I}+k_{O \rightarrow I} * p_{O}+k_{R \rightarrow I} * p_{R}} \cr {\frac{d p_{R}}{d t}=-\left(k_{R \rightarrow I}+k_{R \rightarrow C}\right) * p_{R}+k_{I \rightarrow R} * p_{I}+k_{C \rightarrow R} * p_{C}}
+\end{array}
+$$</p>
+<p>$$
+p_{C}+p_{O}+p_{I}+p_{R}=1
+$$</p>
+<ul>
+<li>It should be noted that the Markov model of the IMAC and the reaction rates are <strong>phenomenological</strong>, as quantitative information is limited.</li>
+</ul>
+<p><strong>Parameters</strong></p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Value</th>
+<th>Units</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_{IMM}$</td>
+<td>$19.2$</td>
+<td>$V/s$</td>
+<td>Conductance of IMM</td>
+</tr>
+<tr>
+<td>$V_{P, \Psi}$</td>
+<td>$3.5$</td>
+<td>$V/s$</td>
+<td>Charge rate of ETC</td>
+</tr>
+<tr>
+<td>$k_{SOD,m}$</td>
+<td>$0.08$</td>
+<td>$mM/s$</td>
+<td>Rate constant of SOD, mitochondrial</td>
+</tr>
+<tr>
+<td>$k_{SOD,i}$</td>
+<td>$0.006$</td>
+<td>$mM/s$</td>
+<td>Rate constant of SOD, intermembrane space</td>
+</tr>
+<tr>
+<td>$k_{SOD,c}$</td>
+<td>$0.006$</td>
+<td>$mM/s$</td>
+<td>Rate constant of SOD, cytosolic</td>
+</tr>
+<tr>
+<td>$K_{m,SOD}$</td>
+<td>$0.002$</td>
+<td>$mM$</td>
+<td>Michaelis constant for superoxide of SOD</td>
+</tr>
+<tr>
+<td>$V_{P, \Psi}$</td>
+<td>$3.5$</td>
+<td>$V/s$</td>
+<td>Charge rate of ETC</td>
+</tr>
+<tr>
+<td>$G_L$</td>
+<td>$0.0782$</td>
+<td>$mM/V$</td>
+<td>Leak Conductance of IMAC</td>
+</tr>
+<tr>
+<td>$G_{max}$</td>
+<td>$7.82$</td>
+<td>$mM/V$</td>
+<td>Integral conductance of IMAC</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>$0.4$</td>
+<td>$Hz \cdot mM^{-2}$</td>
+<td>Transition rate constant of IMAC</td>
+</tr>
+<tr>
+<td>$\beta$</td>
+<td>$10000$</td>
+<td>$Hz \cdot mM^{-2}$</td>
+<td>Transition rate constant of IMAC</td>
+</tr>
+<tr>
+<td>$k_{SO, IC}$</td>
+<td>$5$</td>
+<td>$Hz$</td>
+<td>Diffusion rate of superoxide between intermembrane space and cytosol</td>
+</tr>
+<tr>
+<td>$D_{SO}$</td>
+<td>$1$</td>
+<td>$\mu m^2 / s$</td>
+<td>Diffusion constant of superoxide in the cytosol</td>
+</tr>
+</tbody>
+</table>
+<h3 id=2d-mitochondrial-network-model>2D mitochondrial network model</h3>
+<ul>
+<li>100 × 20 grid of mitochondria</li>
+<li>Because each individual mitochondrion has the dimensions 0.9 μm × 0.9 μm, the spatial scale of the network model is 90 μm × 18 μm, which are approximately the dimensions of an average myocyte</li>
+<li>mitochondrial superoxide production displays a bistable behavio: production switches between high and low states</li>
+<li>matrix superoxide buildup is required for IMACs to open to result in membrane potential oscillations</li>
+<li>transient depolarizations tend to occur randomly in space and time</li>
+</ul>
+<h3 id=numerical-methods>Numerical methods</h3>
+<ul>
+<li>ODE & PDE: FE method, Δt = 0.0002s</li>
+<li>Markov model: Gillespie&rsquo;s algorithm</li>
+<li>The IMAC channel dynamics occur on a millisecond timescale</li>
+<li>Model is written in CUDA</li>
+</ul>
+<h2 id=results>Results</h2>
+<h3 id=dynamics-of-a-single-imac>Dynamics of a single IMAC</h3>
+<p><img class=lazyload data-src=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/89e91fd1-37fe-4005-8986-78b2e36e7cac/gr2_lrg.jpg data-srcset="https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/89e91fd1-37fe-4005-8986-78b2e36e7cac/gr2_lrg.jpg, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/89e91fd1-37fe-4005-8986-78b2e36e7cac/gr2_lrg.jpg 1.5x, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/89e91fd1-37fe-4005-8986-78b2e36e7cac/gr2_lrg.jpg 2x" data-sizes=auto alt=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/89e91fd1-37fe-4005-8986-78b2e36e7cac/gr2_lrg.jpg title=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/89e91fd1-37fe-4005-8986-78b2e36e7cac/gr2_lrg.jpg></p>
+<ul>
+<li>the channel exhibits a bursting behavior: remains closed for a long period and then enters into a mode of flipping quickly between closing and opening</li>
+<li>The 108-pS channel in mitoplasts (a candidate for IMAC) showed similar behavior: bursting type, time scale in ms</li>
+</ul>
+<h3 id=depolarization-dynamics-of-a-single-mitochondrion>Depolarization dynamics of a single mitochondrion</h3>
+<p><img class=lazyload data-src=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/75fbe59e-2626-485a-9484-54af318c7079/gr3_lrg.jpg data-srcset="https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/75fbe59e-2626-485a-9484-54af318c7079/gr3_lrg.jpg, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/75fbe59e-2626-485a-9484-54af318c7079/gr3_lrg.jpg 1.5x, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/75fbe59e-2626-485a-9484-54af318c7079/gr3_lrg.jpg 2x" data-sizes=auto alt=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/75fbe59e-2626-485a-9484-54af318c7079/gr3_lrg.jpg title=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/75fbe59e-2626-485a-9484-54af318c7079/gr3_lrg.jpg></p>
+<ul>
+<li>During low shunt conditions: both SOM and SOI very low => No RIRR</li>
+<li>Under high shunt conditions, ROS accumulate in matrix => higher steady state of superoxide in the intermembrane space => positive-feedback effect of RIRR</li>
+<li>the transient depolarizations of a single mitochondrion are not periodic, but more or less random</li>
+</ul>
+<p><img class=lazyload data-src=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/62e29bff-ab1e-42a8-b619-72fa2ecfa21f/gr4_lrg.jpg data-srcset="https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/62e29bff-ab1e-42a8-b619-72fa2ecfa21f/gr4_lrg.jpg, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/62e29bff-ab1e-42a8-b619-72fa2ecfa21f/gr4_lrg.jpg 1.5x, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/62e29bff-ab1e-42a8-b619-72fa2ecfa21f/gr4_lrg.jpg 2x" data-sizes=auto alt=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/62e29bff-ab1e-42a8-b619-72fa2ecfa21f/gr4_lrg.jpg title="Close-up of a single depolarization for the single-mitochondrion model"></p>
+<ul>
+<li>The onset of RIRR is extremely fast and accounts for the steepness during the initial depolarization</li>
+</ul>
+<p><img class=lazyload data-src=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/8f0b20eb-c3bd-49cf-9376-e2a0ab18c60d/gr5_lrg.jpg data-srcset="https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/8f0b20eb-c3bd-49cf-9376-e2a0ab18c60d/gr5_lrg.jpg, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/8f0b20eb-c3bd-49cf-9376-e2a0ab18c60d/gr5_lrg.jpg 1.5x, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/8f0b20eb-c3bd-49cf-9376-e2a0ab18c60d/gr5_lrg.jpg 2x" data-sizes=auto alt=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/8f0b20eb-c3bd-49cf-9376-e2a0ab18c60d/gr5_lrg.jpg title="ISI distributions for the single-mitochondrion model under different conditions"></p>
+<ul>
+<li>interspike intervals (ISIs)</li>
+<li>When NIMAC is increased to 100 (same total conductance), the average ISI increases and the distribution is slightly broadened</li>
+<li>an increase in the number of channels increases the oscillation frequency and narrows the distribution (more periodic)</li>
+<li>Increasing shunt increases the oscillation frequency and narrows the distribution</li>
+</ul>
+<h3 id=spatiotemporal-dynamics-of-the-mitochondrial-network>Spatiotemporal dynamics of the mitochondrial network</h3>
+<p><img class=lazyload data-src=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/e2059385-5b0e-4981-a06d-e3e12f438db0/gr6_lrg.jpg data-srcset="https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/e2059385-5b0e-4981-a06d-e3e12f438db0/gr6_lrg.jpg, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/e2059385-5b0e-4981-a06d-e3e12f438db0/gr6_lrg.jpg 1.5x, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/e2059385-5b0e-4981-a06d-e3e12f438db0/gr6_lrg.jpg 2x" data-sizes=auto alt=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/e2059385-5b0e-4981-a06d-e3e12f438db0/gr6_lrg.jpg title="Mitochondrial flickering and waves in a 2D network">
+<img class=lazyload data-src=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/c469f5a8-fd73-48f7-88c7-56a00e7baada/gr7_lrg.jpg data-srcset="https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/c469f5a8-fd73-48f7-88c7-56a00e7baada/gr7_lrg.jpg, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/c469f5a8-fd73-48f7-88c7-56a00e7baada/gr7_lrg.jpg 1.5x, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/c469f5a8-fd73-48f7-88c7-56a00e7baada/gr7_lrg.jpg 2x" data-sizes=auto alt=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/c469f5a8-fd73-48f7-88c7-56a00e7baada/gr7_lrg.jpg title="Distribution of cluster sizes of depolarized mitochondria =&amp;gt; self-organized criticality"></p>
+<ul>
+<li>p = 0.25, the distribution was close to an exponential distribution (y = 8951e^−0.6256x)</li>
+<li>for p = 0.4, the distribution exhibited a stronger power-law (y = 12847e^−0.0914x x−1.5713)</li>
+<li>for p = 0.6, this distribution was close to a pure power-law distribution (y = 4585x^−1.6455)</li>
+<li>The power-law distribution indicates that the system can exhibit all size scales, a property of critical phenomena in statistical physics
+<img class=lazyload data-src=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/32541592-8756-4a0d-af31-8a27127e4f0a/gr8_lrg.jpg data-srcset="https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/32541592-8756-4a0d-af31-8a27127e4f0a/gr8_lrg.jpg, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/32541592-8756-4a0d-af31-8a27127e4f0a/gr8_lrg.jpg 1.5x, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/32541592-8756-4a0d-af31-8a27127e4f0a/gr8_lrg.jpg 2x" data-sizes=auto alt=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/32541592-8756-4a0d-af31-8a27127e4f0a/gr8_lrg.jpg title="Periodicity and rhythmicity of whole-cell membrane potential"></li>
+<li>the single mitochondrion flickering is more random and less frequent than the depolarization of the network</li>
+<li>coupling between mitochondria through RIRR causes synchronized mitochondrial depolarizations, and thus periodicity in the average membrane potential</li>
+<li>ACF = autocorrelation function, the correlation between a signal at time t and a later time (t + lag time)</li>
+</ul>
+<h4 id=the-conduction-velocity-of-mitochondrial-depolarization-waves>The conduction velocity of mitochondrial depolarization waves</h4>
+<ul>
+<li>
+<p>Aon : 22 μm/s (IMAC)</p>
+</li>
+<li>
+<p>Brady: &lt;0.1 μm/s (mPTP)</p>
+</li>
+<li>
+<p>This paper: both ΨM oscillations and slow waves, and wave velocities ranged from 0.1 to 2.2 μm/s</p>
+</li>
+<li>
+<p>enhancing superoxide dismutase activity decreases wave velocity
+<img class=lazyload data-src=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/c69ea01b-1ae6-4043-8359-8ffe3231fb20/gr9_lrg.jpg data-srcset="https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/c69ea01b-1ae6-4043-8359-8ffe3231fb20/gr9_lrg.jpg, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/c69ea01b-1ae6-4043-8359-8ffe3231fb20/gr9_lrg.jpg 1.5x, https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/c69ea01b-1ae6-4043-8359-8ffe3231fb20/gr9_lrg.jpg 2x" data-sizes=auto alt=https://els-jbs-prod-cdn.literatumonline.com/cms/attachment/c69ea01b-1ae6-4043-8359-8ffe3231fb20/gr9_lrg.jpg title="Effects of superoxide dismutase activity on whole-cell Ψ oscillations"></p>
+</li>
+<li>
+<p>Stronger coupling causes an earlier transition from flickering to waves and oscillations.</p>
+</li>
+</ul>
+<h2 id=discussion>Discussion</h2>
+<ul>
+<li>a Markov model of the IMAC in a single mitochondrion and a mitochondrial network to simulate mitochondrial flickering</li>
+<li>The periodicity of the flickering depends on the total number of IMACs in the mitochondrial membrane and the superoxide production rate (coupling strength)</li>
+<li>The mitochondrial criticality is reached via the dynamics of self-organized criticality</li>
+</ul>
+<h3 id=mechanisms>Mechanisms?</h3>
+<ul>
+<li>mPTP opening triggered by sarcoplasmic reticulum (SR) calcium release or ROS release</li>
+<li>transient depolarizations or flickering may be caused by different mechanisms under different conditions (single blocker ineffective)</li>
+<li>Our IMAC model was partially based on the experimental observations of Borecky et al (108-pS channel)</li>
+<li>This model depends strongly on the random behavior of the channels, the depolarizations occur nonperiodically, simulating the flickering behavior. Deterministic ODEs cannot attain this.</li>
+<li>the spatiotemporal dynamics in our model is similar to the dynamics of <strong>calcium (Ca) signaling</strong> in experiments and computer modeling: Ca signaling hierarchy of quarks, sparks, macrosparks (or spark clusters), abortive (short lived) waves, and persistent waves are also governed by the dynamics of self-organized criticality</li>
+<li>oscillations are not governed by clocks or pacemakers but are stochastic in nature</li>
+</ul>
+<h3 id=model-critique>Model critique</h3>
+<p>A simple mitochondrial model only includes the RIRR of the IMAC and ROS production and dismutation</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>Nivala M, Korge P, Nivala M, Weiss JN, Qu Z. Linking flickering to waves and whole-cell oscillations in a mitochondrial network model. Biophys J. 2011;101(9):2102-11. <a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3207179/ target=_blank rel="noopener noreffer">PMC3207179</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>Updated on 2021-08-15&nbsp;<a class=git-hash href=https://github.com/sosiristseng/sosiristseng.github.io/commit/49fa12fc36403fcb0fa727336c4825bda5d488ff target=_blank title="commit by Wen-Wei Tseng(sosiristseng@gmail.com) 49fa12fc36403fcb0fa727336c4825bda5d488ff: add paper reading" rel="noopener noreferrer">
+<i class="fas fa-hashtag fa-fw"></i>49fa12f</a></span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md><span>
+<a class=link-to-markdown href=/nivala-2010-linking-flickering-to-waves-and-whole-cell-oscillations-in-a-mitochondrial-network-model/index.md target=_blank rel="noopener noreferrer">Read Markdown</a>
+</span></div>
+<div class=post-info-share>
+<span><a href=# onclick=return!1 title="Share on Twitter" data-sharer=twitter data-url=https://sosiristseng.github.io/nivala-2010-linking-flickering-to-waves-and-whole-cell-oscillations-in-a-mitochondrial-network-model/ data-title="Nivala 2010 : Linking flickering to waves and whole-cell oscillations in a mitochondrial network model" data-via=sosiristseng><i class="fab fa-twitter fa-fw"></i></a><a href=# onclick=return!1 title="Share on Facebook" data-sharer=facebook data-url=https://sosiristseng.github.io/nivala-2010-linking-flickering-to-waves-and-whole-cell-oscillations-in-a-mitochondrial-network-model/><i class="fab fa-facebook-square fa-fw"></i></a><a href=# onclick=return!1 title="Share on Linkedin" data-sharer=linkedin data-url=https://sosiristseng.github.io/nivala-2010-linking-flickering-to-waves-and-whole-cell-oscillations-in-a-mitochondrial-network-model/><i class="fab fa-linkedin fa-fw"></i></a><a href=# onclick=return!1 title="Share on Hacker News" data-sharer=hackernews data-url=https://sosiristseng.github.io/nivala-2010-linking-flickering-to-waves-and-whole-cell-oscillations-in-a-mitochondrial-network-model/ data-title="Nivala 2010 : Linking flickering to waves and whole-cell oscillations in a mitochondrial network model"><i class="fab fa-hacker-news fa-fw"></i></a><a href=# onclick=return!1 title="Share on Reddit" data-sharer=reddit data-url=https://sosiristseng.github.io/nivala-2010-linking-flickering-to-waves-and-whole-cell-oscillations-in-a-mitochondrial-network-model/><i class="fab fa-reddit fa-fw"></i></a><a href=# onclick=return!1 title="Share on Line" data-sharer=line data-url=https://sosiristseng.github.io/nivala-2010-linking-flickering-to-waves-and-whole-cell-oscillations-in-a-mitochondrial-network-model/ data-title="Nivala 2010 : Linking flickering to waves and whole-cell oscillations in a mitochondrial network model"><i data-svg-src=/lib/simple-icons/icons/line.min.svg></i></a></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags></section>
+<section>
+<span><a href=# onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/mustroph-2014-camkii-regulation-of-cardiac-k-channels/ class=prev rel=prev title="Mustroph 2014 : CaMKII regulation of cardiac K channels"><i class="fas fa-angle-left fa-fw"></i>Mustroph 2014 : CaMKII regulation of cardiac K channels</a>
+<a href=/nobile-2016-graphics-processing-units-in-bioinformatics-computational-biology-and-systems-biology/ class=next rel=next title="Nobile 2016 : Graphics processing units in bioinformatics, computational biology and systems biology">Nobile 2016 : Graphics processing units in bioinformatics, computational biology and systems biology<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.87.0">Hugo</a> | Theme - <a href=https://github.com/HEIGE-PCloud/DoIt target=_blank rel="noopener noreffer" title="DoIt 0.2.10"><i class="far fa-edit fa-fw"></i> DoIt</a>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2020 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://sosiristseng.github.io/ target=_blank rel="noopener noreferrer">Wen-Wei Tseng</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreferrer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div><script>'serviceWorker'in navigator&&(navigator.serviceWorker.register('/sw.min.js',{scope:'/'}).then(function(a){}),navigator.serviceWorker.ready.then(function(a){}))</script></footer></div>
+<div id=fixed-buttons><a href=#back-to-top id=back-to-top-button class=fixed-button title="Back to Top">
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments">
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><div class=assets><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/fuse/fuse.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/topbar/topbar.min.js></script><script type=text/javascript src=/lib/pjax/pjax.min.js></script><script type=text/javascript src=/js/theme.min.js></script></div>
+<div class=pjax-assets><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/auto-render.min.js></script><script type=text/javascript src=/lib/katex/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:15},comment:{},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{distance:100,findAllMatches:!1,fuseIndexURL:"/index.json",highlightTag:"em",ignoreFieldNorm:!1,ignoreLocation:!1,isCaseSensitive:!1,location:0,maxResultLength:10,minMatchCharLength:2,noResultsFound:"No results found",snippetLength:30,threshold:.3,type:"fuse",useExtendedSearch:!1},sharerjs:!0}</script><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css></div>
+</body>
+</html>

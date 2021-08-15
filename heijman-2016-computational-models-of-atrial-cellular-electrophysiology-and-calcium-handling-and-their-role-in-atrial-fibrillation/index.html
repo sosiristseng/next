@@ -1,0 +1,228 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<title class=pjax-title>Heijman 2016 : Computational models of atrial cellular electrophysiology and calcium handling, and their role in atrial fibrillation - Something to Live</title><meta name=Description content="Tech Notes of Wen-Wei Tseng"><meta property="og:title" content="Heijman 2016 : Computational models of atrial cellular electrophysiology and calcium handling, and their role in atrial fibrillation">
+<meta property="og:description" content="Sciwheel1">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sosiristseng.github.io/heijman-2016-computational-models-of-atrial-cellular-electrophysiology-and-calcium-handling-and-their-role-in-atrial-fibrillation/"><meta property="og:image" content="https://sosiristseng.github.io/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2020-10-23T00:05:07+08:00">
+<meta property="article:modified_time" content="2021-08-15T22:37:56+08:00">
+<meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2005-adenine-nucleotide-regulation-in-pancreatic-beta-cells-modeling-of-atp/adp-ca2-interactions/"><meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2010-glucose-sensing-in-the-pancreatic-beta-cell-a-computational-systems-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/kornick-2019-population-dynamics-of-mitochondria-in-cells-a-minimal-mathematical-model/"><meta property="og:see_also" content="https://sosiristseng.github.io/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/"><meta property="og:see_also" content="https://sosiristseng.github.io/hoffman-2017-a-multimethod-computational-simulation-approach-for-investigating-mitochondrial-dynamics-and-dysfunction-in-degenerative-aging/"><meta property="og:see_also" content="https://sosiristseng.github.io/saa-2013-modeling-the-atp-production-in-mitochondri/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/yang-2018-mitochondrialmediated-oxidative-ca2-/calmodulindependent-kinase-ii-activation-induces-early-afterdepolarizations-in-guinea-pig-cardiomyocytes-an-in-silico-study/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhu-2016-doxorubicin-redox-biology-redox-cycling-topoisomerase-inhibition-and-oxidative-stress/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2014-effects-of-regional-mitochondrial-depolarization-on-electrical-propagation-implications-for-arrhythmogenesis/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2012-cardiac-mitochondrial-network-excitability-insights-from-computational-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2009-modeling-cardiac-action-potential-shortening-driven-by-oxidative-stress-induced-mitochondrial-oscillations-in-guinea-pig-cardiomyocytes/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhang-2016-multi-scale-modeling-of-the-cardiovascular-system-disease-development-progression-and-clinical-intervention/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/yang-2018-mitochondrialmediated-oxidative-ca2-/calmodulindependent-kinase-ii-activation-induces-early-afterdepolarizations-in-guinea-pig-cardiomyocytes-an-in-silico-study/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2014-effects-of-regional-mitochondrial-depolarization-on-electrical-propagation-implications-for-arrhythmogenesis/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2012-cardiac-mitochondrial-network-excitability-insights-from-computational-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/zhou-2009-modeling-cardiac-action-potential-shortening-driven-by-oxidative-stress-induced-mitochondrial-oscillations-in-guinea-pig-cardiomyocytes/"><meta property="og:see_also" content="https://sosiristseng.github.io/yang-2014-mitochondria-and-arrhythmias/"><meta property="og:see_also" content="https://sosiristseng.github.io/sarkar-2010-regression-analysis-for-constraining-free-parameters-in-electrophysiological-models-of-cardiac-cells/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2005-adenine-nucleotide-regulation-in-pancreatic-beta-cells-modeling-of-atp/adp-ca2-interactions/"><meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2010-glucose-sensing-in-the-pancreatic-beta-cell-a-computational-systems-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/"><meta property="og:see_also" content="https://sosiristseng.github.io/leung-2021-systems-modeling-predicts-that-mitochondria-er-contact-sites-regulate-the-postsynaptic-energy-landscape/"><meta property="og:see_also" content="https://sosiristseng.github.io/wei-2012-dynamics-of-matrix-free-ca2-in-cardiac-mitochondria-two-components-of-ca2-uptake-and-role-of-phosphate-buffering/"><meta property="og:see_also" content="https://sosiristseng.github.io/tran-2010-a-metabolite-sensitive-thermodynamically-constrained-model-of-cardiac-cross-bridge-cycling-implications-for-force-development-during-ischemia/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/li-2012-mechanisms-by-which-cytoplasmic-calcium-wave-propagation-and-alternans-are-generated-in-cardiac-atrial-myocytes-lacking-t-tubulesinsights-from-a-simulation-study/">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://sosiristseng.github.io/">
+<meta name=twitter:title content="Heijman 2016 : Computational models of atrial cellular electrophysiology and calcium handling, and their role in atrial fibrillation">
+<meta name=twitter:description content="Sciwheel1">
+<meta name=application-name content="Los los los">
+<meta name=apple-mobile-web-app-title content="Los los los">
+<meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=parrot.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://sosiristseng.github.io/heijman-2016-computational-models-of-atrial-cellular-electrophysiology-and-calcium-handling-and-their-role-in-atrial-fibrillation/><link rel=prev href=https://sosiristseng.github.io/hatano-2015-distinct-functional-roles-of-cardiac-mitochondrial-subpopulations-revealed-by-a-3d-simulation-model/><link rel=next href=https://sosiristseng.github.io/heiske-2017-comprehensive-mathematical-model-of-oxidative-phosphorylation-valid-for-physiological-and-pathological-conditions/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
+<noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/animate/animate.min.css>
+<noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Heijman 2016 : Computational models of atrial cellular electrophysiology and calcium handling, and their role in atrial fibrillation","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sosiristseng.github.io\/heijman-2016-computational-models-of-atrial-cellular-electrophysiology-and-calcium-handling-and-their-role-in-atrial-fibrillation\/"},"genre":"posts","wordcount":455,"url":"https:\/\/sosiristseng.github.io\/heijman-2016-computational-models-of-atrial-cellular-electrophysiology-and-calcium-handling-and-their-role-in-atrial-fibrillation\/","datePublished":"2020-10-23T00:05:07+08:00","dateModified":"2021-08-15T22:37:56+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx"},"author":{"@type":"Person","name":"Heijman et al."},"description":""}</script></head>
+<body header-desktop=fixed header-mobile=auto><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a)}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'auto'==='light'||'auto'==='dark'||'auto'==='black'?(setTheme('auto'),saveTheme('auto')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let themeColorMeta=getMeta('theme-color');document.body.getAttribute('theme')!='light'&&(themeColorMeta.content='#000000')</script>
+<div id=back-to-top></div>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Something to Live"><span class=header-title-pre><i class="fas fa-kiwi-bird fa-fw"></i></span>Something to Live</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/ title=Posts> Posts </a><a class=menu-item href=/categories/reading/ title=Reading> Reading </a><a class=menu-item href=/tags/ title=Tags> Tags </a><a class=menu-item href=/series/ title="Reading Topics"> Reading Topics </a><a class=menu-item href=/categories/ title=Categories> Categories </a><a class=menu-item href=/about/ title="About Me"> About </a><a class=menu-item href=https://github.com/sosiristseng/ title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github-alt fa-fw"></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=Search id=search-input-desktop>
+<a href=# onclick=return!1 class="search-button search-toggle" id=search-toggle-desktop title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=# onclick=return!1 class="search-button search-clear" id=search-clear-desktop title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</span><a href=# onclick=return!1 class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Something to Live"><span class=header-title-pre><i class="fas fa-kiwi-bird fa-fw"></i></span>Something to Live</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder=Search id=search-input-mobile>
+<a href=# onclick=return!1 class="search-button search-toggle" id=search-toggle-mobile title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=# onclick=return!1 class="search-button search-clear" id=search-clear-mobile title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=# onclick=return!1 class=search-cancel id=search-cancel-mobile>
+Cancel
+</a>
+</div><a class=menu-item href=/posts/ title=Posts>Posts</a><a class=menu-item href=/categories/reading/ title=Reading>Reading</a><a class=menu-item href=/tags/ title=Tags>Tags</a><a class=menu-item href=/series/ title="Reading Topics">Reading Topics</a><a class=menu-item href=/categories/ title=Categories>Categories</a><a class=menu-item href=/about/ title="About Me">About</a><a class=menu-item href=https://github.com/sosiristseng/ title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github-alt fa-fw"></i></a><a href=# onclick=return!1 class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Heijman 2016 : Computational models of atrial cellular electrophysiology and calcium handling, and their role in atrial fibrillation</h1><div class=post-meta>
+<div class=post-meta-line>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Heijman et al.</a>
+</span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/reading/><i class="far fa-folder fa-fw"></i>Reading</a></span>&nbsp;<span class=post-category>and</span>&nbsp;<span class=post-series>series <a href=/series/ode/><i class="far fa-list-alt fa-fw"></i>ODE</a>&nbsp;<a href=/series/cardiomyocyte/><i class="far fa-list-alt fa-fw"></i>cardiomyocyte</a>&nbsp;<a href=/series/electrophysiology/><i class="far fa-list-alt fa-fw"></i>electrophysiology</a>&nbsp;<a href=/series/calcium/><i class="far fa-list-alt fa-fw"></i>calcium</a>&nbsp;<a href=/series/atria-model/><i class="far fa-list-alt fa-fw"></i>atria model</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2020-10-23>2020-10-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-08-15>2021-08-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;455 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#differences-between-atrial-ventricular-and-sinoatrial-node-cardiomyocytes>Differences between atrial, ventricular and sinoatrial node cardiomyocytes</a></li>
+<li><a href=#role-of-ca2-handling-abnormalities-in-atrial-arrhythmias>Role of Ca2+ handling abnormalities in atrial arrhythmias</a></li>
+<li><a href=#computational-modelling-of-atrial-cellular-electrophysiology-and-ca2-handling>Computational modelling of atrial cellular electrophysiology and Ca2+ handling</a>
+<ul>
+<li><a href=#types-of-ionchannel-models>Types of ion‐channel models</a></li>
+</ul>
+</li>
+<li><a href=#atrial-cardiomyocyte-models-and-their-principal-findings>Atrial cardiomyocyte models and their principal findings</a></li>
+<li><a href=#computational-models-based-on-experimental-data-from-animals>Computational models based on experimental data from animals</a></li>
+<li><a href=#computational-models-of-human-atrial-cardiomyocytes>Computational models of human atrial cardiomyocytes</a></li>
+<li><a href=#spatial-models-of-atrial-ca2-handling>Spatial models of atrial Ca2+ handling</a></li>
+<li><a href=#applications-of-computational-modelling-in-af-research>Applications of computational modelling in AF research</a></li>
+<li><a href=#gaps-in-knowledge-and-future-directions>Gaps in knowledge and future directions</a></li>
+<li><a href=#reference>Reference</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content><p><a href=https://sciwheel.com/work/#/items/4522998 target=_blank rel="noopener noreffer">Sciwheel</a><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<h2 id=introduction>Introduction</h2>
+<ul>
+<li>Computational modelling was developed to complement experimental approaches to improve understanding of cardiac electrophysiology and arrhythmogenesis</li>
+<li>a central role for <strong>Ca2+ handling</strong> abnormalities has been identified in promoting ectopic activity and re‐entry, the two major mechanisms underlying atrial fibrillation (AF)</li>
+</ul>
+<h2 id=differences-between-atrial-ventricular-and-sinoatrial-node-cardiomyocytes>Differences between atrial, ventricular and sinoatrial node cardiomyocytes</h2>
+<p><img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/125469140-ab06bbb6-3da7-4f45-9695-8d41911c44fc.png data-srcset="https://user-images.githubusercontent.com/40054455/125469140-ab06bbb6-3da7-4f45-9695-8d41911c44fc.png, https://user-images.githubusercontent.com/40054455/125469140-ab06bbb6-3da7-4f45-9695-8d41911c44fc.png 1.5x, https://user-images.githubusercontent.com/40054455/125469140-ab06bbb6-3da7-4f45-9695-8d41911c44fc.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/125469140-ab06bbb6-3da7-4f45-9695-8d41911c44fc.png title=image></p>
+<ul>
+<li>Atrial cardiomyocytes possessing a number of ion currents that are largely absent in the ventricle (e.g. ultra‐rapid delayed‐rectifier K+ current IKur, or acetylcholine‐activated inward‐rectifying K+ current IK,ACh)</li>
+<li>SAN cardiomyocytes additionally express more hyperpolarization‐activated cyclic nucleotide‐gated (HCN) channels but have relatively few Na+ channels. T‐type Ca2+ current is largest in the SAN.</li>
+<li>ventricular cardiomyocytes have a larger basal inward‐rectifying K+ current (IK1)</li>
+<li>differences in Ca2+ handling between cell types
+<ul>
+<li>ventricular myocytes having a well‐developed system of membrane invaginations (t‐tubules) => homogeneous activation</li>
+<li>atrial myocytes: centripetal Ca2+ wave</li>
+</ul>
+</li>
+</ul>
+<h2 id=role-of-ca2-handling-abnormalities-in-atrial-arrhythmias>Role of Ca2+ handling abnormalities in atrial arrhythmias</h2>
+<ul>
+<li>Ca2+ overload can activate NCX => EADs and DADs, cardiac alternans</li>
+<li>Ca signalling pathways => remodeling</li>
+</ul>
+<h2 id=computational-modelling-of-atrial-cellular-electrophysiology-and-ca2-handling>Computational modelling of atrial cellular electrophysiology and Ca2+ handling</h2>
+<p><img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/125469166-24b43314-abcd-4794-9fed-66c7f3248fb4.png data-srcset="https://user-images.githubusercontent.com/40054455/125469166-24b43314-abcd-4794-9fed-66c7f3248fb4.png, https://user-images.githubusercontent.com/40054455/125469166-24b43314-abcd-4794-9fed-66c7f3248fb4.png 1.5x, https://user-images.githubusercontent.com/40054455/125469166-24b43314-abcd-4794-9fed-66c7f3248fb4.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/125469166-24b43314-abcd-4794-9fed-66c7f3248fb4.png title=image></p>
+<h3 id=types-of-ionchannel-models>Types of ion‐channel models</h3>
+<ul>
+<li>instantaneous, time‐independent (rapid equilibrium): IK1</li>
+<li>Hodgkin–Huxley gating variables</li>
+<li>Markov models: states variables, more complex, additionally capture dependent state transitions</li>
+</ul>
+<h2 id=atrial-cardiomyocyte-models-and-their-principal-findings>Atrial cardiomyocyte models and their principal findings</h2>
+<p><img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/125469183-a65d52ff-2390-4293-a190-a780d86e4e44.png data-srcset="https://user-images.githubusercontent.com/40054455/125469183-a65d52ff-2390-4293-a190-a780d86e4e44.png, https://user-images.githubusercontent.com/40054455/125469183-a65d52ff-2390-4293-a190-a780d86e4e44.png 1.5x, https://user-images.githubusercontent.com/40054455/125469183-a65d52ff-2390-4293-a190-a780d86e4e44.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/125469183-a65d52ff-2390-4293-a190-a780d86e4e44.png title=image></p>
+<h2 id=computational-models-based-on-experimental-data-from-animals>Computational models based on experimental data from animals</h2>
+<p>See <code>Table 1</code></p>
+<h2 id=computational-models-of-human-atrial-cardiomyocytes>Computational models of human atrial cardiomyocytes</h2>
+<p><img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/125469196-91dee0e4-71af-4036-a1a8-412c572f1dc7.png data-srcset="https://user-images.githubusercontent.com/40054455/125469196-91dee0e4-71af-4036-a1a8-412c572f1dc7.png, https://user-images.githubusercontent.com/40054455/125469196-91dee0e4-71af-4036-a1a8-412c572f1dc7.png 1.5x, https://user-images.githubusercontent.com/40054455/125469196-91dee0e4-71af-4036-a1a8-412c572f1dc7.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/125469196-91dee0e4-71af-4036-a1a8-412c572f1dc7.png title=image></p>
+<h2 id=spatial-models-of-atrial-ca2-handling>Spatial models of atrial Ca2+ handling</h2>
+<ul>
+<li>transverse segmentation allows simulation of the centripetal Ca2+ wave</li>
+<li>subsarcolemmal SR Ca2+‐release sites influence AP shape, whereas the central release sites control centripetal Ca2+ wave propagation</li>
+<li>However, common‐pool models also show alternans, as recently demonstrated for the Grandi model (Chang et al. 2014). This type of alternans critically depends on intrinsic RyR2 properties.</li>
+<li>both transverse and longitudinal compartmentation of Ca2+ handling (Fig. 4 C), along with stochastic gating of RyR2s using a Markov‐model approach => The combination of changes produces sustained triggered activity = paroxysmal AF (pAF)</li>
+</ul>
+<p><img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/125469337-96698aed-c1d3-41d7-89c3-4ee4236fb935.png data-srcset="https://user-images.githubusercontent.com/40054455/125469337-96698aed-c1d3-41d7-89c3-4ee4236fb935.png, https://user-images.githubusercontent.com/40054455/125469337-96698aed-c1d3-41d7-89c3-4ee4236fb935.png 1.5x, https://user-images.githubusercontent.com/40054455/125469337-96698aed-c1d3-41d7-89c3-4ee4236fb935.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/125469337-96698aed-c1d3-41d7-89c3-4ee4236fb935.png title=image></p>
+<h2 id=applications-of-computational-modelling-in-af-research>Applications of computational modelling in AF research</h2>
+<p><img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/125469348-93fb663f-6495-4fcb-a271-275dfe1cc9ca.png data-srcset="https://user-images.githubusercontent.com/40054455/125469348-93fb663f-6495-4fcb-a271-275dfe1cc9ca.png, https://user-images.githubusercontent.com/40054455/125469348-93fb663f-6495-4fcb-a271-275dfe1cc9ca.png 1.5x, https://user-images.githubusercontent.com/40054455/125469348-93fb663f-6495-4fcb-a271-275dfe1cc9ca.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/125469348-93fb663f-6495-4fcb-a271-275dfe1cc9ca.png title=image></p>
+<ul>
+<li>It&rsquo;s not experimentally possible to modulate the function of a single channel or transporter in human atrial cardiomyocytes with high specificity. Computational assessment of potential mechanisms of atrial arrhythmogenesis could help to identify experimental findings about changes in ion‐channel function</li>
+<li>The advances and applications of atrial cardiomyocyte models have been paralleled by advances in the development of models for other cell types (ventricular: common‐pool and spatial ‘local‐control’ models)</li>
+</ul>
+<h2 id=gaps-in-knowledge-and-future-directions>Gaps in knowledge and future directions</h2>
+<ul>
+<li>pronounced inter‐patient and regional variation: tissues surrounding the (PVs) have specific electrophysiological and Ca2+ handling properties, making them more likely to produce ectopic activity</li>
+<li>multiscale understanding of AF</li>
+<li>Channel modeling (e.g. RyR2)</li>
+</ul>
+<p><img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/125469419-8c6c77c8-ab33-49ac-8732-09bc12dc1765.png data-srcset="https://user-images.githubusercontent.com/40054455/125469419-8c6c77c8-ab33-49ac-8732-09bc12dc1765.png, https://user-images.githubusercontent.com/40054455/125469419-8c6c77c8-ab33-49ac-8732-09bc12dc1765.png 1.5x, https://user-images.githubusercontent.com/40054455/125469419-8c6c77c8-ab33-49ac-8732-09bc12dc1765.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/125469419-8c6c77c8-ab33-49ac-8732-09bc12dc1765.png title=image></p>
+<h2 id=reference>Reference</h2>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>Heijman J, Erfanian Abdoust P, Voigt N, Nattel S, Dobrev D. Computational models of atrial cellular electrophysiology and calcium handling, and their role in atrial fibrillation. J Physiol (Lond) 2016;594(3):537-553. doi:10.1113/JP271404. <a href=http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5341705 target=_blank rel="noopener noreffer">PMC5341705</a>.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>Updated on 2021-08-15&nbsp;<a class=git-hash href=https://github.com/sosiristseng/sosiristseng.github.io/commit/49fa12fc36403fcb0fa727336c4825bda5d488ff target=_blank title="commit by Wen-Wei Tseng(sosiristseng@gmail.com) 49fa12fc36403fcb0fa727336c4825bda5d488ff: add paper reading" rel="noopener noreferrer">
+<i class="fas fa-hashtag fa-fw"></i>49fa12f</a></span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md><span>
+<a class=link-to-markdown href=/heijman-2016-computational-models-of-atrial-cellular-electrophysiology-and-calcium-handling-and-their-role-in-atrial-fibrillation/index.md target=_blank rel="noopener noreferrer">Read Markdown</a>
+</span></div>
+<div class=post-info-share>
+<span><a href=# onclick=return!1 title="Share on Twitter" data-sharer=twitter data-url=https://sosiristseng.github.io/heijman-2016-computational-models-of-atrial-cellular-electrophysiology-and-calcium-handling-and-their-role-in-atrial-fibrillation/ data-title="Heijman 2016 : Computational models of atrial cellular electrophysiology and calcium handling, and their role in atrial fibrillation" data-via=sosiristseng><i class="fab fa-twitter fa-fw"></i></a><a href=# onclick=return!1 title="Share on Facebook" data-sharer=facebook data-url=https://sosiristseng.github.io/heijman-2016-computational-models-of-atrial-cellular-electrophysiology-and-calcium-handling-and-their-role-in-atrial-fibrillation/><i class="fab fa-facebook-square fa-fw"></i></a><a href=# onclick=return!1 title="Share on Linkedin" data-sharer=linkedin data-url=https://sosiristseng.github.io/heijman-2016-computational-models-of-atrial-cellular-electrophysiology-and-calcium-handling-and-their-role-in-atrial-fibrillation/><i class="fab fa-linkedin fa-fw"></i></a><a href=# onclick=return!1 title="Share on Hacker News" data-sharer=hackernews data-url=https://sosiristseng.github.io/heijman-2016-computational-models-of-atrial-cellular-electrophysiology-and-calcium-handling-and-their-role-in-atrial-fibrillation/ data-title="Heijman 2016 : Computational models of atrial cellular electrophysiology and calcium handling, and their role in atrial fibrillation"><i class="fab fa-hacker-news fa-fw"></i></a><a href=# onclick=return!1 title="Share on Reddit" data-sharer=reddit data-url=https://sosiristseng.github.io/heijman-2016-computational-models-of-atrial-cellular-electrophysiology-and-calcium-handling-and-their-role-in-atrial-fibrillation/><i class="fab fa-reddit fa-fw"></i></a><a href=# onclick=return!1 title="Share on Line" data-sharer=line data-url=https://sosiristseng.github.io/heijman-2016-computational-models-of-atrial-cellular-electrophysiology-and-calcium-handling-and-their-role-in-atrial-fibrillation/ data-title="Heijman 2016 : Computational models of atrial cellular electrophysiology and calcium handling, and their role in atrial fibrillation"><i data-svg-src=/lib/simple-icons/icons/line.min.svg></i></a></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags></section>
+<section>
+<span><a href=# onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/hatano-2015-distinct-functional-roles-of-cardiac-mitochondrial-subpopulations-revealed-by-a-3d-simulation-model/ class=prev rel=prev title="Hatano 2015 : Distinct Functional Roles of Cardiac Mitochondrial Subpopulations Revealed by a 3D Simulation Model"><i class="fas fa-angle-left fa-fw"></i>Hatano 2015 : Distinct Functional Roles of Cardiac Mitochondrial Subpopulations Revealed by a 3D Simulation Model</a>
+<a href=/heiske-2017-comprehensive-mathematical-model-of-oxidative-phosphorylation-valid-for-physiological-and-pathological-conditions/ class=next rel=next title="Heiske 2017 : Comprehensive mathematical model of oxidative phosphorylation valid for physiological and pathological conditions">Heiske 2017 : Comprehensive mathematical model of oxidative phosphorylation valid for physiological and pathological conditions<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.87.0">Hugo</a> | Theme - <a href=https://github.com/HEIGE-PCloud/DoIt target=_blank rel="noopener noreffer" title="DoIt 0.2.10"><i class="far fa-edit fa-fw"></i> DoIt</a>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2020 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://sosiristseng.github.io/ target=_blank rel="noopener noreferrer">Wen-Wei Tseng</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreferrer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div><script>'serviceWorker'in navigator&&(navigator.serviceWorker.register('/sw.min.js',{scope:'/'}).then(function(a){}),navigator.serviceWorker.ready.then(function(a){}))</script></footer></div>
+<div id=fixed-buttons><a href=#back-to-top id=back-to-top-button class=fixed-button title="Back to Top">
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments">
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><div class=assets><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/fuse/fuse.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/topbar/topbar.min.js></script><script type=text/javascript src=/lib/pjax/pjax.min.js></script><script type=text/javascript src=/js/theme.min.js></script></div>
+<div class=pjax-assets><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:15},comment:{},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},search:{distance:100,findAllMatches:!1,fuseIndexURL:"/index.json",highlightTag:"em",ignoreFieldNorm:!1,ignoreLocation:!1,isCaseSensitive:!1,location:0,maxResultLength:10,minMatchCharLength:2,noResultsFound:"No results found",snippetLength:30,threshold:.3,type:"fuse",useExtendedSearch:!1},sharerjs:!0}</script><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css></div>
+</body>
+</html>

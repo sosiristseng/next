@@ -1,105 +1,89 @@
-# Web Develpment Bookmarks
+# Bookmarks
 
 
-> CSS, Icons, Illustrations, Photos
+My portable bookmarks.
 
 <!--more-->
 
-## CSS generators
+## Free tools
 
-Generate CSS styles for your websites. From [hashnode](https://denic.hashnode.dev/css-generators).
+- [MikuTools](https://tools.miku.ac/) : a collection of small useful online tools.
+- [免費資源網路社群 (Traditional Chinese)](https://free.com.tw/) : a collection of free tools.
+- [Compiler explorer](https://godbolt.org/) : assembly for a C/C++ code snippet.
+- [Free for dev](https://free-for.dev/) : online tools with free tiers.
+- [Desmos graphing calculator](https://www.desmos.com/calculator)
+- [Geogebra](https://www.geogebra.org/)
+- [Awesome](https://github.com/sindresorhus/awesome) lists of everything.
+- [Regex 101](https://regex101.com/)
+- [Regexr](https://regexr.com/)
 
-- [CSS Accordion Slider Generator](https://accordionslider.com/)
-- [CSS clip-path maker](https://bennettfeely.com/clippy/)
-- [CSS grid generator](https://cssgrid-generator.netlify.app/)
-- [Data Color Picker](https://learnui.design/tools/data-color-picker.html)
-- [Easing radius](https://larsenwork.com/easing-gradients)
-- [Fancy border radius](https://9elements.github.io/fancy-border-radius/)
-- [Get CSS waves](https://getwaves.io/)
-- [Neumorphism](https://neumorphism.io/)
-- [Smooth shadows](https://shadows.brumm.af/)
+## DevOps
 
-## Icons
+> DevOps is a set of practices that combines software development (Dev) and IT operations (Ops). It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. ([Wikipedia](https://en.wikipedia.org/wiki/DevOps))
 
-- [Fork awesome](https://forkaweso.me/Fork-Awesome/)
-- [Freebie supply](https://freebiesupply.com/)
-- [Friconix](https://friconix.com/) icon with extensive parameters. Also see its [CSS color table](https://lucidar.me/en/web-dev/css-color-list/)
-- [Handcrafted icons](https://www.zwicon.com/)
-- [Icofont](https://icofont.com/)
-- [Icon duck](https://iconduck.com) : 116,704 free open source icons & illustrations
-- [Iconify](https://iconify.design/)
-- [IconPark](https://iconpark.bytedance.com/official) by ByteDance
-- [Icons8](https://icons8.com/)
-- [Material Design Icons](https://materialdesignicons.com/)
-- [Octicons](https://primer.style/octicons/) by GitHub
-- [PNG repo](https://www.pngrepo.com/) and the sister project [SVG repo](https://www.svgrepo.com/)
-- [Simple icons](https://simpleicons.org/)
-- [Tabler Icons](https://github.com/tabler/tabler-icons)
-- [Vector Icons](https://iconscout.com/unicons)
-- [Vivid.js](https://webkul.github.io/vivid/)
+- [Awesome devops](https://github.com/awesome-soft/awesome-devops).
+- [DevOps category](categories/devops)
 
-## Illustrations
+## Games
 
-- [Absurd illustrations](https://absurd.design/): Free surreal illustrations.
-- [DrawKit](https://www.drawkit.io/): Beautiful, free illustrations. Updated weekly.
-- [Freebie supply](https://freebiesupply.com/): The freshest design resources for Adobe XD, Figma, Sketch, Photoshop and Adobe Illustrator.
-- [Gratisography](https://gratisography.com/): High Resolution Free Stock Pictures.
-- [Humaaans](https://www.humaaans.com/): SVG human figures with customization options
-- [IRA designs](https://iradesign.io/): Build your own amazing illustrations
-- [Manypixels](https://www.manypixels.co/gallery/)
-- [Mixkit](https://mixkit.co/) : Beautiful Art & Illustration
-- [Ouch](https://icons8.com/illustrations) from [icons8](https://icons8.com/)
-- [The stocks](http://thestocks.im) : Collections of icons, illustrations, photos
-- [Undraw](https://undraw.co/) : Open-source illustrations
+- [Steam workshop downloader](https://steamworkshopdownloader.io/)
+- [Steam workshop download](http://steamworkshop.download/)
+- [EU4 console command](https://eu4.paradoxwikis.com/Console_commands)
+- [Stellaris console commands](https://stellaris.paradoxwikis.com/Console_commands)
 
-## Photos
+## Document
 
-- [Big Foto](https://bigfoto.com/)
-- [CC search](https://search.creativecommons.org/): Search for content to reuse
-- [DreamsTime](https://www.dreamstime.com/)
-- [Foodiesfeed](http://foodiesfeed.com/): Food pictures
-- [Free digital photos](http://www.freedigitalphotos.net/)
-- [Free images](http://www.freeimages.com/)
-- [Free media goo](https://www.freemediagoo.com/): includes texture photos (e.g. rust, concrete)
-- [Free Range Stock](https://freerangestock.com/)
-- [Free Stock Photos](https://picjumbo.com/)
-- [Freebie supply](https://freebiesupply.com/)
-- [Gratisography](https://gratisography.com/)
-- [IM free](http://imcreator.com/free): A curated collection of free web design resources. Includes some icons.
-- [LibreShot](https://libreshot.com/)
-- [Life of pix](https://www.lifeofpix.com/)
-- [Little visuals](https://littlevisuals.co/)
-- [Morgue file](https://morguefile.com/)
-- [New old stock](https://nos.twnsnd.co/): old photos
-- [Pexels](https://www.pexels.com/)
-- [Pic jumbo](https://picjumbo.com/)
-- [Pickup image](https://pickupimage.com/)
-- [Pixabay](https://pixabay.com/)
-- [Public Domain Pictures](https://www.publicdomainpictures.net/en/)
-- [Stock Vault](https://www.stockvault.net/)
-- [Unsplash](https://unsplash.com/)
-- [Wikipedia commons](https://commons.wikimedia.org/wiki/Main_Page) and [Can we image](https://canweimage.com/) search engine.
+> Documents, slides, and  diagrams
 
-## HTML Publications
+- [draw.io](https://www.draw.io/): Flow chart and diagram maker
+- [PDF24](https://tools.pdf24.org/en/): 24 free PDF tools
+- [My Graph Paper](https://www.mygraphpaper.com/)
+- [SlidesGo](https://slidesgo.com/): Free Google Slides and PowerPoint templates
+- [Word templates](https://www.vertex42.com/WordTemplates/): Microsoft Word templates
 
-Generate PDF documents from XML/HTML using the "CSS Paged Media"
+## Linux
 
-- [Print CSS](https://print-css.rocks/) :: materials about publication HTML.
-- [Weasy Print](https://courtbouillon.org/weasyprint) :: turns simple HTML pages into gorgeous PDF publications.
-- [Alternative to LaTeX for high quality reports](https://speakerdeck.com/rlesur/alternative-to-latex-for-high-quality-reports-with-rmarkdown)
+[Linux bookmarks]({{< ref "linux/bookmarks.md" >}})
 
-## Hosting Web sites
+## Python
 
-See also [Jace.pro's post](https://jace.pro/post/2020-12-17-cloudflare-pages-netlify-zeit-github-pages-and-gitlab-pages-where-to-host/) comparing hosting options.
+[Python bookmarks]({{< ref "python/bookmarks.md" >}})
 
-- [Cloudflare pages](https://pages.cloudflare.com)
-- [Netlify](https://www.netlify.com/)
-- [GitLab pages](https://docs.gitlab.com/ee/user/project/pages/)
-- [Github pages docs](https://docs.github.com/en/pages)
+## Julia
 
-## Checking hyperlinks
+[Julia bookmarks]({{< ref "julia/bookmarks.md" >}})
 
-- [linkchecker-markdown](https://github.com/scivision/linkchecker-markdown) : Blazing-fast markdown link checker in Python.
-- [markdown-link-check](https://github.com/marketplace/actions/markdown-link-check) : GitHub action for `markdown-link-check`.
-- [lychee-action](https://github.com/lycheeverse/lychee-action) : Github action to check for broken links in Markdown, HTML, and text files using lychee, a fast link checker written in Rust.
+## Research Tools
+
+[Research Tools bookmarks]({{< ref "research/bookmarks.md" >}})
+
+[LaTeX bookmarks]({{< ref "research/latex.md" >}})
+
+[Markdown bookmarks]({{< ref "research/markdown.md" >}})
+
+## Fonts
+
+- [Nerd fonts](https://www.nerdfonts.com/): patched fonts with glyphs.
+- [Google fonts](https://fonts.google.com/)
+- [Font squirrel](https://www.fontsquirrel.com/): hand-picked free fonts
+- [Fontshare](https://www.fontshare.com/) from [Indian Type Foundry](https://www.indiantypefoundry.com/).
+- [Font Library](https://fontlibrary.org/)
+- [Cascadia code](https://github.com/microsoft/cascadia-code): a fun, new monospaced font developed for Windows Terminal (and friends).
+- [IBM plex](https://github.com/IBM/plex)
+- [Gensen font](https://github.com/ButTaiwan/gensen-font): Rounded corner CJK fonts.
+- [Public Sans](https://github.com/uswds/public-sans): A strong, neutral, principles-driven, open source typeface for text or display.
+
+
+Compatible fonts for MS ones:
+
+- Arial (Sans): Arimo and Liberation Sans
+- Times New Roman (Sans Serif): Tinos and Liberation Serif
+- Courier New (Monospace): Cousine and Liberation Mono
+- Calibri: Carlito
+- Cambria: Caladea
+
+## Web Develpment
+
+[Web Develpment  bookmarks]({{< ref "webdev/bookmarks.md" >}})
+
 

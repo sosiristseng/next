@@ -1,0 +1,285 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<title class=pjax-title>Wacquier 2016 : Interplay Between Intracellular Ca Oscillations and Ca-stimulated Mitochondrial Metabolism - Something to Live</title><meta name=Description content="Tech Notes of Wen-Wei Tseng"><meta property="og:title" content="Wacquier 2016 : Interplay Between Intracellular Ca Oscillations and Ca-stimulated Mitochondrial Metabolism ">
+<meta property="og:description" content="Sciwheel1">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sosiristseng.github.io/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/"><meta property="og:image" content="https://sosiristseng.github.io/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-07-15T17:29:23+08:00">
+<meta property="article:modified_time" content="2021-08-15T22:37:56+08:00">
+<meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2005-adenine-nucleotide-regulation-in-pancreatic-beta-cells-modeling-of-atp/adp-ca2-interactions/"><meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2010-glucose-sensing-in-the-pancreatic-beta-cell-a-computational-systems-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/kornick-2019-population-dynamics-of-mitochondria-in-cells-a-minimal-mathematical-model/"><meta property="og:see_also" content="https://sosiristseng.github.io/hoffman-2017-a-multimethod-computational-simulation-approach-for-investigating-mitochondrial-dynamics-and-dysfunction-in-degenerative-aging/"><meta property="og:see_also" content="https://sosiristseng.github.io/saa-2013-modeling-the-atp-production-in-mitochondri/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/patel-2013-optimal-dynamics-for-quality-control-in-spatially-distributed-mitochondrial-networks/"><meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2005-adenine-nucleotide-regulation-in-pancreatic-beta-cells-modeling-of-atp/adp-ca2-interactions/"><meta property="og:see_also" content="https://sosiristseng.github.io/miyamoto-2015-compartmentalized-ampk-signaling-illuminated-by-genetically-encoded-molecular-sensors-and-actuators/"><meta property="og:see_also" content="https://sosiristseng.github.io/toyama-2016-metabolism.-amp-activated-protein-kinase-mediates-mitochondrial-fission-in-response-to-energy-stress/"><meta property="og:see_also" content="https://sosiristseng.github.io/montemurro-2017-cell-cycle-related-metabolism-and-mitochondrial-dynamics-in-a-replication-competent-pancreatic-beta-cell-line/"><meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2010-glucose-sensing-in-the-pancreatic-beta-cell-a-computational-systems-analysis/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/patel-2013-optimal-dynamics-for-quality-control-in-spatially-distributed-mitochondrial-networks/"><meta property="og:see_also" content="https://sosiristseng.github.io/montemurro-2017-cell-cycle-related-metabolism-and-mitochondrial-dynamics-in-a-replication-competent-pancreatic-beta-cell-line/"><meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2010-glucose-sensing-in-the-pancreatic-beta-cell-a-computational-systems-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/haythorne-2019-diabetes-causes-marked-inhibition-of-mitochondrial-metabolism-in-pancreatic-%CE%B2-cells/"><meta property="og:see_also" content="https://sosiristseng.github.io/jesinkey-2019-mitochondrial-gtp-links-nutrient-sensing-to-%CE%B2-cell-health-mitochondrial-morphology-and-insulin-secretion-independent-of-osphos/"><meta property="og:see_also" content="https://sosiristseng.github.io/kornick-2019-population-dynamics-of-mitochondria-in-cells-a-minimal-mathematical-model/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2005-adenine-nucleotide-regulation-in-pancreatic-beta-cells-modeling-of-atp/adp-ca2-interactions/"><meta property="og:see_also" content="https://sosiristseng.github.io/fridlyand-2010-glucose-sensing-in-the-pancreatic-beta-cell-a-computational-systems-analysis/"><meta property="og:see_also" content="https://sosiristseng.github.io/leung-2021-systems-modeling-predicts-that-mitochondria-er-contact-sites-regulate-the-postsynaptic-energy-landscape/"><meta property="og:see_also" content="https://sosiristseng.github.io/wei-2012-dynamics-of-matrix-free-ca2-in-cardiac-mitochondria-two-components-of-ca2-uptake-and-role-of-phosphate-buffering/"><meta property="og:see_also" content="https://sosiristseng.github.io/tran-2010-a-metabolite-sensitive-thermodynamically-constrained-model-of-cardiac-cross-bridge-cycling-implications-for-force-development-during-ischemia/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/wei-2012-dynamics-of-matrix-free-ca2-in-cardiac-mitochondria-two-components-of-ca2-uptake-and-role-of-phosphate-buffering/"><meta property="og:see_also" content="https://sosiristseng.github.io/mathematical-models-of-the-mcu-and-nclx-a-summary/">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://sosiristseng.github.io/">
+<meta name=twitter:title content="Wacquier 2016 : Interplay Between Intracellular Ca Oscillations and Ca-stimulated Mitochondrial Metabolism ">
+<meta name=twitter:description content="Sciwheel1">
+<meta name=application-name content="Los los los">
+<meta name=apple-mobile-web-app-title content="Los los los">
+<meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=parrot.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://sosiristseng.github.io/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/><link rel=prev href=https://sosiristseng.github.io/hoffman-2017-a-multimethod-computational-simulation-approach-for-investigating-mitochondrial-dynamics-and-dysfunction-in-degenerative-aging/><link rel=next href=https://sosiristseng.github.io/tam-2013-mathematical-modeling-of-the-role-of-mitochondrial-fusion-and-fission-in-mitochondrial-dna-maintenance/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
+<noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/animate/animate.min.css>
+<noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Wacquier 2016 : Interplay Between Intracellular Ca Oscillations and Ca-stimulated Mitochondrial Metabolism ","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sosiristseng.github.io\/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism\/"},"genre":"posts","wordcount":1227,"url":"https:\/\/sosiristseng.github.io\/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism\/","datePublished":"2021-07-15T17:29:23+08:00","dateModified":"2021-08-15T22:37:56+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx"},"author":{"@type":"Person","name":"Wen-Wei Tseng"},"description":""}</script></head>
+<body header-desktop=fixed header-mobile=auto><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a)}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'auto'==='light'||'auto'==='dark'||'auto'==='black'?(setTheme('auto'),saveTheme('auto')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let themeColorMeta=getMeta('theme-color');document.body.getAttribute('theme')!='light'&&(themeColorMeta.content='#000000')</script>
+<div id=back-to-top></div>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Something to Live"><span class=header-title-pre><i class="fas fa-kiwi-bird fa-fw"></i></span>Something to Live</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/ title=Posts> Posts </a><a class=menu-item href=/categories/reading/ title=Reading> Reading </a><a class=menu-item href=/tags/ title=Tags> Tags </a><a class=menu-item href=/series/ title="Reading Topics"> Reading Topics </a><a class=menu-item href=/categories/ title=Categories> Categories </a><a class=menu-item href=/about/ title="About Me"> About </a><a class=menu-item href=https://github.com/sosiristseng/ title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github-alt fa-fw"></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=Search id=search-input-desktop>
+<a href=# onclick=return!1 class="search-button search-toggle" id=search-toggle-desktop title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=# onclick=return!1 class="search-button search-clear" id=search-clear-desktop title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</span><a href=# onclick=return!1 class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Something to Live"><span class=header-title-pre><i class="fas fa-kiwi-bird fa-fw"></i></span>Something to Live</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder=Search id=search-input-mobile>
+<a href=# onclick=return!1 class="search-button search-toggle" id=search-toggle-mobile title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=# onclick=return!1 class="search-button search-clear" id=search-clear-mobile title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=# onclick=return!1 class=search-cancel id=search-cancel-mobile>
+Cancel
+</a>
+</div><a class=menu-item href=/posts/ title=Posts>Posts</a><a class=menu-item href=/categories/reading/ title=Reading>Reading</a><a class=menu-item href=/tags/ title=Tags>Tags</a><a class=menu-item href=/series/ title="Reading Topics">Reading Topics</a><a class=menu-item href=/categories/ title=Categories>Categories</a><a class=menu-item href=/about/ title="About Me">About</a><a class=menu-item href=https://github.com/sosiristseng/ title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github-alt fa-fw"></i></a><a href=# onclick=return!1 class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Wacquier 2016 : Interplay Between Intracellular Ca Oscillations and Ca-stimulated Mitochondrial Metabolism </h1><div class=post-meta>
+<div class=post-meta-line>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Wen-Wei Tseng</a>
+</span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/reading/><i class="far fa-folder fa-fw"></i>Reading</a></span>&nbsp;<span class=post-category>and</span>&nbsp;<span class=post-series>series <a href=/series/ode/><i class="far fa-list-alt fa-fw"></i>ODE</a>&nbsp;<a href=/series/mitochondria/><i class="far fa-list-alt fa-fw"></i>mitochondria</a>&nbsp;<a href=/series/mitochondrial-dynamics/><i class="far fa-list-alt fa-fw"></i>mitochondrial dynamics</a>&nbsp;<a href=/series/calcium/><i class="far fa-list-alt fa-fw"></i>calcium</a>&nbsp;<a href=/series/mcu/><i class="far fa-list-alt fa-fw"></i>MCU</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-07-15>2021-07-15</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-08-15>2021-08-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1227 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#model-construction>Model construction</a>
+<ul>
+<li><a href=#parameters>Parameters</a></li>
+<li><a href=#odes>ODEs</a></li>
+<li><a href=#mcu>MCU</a></li>
+<li><a href=#ncx>NCX</a></li>
+<li><a href=#calcium-leak>Calcium leak</a></li>
+<li><a href=#pdh>PDH</a></li>
+<li><a href=#malate-aspartate-shuttle>Malate aspartate shuttle</a></li>
+<li><a href=#ant>ANT</a></li>
+<li><a href=#atp-synthesis>ATP synthesis</a></li>
+<li><a href=#atp-consumption>ATP consumption</a></li>
+<li><a href=#proton-leak>Proton leak</a></li>
+</ul>
+</li>
+<li><a href=#ca-oscillations>Ca oscillations</a></li>
+<li><a href=#possible-nature-of-the-bidirectional-ca2-flux-between-the-mitochondria-and-the-cytosol>Possible nature of the bidirectional Ca2+ flux between the mitochondria and the cytosol</a></li>
+<li><a href=#dynamics-of-mitochondrial-variables>Dynamics of mitochondrial variables</a></li>
+<li><a href=#glycolytic-input-and-ca2-oscillations>Glycolytic input and Ca2+ oscillations</a></li>
+<li><a href=#robustness-of-mitochondrial-metabolism-with-respect-to-ca2-dynamics>Robustness of mitochondrial metabolism with respect to Ca2+ dynamics</a></li>
+<li><a href=#discussion>Discussion</a></li>
+</ul>
+</nav></div>
+</div><div class=content id=content><p><a href=https://sciwheel.com/work/#/items/5724355/ target=_blank rel="noopener noreffer">Sciwheel</a><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<h2 id=introduction>Introduction</h2>
+<p>A new integrative model for Ca2+ signalling and mitochondrial metabolism in electrically non-excitable cells.</p>
+<p>At rest, $\ce{[Ca^2+]}_m$ and $\ce{[Ca^2+]}_c$ are similar, in the 100 nM range.</p>
+<p>In non-excitable cells, these oscillations are due to a cyclical exchange of Ca between the cytosol and the endoplasmic reticulum (ER), through the biphasic regulation of the IP3 receptor (IP3R) by cytosolic Ca.</p>
+<p>Mitochondrial membrane potential (ΔΨ) drives cytosolic Ca to the mitochondrial matrix via the Mitochondrial Calcium Uniporter (MCU). Extrusion of Ca2+ out of mitochondria occurs through both a Na+-Ca2+ exchanger (NCX) and a H+-Ca2+ exchanger.</p>
+<p>Pyruvate dehydrogenase (PDH) and two rate-limiting enzymes in the TCA cycle, isocitrate dehydrogenase and α-ketoglutarate dehydrogenase, are up-regulated by mitochondrial Ca. Cytosolic Ca also directly influences mitochondrial metabolism as a component of the malate-aspartate shuttle (MAS), the aspartate-glutamate carrier (AGC), is stimulated by modest increases in cytosolic Ca.</p>
+<p>Given the complexity and highly non-linear character of Ca2+ and mitochondrial dynamics ( <em>not the fission/fusion dynamics</em> ), it is useful to resort to computational modelling to clarify their interplay. This model focues on calcium signaling affecting mitochondrial metabolism.</p>
+<p>We found that a reversible Ca2+ leak between the cytosol and the mitochondria, which could correspond to the low conductance mode of the mitochondrial permeability transition pore, was necessary to account for a number of experimental observations.</p>
+<p>The phase relationship between Ca2+ peaks in the cytosol, the ER, and the mitochondria31 was investigated in details. The effect of modifying the activity of the MCU or of the NCX was next analysed in the simulations, with respect to previous experimental observations in HeLa cells32,33.</p>
+<h2 id=model-construction>Model construction</h2>
+<p>HeLa cells-based.</p>
+<p><figure><a class=lightgallery href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f1.jpg title=Fig1 data-thumbnail=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f1.jpg data-sub-html="<h2>Schematic</h2><p>Fig1</p>">
+<img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f1.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f1.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f1.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f1.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f1.jpg>
+</a><figcaption class=image-caption>Schematic</figcaption>
+</figure></p>
+<p>Fluxes and reactions are described by ordinary differential equations (ODEs).</p>
+<p>As we neglect spatial aspects, we do not consider Ca2+ microdomains, specifically MAM (mitochondria-associated ER membranes), in the model. Also, we do not consider Ca2+ fluxes through the mitochondrial Ca2+/H+ exchanger.</p>
+<p>All concentrations (including Michaelis-Menten constants) are thus averages on the volume of a given intracellular compartment: cytosol (c), endoplasmic reticulum (ER) or mitochondria (m). The fluxes are scaled by the appropriate volume ratio when necessary.</p>
+<h3 id=parameters>Parameters</h3>
+<p><a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/table/t1/ target=_blank rel="noopener noreffer"><code>Table1</code></a></p>
+<h3 id=odes>ODEs</h3>
+<p>We adopt a fully deterministic approach, which is appropriate to obtain predictions about the average effect of the different individual fluxes on Ca2+ dynamics. (Cao, 2014)</p>
+<p>The full system of equations is simulated using the software package XPPAUT. Bifurcation diagrams are obtained numerically, by solving the differential equations with the MATLAB solver ode23, or ode23tb when using pulses.</p>
+<p>Conservation relationships</p>
+<ul>
+<li>Total intracellular Ca since the cell is non-excitable.</li>
+<li>Total NAD/NADH</li>
+<li>Mitochondrial ATP/ADP</li>
+<li>Cystosolic ATP/ADP</li>
+</ul>
+<p>The conservation of ADP/ATP does not hold in the long run as adenine nucleotide/Mg2+ transporters, known as SCaMCs, mediate net transfer of ADP and/or ATP to the mitochondrial matrix. But this conservation assumption is appropriate in the short simulation time of this model.</p>
+<h3 id=mcu>MCU</h3>
+<p>We based this kinetic equation on that proposed by Magnus and Keizer, based on the Monod-Wyman-Changeux (MWC) formalism for allosteric enzymes, which in very good agreement with the results of Csordás et al. (2013) on the MCU.</p>
+<p><img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m15.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m15.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m15.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m15.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m15.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m15.jpg></p>
+<h3 id=ncx>NCX</h3>
+<p>The exponential expression was proposed by Bertram et al. (1Ca-3Na)</p>
+<p><img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m16.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m16.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m16.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m16.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m16.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m16.jpg></p>
+<p>It is assumed that the cytosolic Na+ concentration remains constant and that channel activity is favoured by a large ratio of Ca2+ concentrations between the cytosol and mitochondria.</p>
+<h3 id=calcium-leak>Calcium leak</h3>
+<p><img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m17.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m17.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m17.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m17.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m17.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m17.jpg></p>
+<p>The existence of this flux also accounts for the observation that mitochondria take up Ca2+ from the cytosol at nanomolar concentrations, at which the MCU is inactive.
+We hypothesize that this flux may reflect the low conductance state of the mitochondrial Permeability Transition Pore (mPTP).</p>
+<h3 id=pdh>PDH</h3>
+<p>This expression is taken from Bertram et al.</p>
+<p><img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m18.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m18.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m18.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m18.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m18.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m18.jpg></p>
+<h3 id=malate-aspartate-shuttle>Malate aspartate shuttle</h3>
+<p><img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m20.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m20.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m20.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m20.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m20.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m20.jpg></p>
+<p>The aspartate-glutamate carrier is part of the MAS NADH shuttle</p>
+<h3 id=ant>ANT</h3>
+<p><img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m22.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m22.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m22.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m22.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m22.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m22.jpg></p>
+<p>This equation has been erroneously transcribed and simplified in previous publications. (Saa, 2013)</p>
+<h3 id=atp-synthesis>ATP synthesis</h3>
+<p><img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m23.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m23.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m23.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m23.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m23.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m23.jpg></p>
+<p>A weak decrease in rate with increasing ATPm (i.e. with decreasing ADPm), but for a steep sigmoidal dependency on the mitochondrial potential.</p>
+<h3 id=atp-consumption>ATP consumption</h3>
+<p><img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m24.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m24.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m24.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m24.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m24.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m24.jpg></p>
+<h3 id=proton-leak>Proton leak</h3>
+<p>Linear relationship.</p>
+<p><img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m25.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m25.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m25.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m25.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m25.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-m25.jpg></p>
+<p>SERCA pumps are Ca-ATPases transporting 2 Ca ions for one molecule of ATP hydrolysed. This incorporates the link between Ca2+ activity and ATP consumption in the cytoplasm.</p>
+<p>The second term encompasses the other ATP-consuming processes in the cytoplasm.</p>
+<h2 id=ca-oscillations>Ca oscillations</h2>
+<p><figure><a class=lightgallery href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f2.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f2.jpg data-thumbnail=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f2.jpg data-sub-html="<h2>Dynamics of Ca2+ exchanges between cytosol, ER and mitochondria</h2>">
+<img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f2.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f2.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f2.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f2.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f2.jpg>
+</a><figcaption class=image-caption>Dynamics of Ca2+ exchanges between cytosol, ER and mitochondria</figcaption>
+</figure></p>
+<p><figure><a class=lightgallery href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f3.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f3.jpg data-thumbnail=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f3.jpg data-sub-html="<h2>The Ca2+ buffering capacity of mitochondria modifies the amplitude of Ca2+ oscillations</h2>">
+<img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f3.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f3.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f3.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f3.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f3.jpg>
+</a><figcaption class=image-caption>The Ca2+ buffering capacity of mitochondria modifies the amplitude of Ca2+ oscillations</figcaption>
+</figure></p>
+<p><figure><a class=lightgallery href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f4.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f4.jpg data-thumbnail=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f4.jpg data-sub-html="<h2>The rate of Ca2+ entry into mitochondria alters cytosolic Ca2+ oscillations</h2>">
+<img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f4.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f4.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f4.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f4.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f4.jpg>
+</a><figcaption class=image-caption>The rate of Ca2+ entry into mitochondria alters cytosolic Ca2+ oscillations</figcaption>
+</figure></p>
+<p>That decreasing the rate of Ca2+ entry into mitochondria through the MCU slows down Ca2+ oscillations appeared as a rather counter-intuitive prediction of the model. We tested this prediction experimentally using HeLa cells transiently transfected with scrambled siRNA or siRNA against MCU.</p>
+<h2 id=possible-nature-of-the-bidirectional-ca2-flux-between-the-mitochondria-and-the-cytosol>Possible nature of the bidirectional Ca2+ flux between the mitochondria and the cytosol</h2>
+<p><figure><a class=lightgallery href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f5.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f5.jpg data-thumbnail=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f5.jpg data-sub-html="<h2>Analysis of the bidirectional Ca2+ flux between the cytosol and the mitochondria, Jx.</h2>">
+<img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f5.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f5.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f5.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f5.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f5.jpg>
+</a><figcaption class=image-caption>Analysis of the bidirectional Ca2+ flux between the cytosol and the mitochondria, Jx.</figcaption>
+</figure></p>
+<p>Inhibition of the mPTP by CSA (cyclosporin A) indeed increased the period of Ca2+ oscillations in response to both 0.3 and 1 μM histamine. It should be noted that CSA has been reported to stimulate SERCA pumps in addition to its effect on the mPTP.</p>
+<h2 id=dynamics-of-mitochondrial-variables>Dynamics of mitochondrial variables</h2>
+<p><figure><a class=lightgallery href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f6.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f6.jpg data-thumbnail=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f6.jpg data-sub-html="<h2>Dynamics of mitochondrial variables</h2>">
+<img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f6.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f6.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f6.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f6.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f6.jpg>
+</a><figcaption class=image-caption>Dynamics of mitochondrial variables</figcaption>
+</figure></p>
+<h2 id=glycolytic-input-and-ca2-oscillations>Glycolytic input and Ca2+ oscillations</h2>
+<p>We tested this in the model by decreasing kGLY that represents the input of the glycolytic pathway. This leads to a decrease in the period of Ca2+ oscillations, as observed experimentally. A less active glycolytic pathway indeed decreases the mitochondrial voltage and thereby reduces the activity of the MCU. In consequence, Ca2+ is less actively imported in mitochondria, leading to increased cytosolic Ca2+ between successive spikes.</p>
+<p><figure><a class=lightgallery href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f7.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f7.jpg data-thumbnail=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f7.jpg data-sub-html="<h2>Decreasing the glycolytic input slows down the cytosolic Ca2+ oscillations</h2>">
+<img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f7.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f7.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f7.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f7.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f7.jpg>
+</a><figcaption class=image-caption>Decreasing the glycolytic input slows down the cytosolic Ca2+ oscillations</figcaption>
+</figure></p>
+<h2 id=robustness-of-mitochondrial-metabolism-with-respect-to-ca2-dynamics>Robustness of mitochondrial metabolism with respect to Ca2+ dynamics</h2>
+<p>We simulated Ca2+ spikes of different frequencies and amplitudes and computed the resulting average values of mitochondrial NADH and ATP concentrations.</p>
+<p><figure><a class=lightgallery href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f8.jpg title=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f8.jpg data-thumbnail=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f8.jpg data-sub-html="<h2>Effect of changing the characteristics of Ca2+ spikes on mitochondrial metabolism</h2>">
+<img class=lazyload data-src=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f8.jpg data-srcset="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f8.jpg, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f8.jpg 1.5x, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f8.jpg 2x" data-sizes=auto alt=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/bin/srep19316-f8.jpg>
+</a><figcaption class=image-caption>Effect of changing the characteristics of Ca2+ spikes on mitochondrial metabolism</figcaption>
+</figure></p>
+<p>Optimised metabolism is naturally obtained in the model for the parameter values listed in <code>Table 1</code>.</p>
+<h2 id=discussion>Discussion</h2>
+<p>As compared with previous modelling approaches, we also considered the existence of one additional Ca2+ exchange flux between the cytosol and the mitochondria. (mPTP bidirectional)</p>
+<p>Other modes of Ca2+ uptake into mitochondria, not considered in the model but reported to be active at low concentrations of cytosolic Ca2+, could also play a role.</p>
+<ul>
+<li>Ryanodine receptors</li>
+<li>Rapid mode of Ca2+ uptake by mitochondria (RaM)</li>
+</ul>
+<p>The model is fully consistent with the reported effect of alterations in the rates of mitochondrial Ca2+ exchanges on the characteristics of Ca2+ oscillations. The frequency of oscillations can decrease when inhibiting the activity either of the NCX or of the MCU.</p>
+<p>Altering mitochondrial metabolism in the model also accounts for corresponding published experimental observations about energising mitochondria.</p>
+<p>The model finally predicted that mitochondrial metabolism remains relatively robust with respect to the amplitude and frequency of the stimulating Ca2+ oscillations.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>Wacquier B, Combettes L, Van Nhieu GT, Dupont G. Interplay Between Intracellular Ca(2+) Oscillations and Ca(2+)-stimulated Mitochondrial Metabolism. Sci Rep. 2016 Jan 18;6:19316. <a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4725975/ target=_blank rel="noopener noreffer">PMC4725975</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>Updated on 2021-08-15&nbsp;<a class=git-hash href=https://github.com/sosiristseng/sosiristseng.github.io/commit/49fa12fc36403fcb0fa727336c4825bda5d488ff target=_blank title="commit by Wen-Wei Tseng(sosiristseng@gmail.com) 49fa12fc36403fcb0fa727336c4825bda5d488ff: add paper reading" rel="noopener noreferrer">
+<i class="fas fa-hashtag fa-fw"></i>49fa12f</a></span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md><span>
+<a class=link-to-markdown href=/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/index.md target=_blank rel="noopener noreferrer">Read Markdown</a>
+</span></div>
+<div class=post-info-share>
+<span><a href=# onclick=return!1 title="Share on Twitter" data-sharer=twitter data-url=https://sosiristseng.github.io/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/ data-title="Wacquier 2016 : Interplay Between Intracellular Ca Oscillations and Ca-stimulated Mitochondrial Metabolism " data-via=sosiristseng><i class="fab fa-twitter fa-fw"></i></a><a href=# onclick=return!1 title="Share on Facebook" data-sharer=facebook data-url=https://sosiristseng.github.io/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/><i class="fab fa-facebook-square fa-fw"></i></a><a href=# onclick=return!1 title="Share on Linkedin" data-sharer=linkedin data-url=https://sosiristseng.github.io/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/><i class="fab fa-linkedin fa-fw"></i></a><a href=# onclick=return!1 title="Share on Hacker News" data-sharer=hackernews data-url=https://sosiristseng.github.io/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/ data-title="Wacquier 2016 : Interplay Between Intracellular Ca Oscillations and Ca-stimulated Mitochondrial Metabolism "><i class="fab fa-hacker-news fa-fw"></i></a><a href=# onclick=return!1 title="Share on Reddit" data-sharer=reddit data-url=https://sosiristseng.github.io/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/><i class="fab fa-reddit fa-fw"></i></a><a href=# onclick=return!1 title="Share on Line" data-sharer=line data-url=https://sosiristseng.github.io/wacquier-2016-interplay-between-intracellular-ca-oscillations-and-ca-stimulated-mitochondrial-metabolism/ data-title="Wacquier 2016 : Interplay Between Intracellular Ca Oscillations and Ca-stimulated Mitochondrial Metabolism "><i data-svg-src=/lib/simple-icons/icons/line.min.svg></i></a></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags></section>
+<section>
+<span><a href=# onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/hoffman-2017-a-multimethod-computational-simulation-approach-for-investigating-mitochondrial-dynamics-and-dysfunction-in-degenerative-aging/ class=prev rel=prev title="Hoffman 2017 : A multimethod computational simulation approach for investigating mitochondrial dynamics and dysfunction in degenerative aging"><i class="fas fa-angle-left fa-fw"></i>Hoffman 2017 : A multimethod computational simulation approach for investigating mitochondrial dynamics and dysfunction in degenerative aging</a>
+<a href=/tam-2013-mathematical-modeling-of-the-role-of-mitochondrial-fusion-and-fission-in-mitochondrial-dna-maintenance/ class=next rel=next title="Tam 2013 : Mathematical modeling of the role of mitochondrial fusion and fission in mitochondrial DNA maintenance">Tam 2013 : Mathematical modeling of the role of mitochondrial fusion and fission in mitochondrial DNA maintenance<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.87.0">Hugo</a> | Theme - <a href=https://github.com/HEIGE-PCloud/DoIt target=_blank rel="noopener noreffer" title="DoIt 0.2.10"><i class="far fa-edit fa-fw"></i> DoIt</a>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2020 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://sosiristseng.github.io/ target=_blank rel="noopener noreferrer">Wen-Wei Tseng</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreferrer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div><script>'serviceWorker'in navigator&&(navigator.serviceWorker.register('/sw.min.js',{scope:'/'}).then(function(a){}),navigator.serviceWorker.ready.then(function(a){}))</script></footer></div>
+<div id=fixed-buttons><a href=#back-to-top id=back-to-top-button class=fixed-button title="Back to Top">
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments">
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><div class=assets><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/fuse/fuse.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/topbar/topbar.min.js></script><script type=text/javascript src=/lib/pjax/pjax.min.js></script><script type=text/javascript src=/js/theme.min.js></script></div>
+<div class=pjax-assets><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/auto-render.min.js></script><script type=text/javascript src=/lib/katex/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:15},comment:{},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{distance:100,findAllMatches:!1,fuseIndexURL:"/index.json",highlightTag:"em",ignoreFieldNorm:!1,ignoreLocation:!1,isCaseSensitive:!1,location:0,maxResultLength:10,minMatchCharLength:2,noResultsFound:"No results found",snippetLength:30,threshold:.3,type:"fuse",useExtendedSearch:!1},sharerjs:!0}</script><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css></div>
+</body>
+</html>
