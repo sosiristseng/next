@@ -1,4 +1,5 @@
 baseURL = "https://sosiristseng.github.io/"
+
 canonifyURLs = false
 relativeURLs = false
 
@@ -18,8 +19,6 @@ enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
 
-# Ignore get JSON errors.
-ignoreErrors = ["error-remote-getjson"]
 
 [languages]
   [languages.en]
@@ -48,7 +47,7 @@ ignoreErrors = ["error-remote-getjson"]
         url = "posts/"
         # title will be shown when you hover on this menu link.
         title = "Posts"
-        weight = 1
+        weight = 10
       [[languages.en.menu.main]]
         identifier = "reading"
         pre = ""
@@ -56,7 +55,7 @@ ignoreErrors = ["error-remote-getjson"]
         name = "Reading"
         url = "reading/"
         title = "Reading"
-        weight = 2
+        weight = 20
       [[languages.en.menu.main]]
         identifier = "tags"
         pre = ""
@@ -64,7 +63,7 @@ ignoreErrors = ["error-remote-getjson"]
         name = "Tags"
         url = "tags/"
         title = "Tags"
-        weight = 3
+        weight = 30
       [[languages.en.menu.main]]
         identifier = "categories"
         pre = ""
@@ -72,7 +71,7 @@ ignoreErrors = ["error-remote-getjson"]
         name = "Categories"
         url = "categories/"
         title = "Categories"
-        weight = 4
+        weight = 40
       [[languages.en.menu.main]]
         identifier = "about"
         pre = ""
@@ -80,7 +79,7 @@ ignoreErrors = ["error-remote-getjson"]
         name = "About"
         url = "about/"
         title = "About Me"
-        weight = 5
+        weight = 50
       [[languages.en.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github-alt fa-fw'></i>"
@@ -88,12 +87,12 @@ ignoreErrors = ["error-remote-getjson"]
         name = ""
         url = "https://github.com/sosiristseng/"
         title = "GitHub"
-        weight = 6
+        weight = 60
     [languages.en.params]
       # site description
       description = "Tech Notes of Wen-Wei Tseng"
       # site keywords
-      keywords = ["Hugo"]
+      keywords = ["Hugo", "Blog"]
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
@@ -230,6 +229,8 @@ ignoreErrors = ["error-remote-getjson"]
         Matrix = ""
         Bilibili = ""
         ORCID = "0000-0003-3858-4622"
+        Liberapay = ""
+        Ko-Fi = ""
         Email = "sosiristeng@gmail.com"
         RSS = true
         # [languages.en.params.social.Mastodon]
@@ -250,9 +251,10 @@ ignoreErrors = ["error-remote-getjson"]
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
   images = [""]
-
   # section(s) under content folder
   mainSections = ["posts"]
+  # enable PWA
+  enablePWA = true
 
   # Header config
   [params.header]
@@ -346,7 +348,7 @@ ignoreErrors = ["error-remote-getjson"]
       # whether to show the copy button of the code block
       copy = true
       # the maximum number of lines of displayed code by default
-      maxShownLines = 14
+      maxShownLines = 15
     # KaTeX mathematical formulas config (KaTeX https://katex.org/)
     [params.page.math]
       enable = false
@@ -466,7 +468,7 @@ ignoreErrors = ["error-remote-getjson"]
       [params.page.comment.utterances]
         enable = false
         # owner/repo
-        repo = "sosiristseng/reading"
+        repo = "sosiristseng"
         issueTerm = "pathname"
         label = "💬 comments"
         lightTheme = "github-light"
@@ -525,10 +527,14 @@ ignoreErrors = ["error-remote-getjson"]
       id = ""
       # whether to anonymize IP
       anonymizeIP = true
+    [params.analytics.fathom]
+      id = ""
+      # server url for your tracker if you're self hosting
+      server = ""
 
   # Cookie consent config
   [params.cookieconsent]
-    enable = true
+    enable = false
     # text strings used for Cookie consent banner
     [params.cookieconsent.content]
       message = ""
@@ -542,7 +548,7 @@ ignoreErrors = ["error-remote-getjson"]
     # located in "themes/CodeIT/assets/data/cdn/" directory
     # you can store your own data files in the same path under your project:
     # "assets/data/cdn/"
-    data = "jsdelivr.yml"
+    data = ""
 
   # Compatibility config
   [params.compatibility]
@@ -577,7 +583,7 @@ ignoreErrors = ["error-remote-getjson"]
   # Table Of Contents settings
   [markup.tableOfContents]
     startLevel = 2
-    endLevel = 5
+    endLevel = 6
 
 # Author config
 [author]
@@ -594,6 +600,7 @@ ignoreErrors = ["error-remote-getjson"]
 # Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
 [Permalinks]
   # posts = ":year/:month/:filename"
+  posts = ":filename"
 
 # Privacy config (https://gohugo.io/about/hugo-and-gdpr/)
 [privacy]
@@ -623,3 +630,9 @@ ignoreErrors = ["error-remote-getjson"]
   section = ["HTML"]
   taxonomy = ["HTML"]
   taxonomyTerm = ["HTML"]
+
+# Options for taxonomies
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
