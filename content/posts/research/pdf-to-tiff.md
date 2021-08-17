@@ -53,6 +53,8 @@ conda install -c conda-forge poppler
 
 ### Usage
 
+[Documentation](https://www.mankier.com/1/pdftoppm)
+
 To convert the pdf file to a 300-DPI TIFF image with lzw compression.
 
 ```bash
