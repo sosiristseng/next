@@ -31,7 +31,7 @@ lightgallery: false
 
 ## Reference managers
 
-- [SciWheel](https://sciwheel.com/work/), browser extension with Google Doc and MS Word plugin, [docs](https://sciwheel.com/work/#/faq/all-topics).
+- [SciWheel](https://sciwheel.com/work/), the online reference manager with browser, Google Doc, and MS Word plugins. [docs](https://sciwheel.com/work/#/faq/all-topics).
 - [Zotero](https://www.zotero.org/), an open-source reference manager.
 
 ## Find Publications
