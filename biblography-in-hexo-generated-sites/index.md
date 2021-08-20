@@ -13,6 +13,8 @@ Please see the [user guide](https://theme-next.js.org) for details.
 
 A [pandoc](https://pandoc.org/) installation is required.
 
+And replace the default Hexo `marked` render:
+
 ```bash
 npm un hexo-renderer-marked
 npm i hexo-renderer-pandoc

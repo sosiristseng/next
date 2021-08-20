@@ -1,7 +1,7 @@
-# Command Line Tools
+# Command Line Prompt
 
 
-> Command-line prompt, Terminal emulators. See also [Awesome CLI Apps](https://github.com/agarrharr/awesome-cli-apps)
+Tools to enhance the command-line experience.
 
 <!--more-->
 
@@ -81,52 +81,4 @@ Append this line in your `*.rc` files of your shell and restart your shell to lo
   ```
 
 Install [nerd fonts](https://www.nerdfonts.com/font-downloads) to show special characters correctly.
-
-## TLDR: command cheatsheets
-
-> [TLDR](https://github.com/tldr-pages/tldr) are collaborative cheatsheets for console commands, a complement to `man` pages.
-
-Also see: [the pdf version](https://tldr.sh/assets/tldr-book.pdf) of TLDR.
-
-**Usage**
-
-For instance, to see the example of the `tar` command, type:
-
-```bash
-tldr tar
-```
-
-## bat : replacement for cat
-
-> [bat](https://github.com/sharkdp/bat): A cat(1) clone with syntax highlighting and Git integration.
-
-## exa : alternative to ls
-
-> [exa](https://the.exa.website) is an improved file lister with more features and better defaults. It uses colours to distinguish file types and metadata. It knows about symlinks, extended attributes, and Git. And it’s small, fast, and just one single binary.
-
-## fd : alternative to find
-
-> [fd](https://github.com/sharkdp/fd) is a simple, fast and user-friendly alternative to 'find'
-
-## Tilix
-
-[Tilix](https://gnunn1.github.io/tilix-web/) is an advanced GTK3 tiling terminal emulator.
-
-**Installation**
-
-- apt
-  ```bash
-  sudo apt install tilix
-  [[ -x $(command -v nautilus) ]] && sudo apt install python-nautilus
-  ```
-- pacman
-  ```bash
-  sudo pacman -S tilix
-  [[ -x $(command -v nautilus) ]] && sudo pacman -S python-nautilus
-  ```
-
-**Set `tilix` as the default GUI terminal emulator**
-
-- Ubuntu: `sudo update-alternatives --config x-terminal-emulator`
-- Arch and derivatives:  Select `tilix` in `Prefered applications`.
 
