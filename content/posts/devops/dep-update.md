@@ -35,7 +35,8 @@ Automatic dependecy update for GitHub projects
 
 [Renovate bot](https://www.whitesourcesoftware.com/free-developer-tools/renovate) can manage both dependecy update checking and automated pull request merging.
 
-It supports a variety of platforms:
+It supports a variety of platforms
+
 - GitHub (.com and Enterprise)
 - GitLab (.com and CE/EE)
 - Bitbucket Cloud / Servee
@@ -43,6 +44,7 @@ It supports a variety of platforms:
 - Gitea.
 
 And a variety of programming languages
+
 - Git submodules
 - GitHub actions
 - Node JS packages
@@ -118,4 +120,10 @@ version = 1
 [merge]
 method = "squash"
 ```
+
+And you need additional step in Github settings
+
+- add the `automerge` tag in the issues.
+- In `Options` -> `Branches`, protect the to-be-merged branch (usually `main`)
+  - Tick "Require status checks to pass before merging" and "Require branches to be up to date before merging".
 

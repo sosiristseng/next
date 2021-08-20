@@ -1,5 +1,5 @@
 ---
-title: "Backup Tools"
+title: "Timeshift"
 subtitle: ""
 date: 2021-06-18T23:41:56+08:00
 draft: false
@@ -23,13 +23,10 @@ math:
 lightgallery: false
 ---
 
-Back up important files in Linux.
-
+[Timeshift](https://github.com/teejee2008/timeshift) is a system backup and restore manager using `rsync` or `btrfs` snapshots.
 <!--more-->
 
-## Timeshift
-
-[Timeshift](https://github.com/teejee2008/timeshift) is a system backup and restore manager using `rsync` or `btrfs` snapshots.
+## Installation
 
 - Via `apt`
   ```bash
@@ -38,6 +35,6 @@ Back up important files in Linux.
 - Via [AUR](https://aur.archlinux.org/packages/timeshift/)
   ```bash
   paru -S timeshift cronie
-  # You may need this step to enable scheduled backup
+  # You may need this to enable scheduled backup
   sudo systemctl enable --now cronie.service
   ```

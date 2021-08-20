@@ -50,13 +50,9 @@ Or using its python fork [jill.py](https://github.com/johnnychen94/jill.py) inst
 
 ## Configurations
 
-- `~/.profile`: for some environment variables before Julia startup
-- `~/.julia/config/startup.jl`: environment for regular Julia startup
-- `~.julia/config/startup_ijulia.jl`: environment for IJulia Jupyter kernel startup
-
 ### Auto-activate Project.toml
 
-In `~/.profile`, add the following line
+Add `JULIA_PROJECT=@.` to the environment varialbe. For example, in `~/.profile`
 
 ```bash
 export JULIA_PROJECT=@.
@@ -64,13 +60,15 @@ export JULIA_PROJECT=@.
 
 ### Use all CPU cores by default
 
-In `~/.profile`, add the following line
+Add `JULIA_NUM_THREADS=N` to the environment varialbe.
+
+For example, in `~/.profile`
 
 ```bash
 export JULIA_NUM_THREADS=$(nproc)
 ```
 
-Or in `~/.bashrc`, add the following line
+Or use alias to run `julia -t N`. For example, in `~/.bashrc`:
 
 ```bash
 alias julia="julia --threads auto"
@@ -81,7 +79,8 @@ alias julia="julia --threads auto"
 Add the following line to `~/.julia/config/startup.jl`,
 
 ```julia
-ENV["CONDA_JL_HOME"] = "/path/to/conda/install"
+ENV["PYTHON"] = ""  # Use conda to install python packages
+ENV["CONDA_JL_HOME"] = "/path/to/conda"
 ```
 
 or add the following line to `~/.profile`:
@@ -92,7 +91,7 @@ export CONDA_JL_HOME=/path/to/conda/install
 
 ### Autoload Revise.jl
 
-Add the following lines to `~/.julia/config/startup.jl`:
+Add the following lines to `~/.julia/config/startup.jl`
 
 ```julia
 try
@@ -103,7 +102,7 @@ end
 
 ```
 
-Add the following lines to `~.julia/config/startup_ijulia.jl`:
+For `IJulia` (Jupyter Notebook), add the following lines to `~.julia/config/startup_ijulia.jl`
 
 ```julia
 try
