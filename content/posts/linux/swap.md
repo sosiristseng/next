@@ -50,6 +50,6 @@ sudo swapon /swapfile
 
 Afterwards add the following line to `/etc/fstab`.
 
-```
+```txt
 /swapfile none swap defaults 0 0
 ```
