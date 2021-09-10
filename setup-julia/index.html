@@ -8,7 +8,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sosiristseng.github.io/setup-julia/"><meta property="og:image" content="https://sosiristseng.github.io/"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-06-19T13:02:15+08:00">
-<meta property="article:modified_time" content="2021-08-20T23:49:31+08:00">
+<meta property="article:modified_time" content="2021-09-10T16:29:51+08:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://sosiristseng.github.io/">
 <meta name=twitter:title content="Setup Julia">
@@ -17,7 +17,7 @@
 <meta name=apple-mobile-web-app-title content="Los los los">
 <meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=parrot.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://sosiristseng.github.io/setup-julia/><link rel=prev href=https://sosiristseng.github.io/julia-design-patterns/><link rel=next href=https://sosiristseng.github.io/julia-modules-and-packages/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
 <noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/animate/animate.min.css>
-<noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Setup Julia","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sosiristseng.github.io\/setup-julia\/"},"genre":"posts","keywords":"julia","wordcount":230,"url":"https:\/\/sosiristseng.github.io\/setup-julia\/","datePublished":"2021-06-19T13:02:15+08:00","dateModified":"2021-08-20T23:49:31+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx"},"author":{"@type":"Person","name":"Wen-Wei Tseng"},"description":""}</script></head>
+<noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Setup Julia","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sosiristseng.github.io\/setup-julia\/"},"genre":"posts","keywords":"julia","wordcount":223,"url":"https:\/\/sosiristseng.github.io\/setup-julia\/","datePublished":"2021-06-19T13:02:15+08:00","dateModified":"2021-09-10T16:29:51+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx"},"author":{"@type":"Person","name":"Wen-Wei Tseng"},"description":""}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a)}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'auto'==='light'||'auto'==='dark'||'auto'==='black'?(setTheme('auto'),saveTheme('auto')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let themeColorMeta=getMeta('theme-color');document.body.getAttribute('theme')!='light'&&(themeColorMeta.content='#000000')</script>
 <div id=back-to-top></div>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
@@ -87,7 +87,7 @@ Cancel
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Wen-Wei Tseng</a>
 </span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/julia/><i class="far fa-folder fa-fw"></i>Julia</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-06-19>2021-06-19</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-08-20>2021-08-20</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;230 words&nbsp;
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-06-19>2021-06-19</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-09-10>2021-09-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;223 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
 </div><div class="details toc" id=toc-static kept>
 <div class="details-summary toc-title">
@@ -96,12 +96,17 @@ Cancel
 </div>
 <div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
 <ul>
-<li><a href=#install-julia>Install Julia</a></li>
-<li><a href=#configurations>Configurations</a>
+<li><a href=#install-julia>Install Julia</a>
+<ul>
+<li><a href=#windows>Windows</a></li>
+<li><a href=#macoslinux>MacOS/Linux</a></li>
+</ul>
+</li>
+<li><a href=#configurations-after-insta>Configurations after insta;;</a>
 <ul>
 <li><a href=#auto-activate-projecttoml>Auto-activate Project.toml</a></li>
 <li><a href=#use-all-cpu-cores-by-default>Use all CPU cores by default</a></li>
-<li><a href=#custom-miniconda-location>Custom Miniconda location</a></li>
+<li><a href=#custom-conda-location>Custom conda location</a></li>
 <li><a href=#autoload-revisejl>Autoload Revise.jl</a></li>
 </ul>
 </li>
@@ -109,8 +114,17 @@ Cancel
 </nav></div>
 </div><div class=content id=content><p><a href=https://julialang.org/ target=_blank rel="noopener noreffer">Julia</a> is a general-purpose programming language focused on ease of syntax, composibility, and high performance.</p>
 <h2 id=install-julia>Install Julia</h2>
-<p>Windows: download and run the installer in <a href=https://julialang.org/downloads/ target=_blank rel="noopener noreffer">the official website</a>. Or use <a href=https://github.com/JuliaLang/juliaup target=_blank rel="noopener noreffer">juliaup</a> in Windows store.</p>
-<p>MacOS/Linux: install Julia using <a href=https://github.com/abelsiqueira/jill target=_blank rel="noopener noreffer">jill</a> bash script:</p>
+<h3 id=windows>Windows</h3>
+<ul>
+<li>Download and run the installer in <a href=https://julialang.org/downloads/ target=_blank rel="noopener noreffer">the official website</a>.</li>
+<li><a href=https://github.com/JuliaLang/juliaup target=_blank rel="noopener noreffer">juliaup</a> in the Windows store.</li>
+<li><a href=https://github.com/heetbeet/juliawin target=_blank rel="noopener noreffer">juliawin</a> Julia bundled with VSCode, Pluto, Conda & PyCall.</li>
+</ul>
+<h3 id=macoslinux>MacOS/Linux</h3>
+<ul>
+<li>Download and run the binary in <a href=https://julialang.org/downloads/ target=_blank rel="noopener noreffer">the official website</a>.</li>
+<li><a href=https://github.com/abelsiqueira/jill target=_blank rel="noopener noreffer">jill</a> installer:</li>
+</ul>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -119,28 +133,24 @@ Cancel
 <pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>bash -ci <span class=s2>&#34;</span><span class=k>$(</span>curl -fsSL https://raw.githubusercontent.com/abelsiqueira/jill/master/jill.sh<span class=k>)</span><span class=s2>&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Or using its python fork <a href=https://github.com/johnnychen94/jill.py target=_blank rel="noopener noreffer">jill.py</a> installer.</p>
+</div><ul>
+<li><a href=https://github.com/johnnychen94/jill.py target=_blank rel="noopener noreffer">jill.py</a> installer. It requires Python.</li>
+</ul>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span><span class=lnt>6
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=c1># pip is required</span>
-
-<span class=o>[[</span> -x <span class=k>$(</span><span class=nb>command</span> -v pip<span class=k>)</span> <span class=o>]]</span> <span class=o>&amp;&amp;</span> pip install -U --user jill
-<span class=o>[[</span> -x <span class=k>$(</span><span class=nb>command</span> -v pip3<span class=k>)</span> <span class=o>]]</span> <span class=o>&amp;&amp;</span> pip3 install -U --user jill
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash>python -m pip install -U --user jill
 
 ~/.local/bin/jill install --confirm
 </code></pre></td></tr></table>
 </div>
-</div><h2 id=configurations>Configurations</h2>
+</div><h2 id=configurations-after-insta>Configurations after insta;;</h2>
 <h3 id=auto-activate-projecttoml>Auto-activate Project.toml</h3>
-<p>Add <code>JULIA_PROJECT=@.</code> to the environment varialbe. For example, in <code>~/.profile</code></p>
+<p>Set environment variable <code>JULIA_PROJECT=@.</code> to let Julia automatically load the closest <code>Project.toml</code> and activates the environment.</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -150,7 +160,7 @@ Cancel
 </code></pre></td></tr></table>
 </div>
 </div><h3 id=use-all-cpu-cores-by-default>Use all CPU cores by default</h3>
-<p>Add <code>JULIA_NUM_THREADS=N</code> to the environment varialbe.</p>
+<p>Set environment varialbe <code>JULIA_NUM_THREADS=N</code>.</p>
 <p>For example, in <code>~/.profile</code></p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
@@ -160,7 +170,7 @@ Cancel
 <pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>export</span> <span class=nv>JULIA_NUM_THREADS</span><span class=o>=</span><span class=k>$(</span>nproc<span class=k>)</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Or use alias to run <code>julia -t N</code>. For example, in <code>~/.bashrc</code>:</p>
+</div><p>Or use alias:</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -169,8 +179,8 @@ Cancel
 <pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>alias</span> <span class=nv>julia</span><span class=o>=</span><span class=s2>&#34;julia --threads auto&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id=custom-miniconda-location>Custom Miniconda location</h3>
-<p>Add the following line to <code>~/.julia/config/startup.jl</code>,</p>
+</div><h3 id=custom-conda-location>Custom conda location</h3>
+<p>Add the following lines to <code>~/.julia/config/startup.jl</code>,</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
@@ -181,13 +191,15 @@ Cancel
 <span class=nb>ENV</span><span class=p>[</span><span class=s>&#34;CONDA_JL_HOME&#34;</span><span class=p>]</span> <span class=o>=</span> <span class=s>&#34;/path/to/conda&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>or add the following line to <code>~/.profile</code>:</p>
+</div><p>or set the following environment variables (Not recommended, they may mess up your system)</p>
 <div class=highlight><div class=chroma>
 <table class=lntable><tr><td class=lntd>
 <pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
 </span></code></pre></td>
 <td class=lntd>
-<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>export</span> <span class=nv>CONDA_JL_HOME</span><span class=o>=</span>/path/to/conda/install
+<pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>export</span> <span class=nv>PYTHON</span><span class=o>=</span><span class=s2>&#34;&#34;</span>
+<span class=nb>export</span> <span class=nv>CONDA_JL_HOME</span><span class=o>=</span><span class=s2>&#34;/path/to/conda/install&#34;</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id=autoload-revisejl>Autoload Revise.jl</h3>
@@ -199,7 +211,6 @@ Cancel
 </span><span class=lnt>3
 </span><span class=lnt>4
 </span><span class=lnt>5
-</span><span class=lnt>6
 </span></code></pre></td>
 <td class=lntd>
 <pre tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=k>try</span>
@@ -207,7 +218,6 @@ Cancel
 <span class=k>catch</span> <span class=n>e</span>
     <span class=nd>@warn</span> <span class=s>&#34;Error initializing Revise&#34;</span> <span class=n>exception</span><span class=o>=</span><span class=p>(</span><span class=n>e</span><span class=p>,</span> <span class=n>catch_backtrace</span><span class=p>())</span>
 <span class=k>end</span>
-
 </code></pre></td></tr></table>
 </div>
 </div><p>For <code>IJulia</code> (Jupyter Notebook), add the following lines to <code>~.julia/config/startup_ijulia.jl</code></p>
@@ -231,8 +241,8 @@ Cancel
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>Updated on 2021-08-20&nbsp;<a class=git-hash href=https://github.com/sosiristseng/sosiristseng.github.io/commit/1e28d1b6bf675f3ff904dc1777c957de75c81dec target=_blank title="commit by Wen-Wei Tseng(sosiristseng@gmail.com) 1e28d1b6bf675f3ff904dc1777c957de75c81dec: split 1st pjase" rel="noopener noreferrer">
-<i class="fas fa-hashtag fa-fw"></i>1e28d1b6</a></span>
+<span>Updated on 2021-09-10&nbsp;<a class=git-hash href=https://github.com/sosiristseng/sosiristseng.github.io/commit/8836ebfb7395c84692b4a4fb1a95505fff9477f1 target=_blank title="commit by Wen-Wei Tseng(sosiristseng@gmail.com) 8836ebfb7395c84692b4a4fb1a95505fff9477f1: install julia" rel="noopener noreferrer">
+<i class="fas fa-hashtag fa-fw"></i>8836ebfb</a></span>
 </div>
 <div class=post-info-license></div>
 </div>

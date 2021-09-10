@@ -89,6 +89,40 @@ Cancel
 <a href=/bookmarks/>Read more...</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/bookmark/>bookmark</a></div></div>
 </article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/matplotlib-sharing-the-legend-box-in-twin-axes/>Matplotlib: Sharing the Legend Box in Twin Axes</a>
+</h1><div class=post-meta>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Wen-Wei Tseng</a>
+</span>&nbsp;<span class=post-publish>published on <time datetime=2021-09-10>2021-09-10</time></span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>categories <a href=/categories/python/><i class="far fa-folder fa-fw"></i>Python</a>&nbsp;<a href=/categories/julia/><i class="far fa-folder fa-fw"></i>Julia</a></span></div><div class=content><ul>
+<li>Capture line plot objects from both axes.</li>
+<li>Call <code>legend()</code> for both(all) line plot objects.</li>
+</ul></div><div class=post-footer>
+<a href=/matplotlib-sharing-the-legend-box-in-twin-axes/>Read more...</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/julia/>julia</a>,&nbsp;<a href=/tags/python/>python</a>,&nbsp;<a href=/tags/visualization/>visualization</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
+<a href=/matplotlib-figures-to-tiff-images/>Matplotlib figures to tiff images</a>
+</h1><div class=post-meta>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Wen-Wei Tseng</a>
+</span>&nbsp;<span class=post-publish>published on <time datetime=2021-09-10>2021-09-10</time></span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>categories <a href=/categories/julia/><i class="far fa-folder fa-fw"></i>Julia</a>&nbsp;<a href=/categories/python/><i class="far fa-folder fa-fw"></i>Python</a></span></div><div class=content><p>Exporting pyplot figures to TIFF images with custom dpi and LZW compression.</p>
+<div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-julia data-lang=julia><span class=n>fig</span><span class=o>.</span><span class=n>savefig</span><span class=p>(</span><span class=s>&#34;fig.tif&#34;</span><span class=p>,</span> <span class=n>dpi</span><span class=o>=</span><span class=mi>300</span><span class=p>,</span> <span class=n>format</span><span class=o>=</span><span class=s>&#34;tiff&#34;</span><span class=p>,</span> <span class=n>pil_kwargs</span><span class=o>=</span><span class=kt>Dict</span><span class=p>(</span><span class=s>&#34;compression&#34;</span> <span class=o>=&gt;</span> <span class=s>&#34;tiff_lzw&#34;</span><span class=p>))</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class=highlight><div class=chroma>
+<table class=lntable><tr><td class=lntd>
+<pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></code></pre></td>
+<td class=lntd>
+<pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=n>fig</span><span class=o>.</span><span class=n>savefig</span><span class=p>(</span><span class=s2>&#34;fig1.tif&#34;</span><span class=p>,</span> <span class=n>dpi</span><span class=o>=</span><span class=mi>300</span><span class=p>,</span> <span class=nb>format</span><span class=o>=</span><span class=s2>&#34;tiff&#34;</span><span class=p>,</span> <span class=n>pil_kwargs</span><span class=o>=</span><span class=p>{</span><span class=s2>&#34;compression&#34;</span> <span class=p>:</span> <span class=s2>&#34;tiff_lzw&#34;</span><span class=p>})</span>
+</code></pre></td></tr></table>
+</div>
+</div></div><div class=post-footer>
+<a href=/matplotlib-figures-to-tiff-images/>Read more...</a><div class=post-tags>
+<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/julia/>julia</a>,&nbsp;<a href=/tags/python/>python</a>,&nbsp;<a href=/tags/visualization/>visualization</a>,&nbsp;<a href=/tags/tiff/>tiff</a></div></div>
+</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
 <a href=/vs-code/>VS Code</a>
 </h1><div class=post-meta>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Wen-Wei Tseng</a>
@@ -137,20 +171,6 @@ Cancel
 </span>&nbsp;<span class=post-publish>published on <time datetime=2021-08-17>2021-08-17</time></span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>categories <a href=/categories/python/><i class="far fa-folder fa-fw"></i>Python</a>&nbsp;<a href=/categories/devops/><i class="far fa-folder fa-fw"></i>DevOps</a></span></div><div class=content><p>The following example uses <a href=https://github.com/conda-incubator/setup-miniconda target=_blank rel="noopener noreffer">setup miniconda</a> GitHub action and the <a href=https://github.com/mamba-org/mamba target=_blank rel="noopener noreffer">mamba</a> package manager.</p></div><div class=post-footer>
 <a href=/use-conda-in-github-actions/>Read more...</a><div class=post-tags>
 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/devops/>devops</a>,&nbsp;<a href=/tags/github/>github</a>,&nbsp;<a href=/tags/python/>python</a>,&nbsp;<a href=/tags/conda/>conda</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/find-and-download-the-latest-release-version-from-github/>Find and download the latest release version from GitHub</a>
-</h1><div class=post-meta>
-<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Wen-Wei Tseng</a>
-</span>&nbsp;<span class=post-publish>published on <time datetime=2021-08-17>2021-08-17</time></span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/devops/><i class="far fa-folder fa-fw"></i>DevOps</a></span></div><div class=content><p>From this <a href=https://gist.github.com/steinwaywhw/a4cd19cda655b8249d908261a62687f8 target=_blank rel="noopener noreffer">gist</a>.</p></div><div class=post-footer>
-<a href=/find-and-download-the-latest-release-version-from-github/>Read more...</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/devops/>devops</a>,&nbsp;<a href=/tags/github/>github</a>,&nbsp;<a href=/tags/pandoc/>pandoc</a></div></div>
-</article><article class="single summary" itemscope itemtype=http://schema.org/Article><h1 class=single-title itemprop="name headline">
-<a href=/interoperativity-between-github-action-and-cirrus-ci/>Interoperativity between Github Action and Cirrus CI</a>
-</h1><div class=post-meta>
-<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Wen-Wei Tseng</a>
-</span>&nbsp;<span class=post-publish>published on <time datetime=2021-08-17>2021-08-17</time></span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/devops/><i class="far fa-folder fa-fw"></i>DevOps</a></span></div><div class=content><p>Run Github actions after successful Cirrus CI runs with the <a href=https://docs.github.com/en/actions/reference/events-that-trigger-workflows#check_suite target=_blank rel="noopener noreffer"><code>check_suite</code></a> trigger.</p></div><div class=post-footer>
-<a href=/interoperativity-between-github-action-and-cirrus-ci/>Read more...</a><div class=post-tags>
-<i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/devops/>devops</a>,&nbsp;<a href=/tags/github/>github</a>,&nbsp;<a href=/tags/cirrus/>cirrus</a></div></div>
 </article><ul class=pagination><li class="page-item active">
 <span class=page-link>
 <a href=/>1</a>
@@ -167,7 +187,7 @@ Cancel
 <span class=page-link aria-hidden=true>&mldr;</span>
 </li><li class=page-item>
 <span class=page-link>
-<a href=/page/21/>21</a>
+<a href=/page/22/>22</a>
 </span>
 </li></ul></div></div>
 </main><footer class=footer>
