@@ -29,30 +29,34 @@ lightgallery: false
 
 ## Install Julia
 
-Windows: download and run the installer in [the official website](https://julialang.org/downloads/). Or use [juliaup](https://github.com/JuliaLang/juliaup) in Windows store.
+### Windows
 
-MacOS/Linux: install Julia using [jill](https://github.com/abelsiqueira/jill) bash script:
+- Download and run the installer in [the official website](https://julialang.org/downloads/).
+- [juliaup](https://github.com/JuliaLang/juliaup) in the Windows store.
+- [juliawin](https://github.com/heetbeet/juliawin) Julia bundled with VSCode, Pluto, Conda & PyCall.
+
+### MacOS/Linux
+
+- Download and run the binary in [the official website](https://julialang.org/downloads/).
+- [jill](https://github.com/abelsiqueira/jill) installer:
 
 ```bash
 bash -ci "$(curl -fsSL https://raw.githubusercontent.com/abelsiqueira/jill/master/jill.sh)"
 ```
 
-Or using its python fork [jill.py](https://github.com/johnnychen94/jill.py) installer.
+- [jill.py](https://github.com/johnnychen94/jill.py) installer. It requires Python.
 
 ```bash
-# pip is required
-
-[[ -x $(command -v pip) ]] && pip install -U --user jill
-[[ -x $(command -v pip3) ]] && pip3 install -U --user jill
+python -m pip install -U --user jill
 
 ~/.local/bin/jill install --confirm
 ```
 
-## Configurations
+## Configurations after insta;;
 
 ### Auto-activate Project.toml
 
-Add `JULIA_PROJECT=@.` to the environment varialbe. For example, in `~/.profile`
+Set environment variable `JULIA_PROJECT=@.` to let Julia automatically load the closest `Project.toml` and activates the environment.
 
 ```bash
 export JULIA_PROJECT=@.
@@ -60,7 +64,7 @@ export JULIA_PROJECT=@.
 
 ### Use all CPU cores by default
 
-Add `JULIA_NUM_THREADS=N` to the environment varialbe.
+Set environment varialbe `JULIA_NUM_THREADS=N`.
 
 For example, in `~/.profile`
 
@@ -68,25 +72,26 @@ For example, in `~/.profile`
 export JULIA_NUM_THREADS=$(nproc)
 ```
 
-Or use alias to run `julia -t N`. For example, in `~/.bashrc`:
+Or use alias:
 
 ```bash
 alias julia="julia --threads auto"
 ```
 
-### Custom Miniconda location
+### Custom conda location
 
-Add the following line to `~/.julia/config/startup.jl`,
+Add the following lines to `~/.julia/config/startup.jl`,
 
 ```julia
 ENV["PYTHON"] = ""  # Use conda to install python packages
 ENV["CONDA_JL_HOME"] = "/path/to/conda"
 ```
 
-or add the following line to `~/.profile`:
+or set the following environment variables (Not recommended, they may mess up your system)
 
 ```bash
-export CONDA_JL_HOME=/path/to/conda/install
+export PYTHON=""
+export CONDA_JL_HOME="/path/to/conda/install"
 ```
 
 ### Autoload Revise.jl
@@ -99,7 +104,6 @@ try
 catch e
     @warn "Error initializing Revise" exception=(e, catch_backtrace())
 end
-
 ```
 
 For `IJulia` (Jupyter Notebook), add the following lines to `~.julia/config/startup_ijulia.jl`
