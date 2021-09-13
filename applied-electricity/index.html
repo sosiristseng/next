@@ -80,150 +80,12 @@ Cancel
 <div id=search-dropdown-mobile></div>
 </div>
 <main class=main>
-<div class=container><div class=toc id=toc-auto>
-<h2 class=toc-title>Contents</h2>
-<div class=toc-content id=toc-content-auto></div>
-</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Applied electricity</h1><div class=post-meta>
+<div class=container><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Applied electricity</h1><div class=post-meta>
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Wen-Wei Tseng</a>
 </span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/course-notes/><i class="far fa-folder fa-fw"></i>Course Notes</a></span></div>
 <div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-06-18>2021-06-18</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-06-18>2021-06-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2597 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
-</div><div class="details toc" id=toc-static kept>
-<div class="details-summary toc-title">
-<span>Contents</span>
-<span><i class="details-icon fas fa-angle-right"></i></span>
-</div>
-<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
-<ul>
-<li><a href=#course-information>Course information</a></li>
-<li><a href=#tldr>TL;DR</a>
-<ul>
-<li><a href=#current>Current</a></li>
-<li><a href=#voltage>Voltage</a></li>
-<li><a href=#dependent-sources>Dependent sources</a></li>
-<li><a href=#power-balance>Power balance</a></li>
-</ul>
-</li>
-<li><a href=#resistive-circuits-nodal-and-mesh-analysis>Resistive circuits, Nodal and mesh analysis</a>
-<ul>
-<li><a href=#nodal-analysis>Nodal analysis</a></li>
-<li><a href=#loop-mesh-analysis>Loop (mesh) analysis</a></li>
-<li><a href=#series--parallel-circuits>Series / parallel circuits</a></li>
-<li><a href=#resistor-tolerance>Resistor tolerance</a></li>
-<li><a href=#y-δ-transformation>Y-Δ transformation</a></li>
-<li><a href=#question>Question</a></li>
-</ul>
-</li>
-<li><a href=#the-principle-of-superposition>The principle of superposition</a></li>
-<li><a href=#thevenin-and-norton-equivalent-circuits>Thevenin and Norton equivalent circuits</a>
-<ul>
-<li>
-<ul>
-<li><a href=#for-dependent-sources>For dependent sources</a></li>
-</ul>
-</li>
-<li><a href=#maximum-power-transfer>Maximum power transfer</a></li>
-<li><a href=#nortons-theorem>Norton&rsquo;s theorem</a></li>
-</ul>
-</li>
-<li><a href=#capacitors-and-capacitance>Capacitors and Capacitance</a></li>
-<li><a href=#inductors-and-inductance>Inductors and Inductance</a></li>
-<li><a href=#ac-steady-state-analysis>AC steady-state analysis</a>
-<ul>
-<li><a href=#rms-root-mean-square-effective-value>RMS (Root mean square), effective value</a></li>
-<li><a href=#phase-lead--lag>Phase lead / lag</a></li>
-<li><a href=#complex-algebra>Complex algebra</a></li>
-<li><a href=#impedance>Impedance</a></li>
-<li><a href=#filter>Filter</a></li>
-</ul>
-</li>
-<li><a href=#rc-rl-and-rlc-circuits>RC, RL, and RLC circuits</a>
-<ul>
-<li><a href=#rc-transients>RC transients</a></li>
-<li><a href=#rl-transient>RL transient</a></li>
-<li><a href=#rlc-transients>RLC transients</a></li>
-<li><a href=#damping>Damping</a></li>
-<li><a href=#quality-factor>Quality factor</a></li>
-</ul>
-</li>
-<li><a href=#steady-state-power-analysis>Steady state power analysis</a>
-<ul>
-<li><a href=#maximum-power-transfer-1>Maximum power transfer</a></li>
-<li><a href=#power-factor-and-complex-power>Power factor and complex power</a>
-<ul>
-<li><a href=#active-power-vs-reactive-power>Active power vs reactive power</a></li>
-</ul>
-</li>
-<li><a href=#safety-considerations>Safety considerations</a></li>
-</ul>
-</li>
-<li><a href=#magnetically-coupled-circuits>Magnetically coupled circuits</a>
-<ul>
-<li><a href=#mutual-inductance>Mutual inductance</a></li>
-<li><a href=#energy-analysis>Energy analysis</a></li>
-<li><a href=#transformers>Transformers</a></li>
-</ul>
-</li>
-<li><a href=#frequency-response>Frequency response</a>
-<ul>
-<li><a href=#series-rlc>Series RLC</a></li>
-<li><a href=#bode-plot>Bode plot</a></li>
-<li><a href=#multistage-system>Multistage system</a></li>
-<li><a href=#network-transfer-function>Network transfer function</a></li>
-<li><a href=#bandwidth>Bandwidth</a>
-<ul>
-<li><a href=#quality-factor-and-effective-bandwidth>Quality factor and effective bandwidth</a></li>
-</ul>
-</li>
-<li><a href=#poles-and-zeros>Poles and Zeros</a></li>
-<li><a href=#filters>Filters</a></li>
-</ul>
-</li>
-<li><a href=#op-amp>OP-Amp</a>
-<ul>
-<li><a href=#ideal-op-amp>Ideal OP-Amp</a></li>
-<li><a href=#circuit-analysis-in-ideal-op-amp>Circuit analysis in Ideal OP-Amp</a></li>
-<li><a href=#more-op-amp-circuits>More OP-Amp circuits</a>
-<ul>
-<li><a href=#multiple-input-voltages>Multiple input voltages</a></li>
-<li><a href=#with-energy-storing-devices>With energy-storing devices</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href=#semiconductors>Semiconductors</a>
-<ul>
-<li><a href=#materials>Materials</a></li>
-<li><a href=#why-semi-conductivity>Why semi-conductivity</a></li>
-<li><a href=#carriers>Carriers</a></li>
-</ul>
-</li>
-<li><a href=#p-n-junctions-and-diodes>P-N junctions and diodes</a>
-<ul>
-<li><a href=#depletion-zone>Depletion zone</a></li>
-<li><a href=#applying-voltage>Applying voltage</a></li>
-<li><a href=#shockley-equation>Shockley equation</a></li>
-<li><a href=#three-representations-of-diodes>Three representations of diodes</a></li>
-</ul>
-</li>
-<li><a href=#diode-circuits>Diode circuits</a>
-<ul>
-<li><a href=#rectifiers>Rectifiers</a></li>
-<li><a href=#limiters-cutters>Limiters (cutters)</a></li>
-<li><a href=#filters-1>Filters</a></li>
-<li><a href=#voltage-regulator-using-zener-diodes>Voltage regulator using Zener diodes</a></li>
-</ul>
-</li>
-<li><a href=#bjt>BJT</a>
-<ul>
-<li><a href=#symbol>Symbol</a></li>
-<li><a href=#math>Math</a></li>
-</ul>
-</li>
-<li><a href=#mosfet>MOSFET</a></li>
-</ul>
-</nav></div>
 </div><div class=content id=content><p>Course notes of Applied electricity by Lecturer 林冠中.</p>
 <h2 id=course-information>Course information</h2>
 <ul>
@@ -838,6 +700,6 @@ The more discharging time scale ($\tau = RC$), the less ripple voltage. ($V_r \a
 <i class="fas fa-comment fa-fw"></i>
 </a>
 </div><div class=assets><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/fuse/fuse.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/topbar/topbar.min.js></script><script type=text/javascript src=/lib/pjax/pjax.min.js></script><script type=text/javascript src=/js/theme.min.js></script></div>
-<div class=pjax-assets><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/auto-render.min.js></script><script type=text/javascript src=/lib/katex/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:15},comment:{},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{distance:100,findAllMatches:!1,fuseIndexURL:"/index.json",highlightTag:"em",ignoreFieldNorm:!1,ignoreLocation:!1,isCaseSensitive:!1,location:0,maxResultLength:10,minMatchCharLength:2,noResultsFound:"No results found",snippetLength:30,threshold:.3,type:"fuse",useExtendedSearch:!1},sharerjs:!0}</script><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css></div>
+<div class=pjax-assets><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:15},comment:{},search:{distance:100,findAllMatches:!1,fuseIndexURL:"/index.json",highlightTag:"em",ignoreFieldNorm:!1,ignoreLocation:!1,isCaseSensitive:!1,location:0,maxResultLength:10,minMatchCharLength:2,noResultsFound:"No results found",snippetLength:30,threshold:.3,type:"fuse",useExtendedSearch:!1},sharerjs:!0}</script></div>
 </body>
 </html>

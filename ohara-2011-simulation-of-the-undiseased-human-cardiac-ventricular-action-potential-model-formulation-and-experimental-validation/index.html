@@ -83,47 +83,12 @@ Cancel
 <div id=search-dropdown-mobile></div>
 </div>
 <main class=main>
-<div class=container><div class=toc id=toc-auto>
-<h2 class=toc-title>Contents</h2>
-<div class=toc-content id=toc-content-auto></div>
-</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Ohara 2011 : Simulation of the undiseased human cardiac ventricular action potential: model formulation and experimental validation</h1><div class=post-meta>
+<div class=container><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Ohara 2011 : Simulation of the undiseased human cardiac ventricular action potential: model formulation and experimental validation</h1><div class=post-meta>
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>OHara et al.</a>
 </span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/reading/><i class="far fa-folder fa-fw"></i>Reading</a></span>&nbsp;<span class=post-category>and</span>&nbsp;<span class=post-series>series <a href=/series/ode/><i class="far fa-list-alt fa-fw"></i>ODE</a>&nbsp;<a href=/series/cardiomyocyte/><i class="far fa-list-alt fa-fw"></i>cardiomyocyte</a>&nbsp;<a href=/series/electrophysiology/><i class="far fa-list-alt fa-fw"></i>electrophysiology</a></span></div>
 <div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2020-10-23>2020-10-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-08-15>2021-08-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;591 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
-</div><div class="details toc" id=toc-static kept>
-<div class="details-summary toc-title">
-<span>Contents</span>
-<span><i class="details-icon fas fa-angle-right"></i></span>
-</div>
-<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
-<ul>
-<li><a href=#model-introduction>Model introduction</a>
-<ul>
-<li><a href=#l-type-ca2-current-ical>L-type Ca2+ Current (ICaL)</a></li>
-<li><a href=#transient-outward-k-current-ito>Transient Outward K+ Current (Ito)</a></li>
-<li><a href=#naca2-exchange-current-inaca>Na+/Ca2+ Exchange Current (INaCa)</a></li>
-<li><a href=#inward-rectifier-k-current-ik1>Inward Rectifier K+ Current (IK1)</a></li>
-<li><a href=#rapid-delayed-rectifier-k-current-ikr>Rapid Delayed Rectifier K+ Current (IKr)</a></li>
-<li><a href=#slow-delayed-rectifier-k-current-iks>Slow Delayed Rectifier K+ Current (IKs)</a></li>
-<li><a href=#fast-na-current-and-late-na-current>Fast Na+ Current and late Na+ current</a></li>
-<li><a href=#nak-atpase-current-inak>Na+/K+ ATPase Current (INaK)</a></li>
-<li><a href=#human-ap-characteristics-and-apd>Human AP Characteristics and APD</a></li>
-<li><a href=#transmural-heterogeneity>Transmural Heterogeneity</a></li>
-</ul>
-</li>
-<li><a href=#early-afterdepolarization-ead>Early Afterdepolarization (EAD)</a></li>
-<li><a href=#na-and-ca2-rate-dependence>Na+ and Ca2+ Rate Dependence</a></li>
-<li><a href=#ca2-cycling-and-camk>Ca2+ Cycling and CaMK</a></li>
-<li><a href=#alternans>Alternans</a></li>
-<li><a href=#currents-participating-in-steady-state-apd-rate-dependence-and-apd-restitution>Currents Participating in Steady State APD Rate Dependence and APD Restitution</a></li>
-<li><a href=#ionic-basis-for-apd-rate-dependence-and-restitution>Ionic Basis for APD Rate Dependence and Restitution</a></li>
-<li><a href=#comparison-with-other-human-ventricular-ap-models>Comparison with Other Human Ventricular AP Models</a></li>
-<li><a href=#discussion>Discussion</a></li>
-<li><a href=#limitations>Limitations</a></li>
-</ul>
-</nav></div>
 </div><div class=content id=content><p><a href=https://sciwheel.com/work/#/items/1270876 target=_blank rel="noopener noreffer">Sciwheel</a><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
 <h2 id=model-introduction>Model introduction</h2>
 <p><img class=lazyload data-src="https://journals.plos.org/ploscompbiol/article/figure/image?download&size=large&id=info:doi/10.1371/journal.pcbi.1002061.g005" data-srcset="https://journals.plos.org/ploscompbiol/article/figure/image?download&size=large&id=info:doi/10.1371/journal.pcbi.1002061.g005, https://journals.plos.org/ploscompbiol/article/figure/image?download&size=large&id=info:doi/10.1371/journal.pcbi.1002061.g005 1.5x, https://journals.plos.org/ploscompbiol/article/figure/image?download&size=large&id=info:doi/10.1371/journal.pcbi.1002061.g005 2x" data-sizes=auto alt="https://journals.plos.org/ploscompbiol/article/figure/image?download&size=large&id=info:doi/10.1371/journal.pcbi.1002061.g005" title="https://journals.plos.org/ploscompbiol/article/figure/image?download&size=large&id=info:doi/10.1371/journal.pcbi.1002061.g005"></p>

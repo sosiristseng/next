@@ -80,39 +80,12 @@ Cancel
 <div id=search-dropdown-mobile></div>
 </div>
 <main class=main>
-<div class=container><div class=toc id=toc-auto>
-<h2 class=toc-title>Contents</h2>
-<div class=toc-content id=toc-content-auto></div>
-</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Julia Design Patterns</h1><div class=post-meta>
+<div class=container><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Julia Design Patterns</h1><div class=post-meta>
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Wen-Wei Tseng</a>
 </span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/julia/><i class="far fa-folder fa-fw"></i>Julia</a></span></div>
 <div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-06-19>2021-06-19</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-07-03>2021-07-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;666 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
-</div><div class="details toc" id=toc-static kept>
-<div class="details-summary toc-title">
-<span>Contents</span>
-<span><i class="details-icon fas fa-angle-right"></i></span>
-</div>
-<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
-<ul>
-<li><a href=#separated-project-environments>Separated Project environments</a></li>
-<li><a href=#packages-and-modules>Packages and modules</a></li>
-<li><a href=#functional-interfaces-and-multiple-dispatch>Functional interfaces and multiple dispatch</a></li>
-<li><a href=#delegation-pattern>Delegation pattern</a></li>
-<li><a href=#holy-traits>Holy traits</a></li>
-<li><a href=#global-constant>Global constant</a></li>
-<li><a href=#struct-of-arrays-soa>Struct of arrays (SoA)</a></li>
-<li><a href=#memoization>Memoization</a></li>
-<li><a href=#barrier-functions-for-type-stability>Barrier functions for type stability</a></li>
-<li><a href=#keyword-definition>Keyword definition</a></li>
-<li><a href=#accessor-getters-and-setters>Accessor: getters and setters</a></li>
-<li><a href=#let-blocks>Let blocks</a></li>
-<li><a href=#functional-pipes>Functional pipes</a></li>
-<li><a href=#anti-patterns-in-julia>Anti-patterns in Julia</a></li>
-<li><a href=#references>References</a></li>
-</ul>
-</nav></div>
 </div><div class=content id=content><p>A bunch of notes of Tom kwong&rsquo;s book <a href=https://www.packtpub.com/product/hands-on-design-patterns-and-best-practices-with-julia/9781838648817 target=_blank rel="noopener noreffer">Hands on Design patterns in Julia</a>.</p>
 <h2 id=separated-project-environments>Separated Project environments</h2>
 <p>It is recommended to maintain a minimal root environment (with a few necessary packages like <code>Revise.jl</code>) and <a href=https://opensourc.es/blog/all-about-pkg/#environments target=_blank rel="noopener noreffer">customize the local Julia project environment</a> by the following steps:</p>
