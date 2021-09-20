@@ -88,12 +88,52 @@ Cancel
 <div id=search-dropdown-mobile></div>
 </div>
 <main class=main>
-<div class=container><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Git Commands</h1><div class=post-meta>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Git Commands</h1><div class=post-meta>
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Wen-Wei Tseng</a>
 </span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/devops/><i class="far fa-folder fa-fw"></i>DevOps</a></span></div>
 <div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-06-18>2021-06-18</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-06-18>2021-06-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;822 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#ordinary-workflows>Ordinary workflows</a>
+<ul>
+<li><a href=#create-repos>Create repos</a></li>
+<li><a href=#make-changes-and-commit>Make changes and commit</a></li>
+<li><a href=#push-and-pull>Push and pull</a></li>
+<li><a href=#stash>Stash</a></li>
+<li><a href=#branches>Branches</a></li>
+</ul>
+</li>
+<li><a href=#orphan-branches>Orphan branches</a></li>
+<li><a href=#git-submodules>Git submodules</a>
+<ul>
+<li><a href=#adding-a-submodule>Adding a submodule</a></li>
+<li><a href=#update-all-git-submodules-to-the-latest-commit>Update all Git submodules to the latest commit</a></li>
+<li><a href=#auto-update-git-submodules-by-github-dependabot>Auto-update Git submodules by GitHub dependabot</a></li>
+</ul>
+</li>
+<li><a href=#editing-git-histories>Editing git histories</a>
+<ul>
+<li><a href=#git-reset>Git reset</a></li>
+<li><a href=#removing-large-binary-blobs>Removing large binary blobs</a>
+<ul>
+<li><a href=#git-filter-repo>Git filter repo</a></li>
+</ul>
+</li>
+<li><a href=#purge-git-database-entirely>Purge Git database entirely</a></li>
+</ul>
+</li>
+</ul>
+</nav></div>
 </div><div class=content id=content><ul>
 <li><a href=https://git-scm.com/docs target=_blank rel="noopener noreffer">Git reference</a></li>
 <li><a href=https://training.github.com/downloads/github-git-cheat-sheet.pdf target=_blank rel="noopener noreffer">Git cheatsheet (pdf)</a></li>

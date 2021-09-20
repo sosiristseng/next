@@ -81,12 +81,57 @@ Cancel
 <div id=search-dropdown-mobile></div>
 </div>
 <main class=main>
-<div class=container><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Saa 2015 : A General Framework for Thermodynamically Consistent Parameterization and Efficient Sampling of Enzymatic Reactions</h1><div class=post-meta>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Saa 2015 : A General Framework for Thermodynamically Consistent Parameterization and Efficient Sampling of Enzymatic Reactions</h1><div class=post-meta>
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Saa et al.</a>
 </span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/reading/><i class="far fa-folder fa-fw"></i>Reading</a></span>&nbsp;<span class=post-category>and</span>&nbsp;<span class=post-series>series <a href=/series/enzyme-kinetics/><i class="far fa-list-alt fa-fw"></i>enzyme kinetics</a></span></div>
 <div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2020-10-23>2020-10-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-08-15>2021-08-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2223 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;11 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a>
+<ul>
+<li><a href=#allosteric-regulation>Allosteric regulation</a></li>
+<li><a href=#herein>Herein</a></li>
+</ul>
+</li>
+<li><a href=#models>Models</a>
+<ul>
+<li><a href=#general-framework-for-modelling-metabolic-reactions>General framework for modelling metabolic reactions</a></li>
+<li><a href=#parameterization-and-sampling-of-the-catalytic-mechanism>Parameterization and sampling of the catalytic mechanism</a></li>
+<li><a href=#sampling-enzyme-intermediate-abundances>Sampling enzyme intermediate abundances</a></li>
+<li><a href=#sampling-reversibilities>Sampling reversibilities</a></li>
+<li><a href=#sampling-elementary-flux-vectors>Sampling elementary flux vectors</a></li>
+<li><a href=#sampling-functional-contributions-catalytic-and-regulatory-effects>Sampling functional contributions: catalytic and regulatory effects</a></li>
+<li><a href=#parameter-set-accuracy-check>Parameter set accuracy check</a></li>
+<li><a href=#elasticity-analysis-of-the-velocity-of-reaction>Elasticity analysis of the velocity of reaction</a></li>
+<li><a href=#computational-implementation>Computational implementation</a></li>
+</ul>
+</li>
+<li><a href=#results>Results</a>
+<ul>
+<li><a href=#dissecting-enzyme-catalysis-assessing-the-impact-of-reaction-molecularity>Dissecting enzyme catalysis: assessing the impact of reaction molecularity</a>
+<ul>
+<li><a href=#sampling-three-ordered-mechanisms-uni-uni-bi-bi-and-ter-ter>Sampling three ordered mechanisms: Uni-Uni, Bi-Bi and Ter-Ter</a></li>
+</ul>
+</li>
+<li><a href=#revealing-the-impact-of-thermodynamics-on-enzyme-kinetics>Revealing the impact of thermodynamics on enzyme kinetics</a></li>
+<li><a href=#sampling-a-rare-kinetic-event-monomeric-cooperativity-of-mammalian-glucokinase>Sampling a rare kinetic event: Monomeric cooperativity of mammalian glucokinase</a></li>
+<li><a href=#allosteric-regulation-modelling-co-activation-of-escherichia-coli-pep-carboxylase-pepc>Allosteric regulation: Modelling co-activation of Escherichia coli PEP carboxylase (PEPC)</a></li>
+</ul>
+</li>
+<li><a href=#discussion>Discussion</a></li>
+<li><a href=#reference>Reference</a></li>
+</ul>
+</nav></div>
 </div><div class=content id=content><p><a href=https://sciwheel.com/work/#/items/4710003 target=_blank rel="noopener noreffer">Sciwheel</a><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
 <h2 id=introduction>Introduction</h2>
 <ul>

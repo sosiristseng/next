@@ -80,12 +80,35 @@ Cancel
 <div id=search-dropdown-mobile></div>
 </div>
 <main class=main>
-<div class=container><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Julia Modules and packages</h1><div class=post-meta>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Julia Modules and packages</h1><div class=post-meta>
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Wen-Wei Tseng</a>
 </span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/julia/><i class="far fa-folder fa-fw"></i>Julia</a></span></div>
 <div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-06-19>2021-06-19</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-06-19>2021-06-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;587 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#include-submodules>Include Submodules</a></li>
+<li><a href=#dev-a-temporary-package>dev a temporary package</a></li>
+<li><a href=#make-a-hosted-packages>Make a hosted packages</a>
+<ul>
+<li><a href=#unit-testing>Unit testing</a></li>
+<li><a href=#documentation>Documentation</a></li>
+<li><a href=#continuous-integration--delivery-cicd>Continuous integration / delivery (CI/CD)</a></li>
+</ul>
+</li>
+<li><a href=#appending-load_path--outdated>Appending <code>LOAD_PATH</code> (⚠️ outdated)</a></li>
+<li><a href=#reference>Reference</a></li>
+</ul>
+</nav></div>
 </div><div class=content id=content><p>When the code grows to a certain size, you might want to organize it.</p>
 <p>Assuming we have the file structure for the submodules</p>
 <div class=highlight><div class=chroma>

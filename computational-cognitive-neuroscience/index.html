@@ -80,12 +80,241 @@ Cancel
 <div id=search-dropdown-mobile></div>
 </div>
 <main class=main>
-<div class=container><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","false")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Computational Cognitive Neuroscience</h1><div class=post-meta>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Computational Cognitive Neuroscience</h1><div class=post-meta>
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Wen-Wei Tseng</a>
 </span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/course-notes/><i class="far fa-folder fa-fw"></i>Course Notes</a></span></div>
 <div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2021-06-18>2021-06-18</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-06-18>2021-06-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;4121 words&nbsp;
 <i class="far fa-clock fa-fw"></i>&nbsp;9 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#course-information>Course Information</a></li>
+<li><a href=#central-questions>Central Questions</a>
+<ul>
+<li><a href=#cognitive-psychology>Cognitive Psychology</a></li>
+<li><a href=#artificial-intelligence>Artificial intelligence</a></li>
+<li><a href=#biological-plausibility>Biological plausibility</a></li>
+<li><a href=#levels-scales-of-nervous-system>Levels (scales) of nervous system</a></li>
+</ul>
+</li>
+<li><a href=#builidng-a-brain-with-math-models>Builidng a brain with math models</a>
+<ul>
+<li><a href=#3d-brain-structure>3D brain structure</a></li>
+<li><a href=#the-scale-of-brain-models>The scale of brain models</a></li>
+<li><a href=#neuron-biology>Neuron biology</a></li>
+<li><a href=#hodgkin-and-huxley-model-1952>Hodgkin and Huxley model (1952)</a>
+<ul>
+<li><a href=#derived-models>Derived models</a></li>
+</ul>
+</li>
+<li><a href=#nef-neural-engineering-network--spa-sementic-pointer-architecture>NEF (Neural Engineering Network) & SPA (Sementic Pointer Architecture)</a>
+<ul>
+<li><a href=#sementic-pointer>Sementic Pointer</a></li>
+<li><a href=#embodieed-semantics>Embodieed semantics</a></li>
+<li><a href=#working-memory>Working memory</a></li>
+<li><a href=#spike-timing-dependent-plasticity-stdp>Spike-Timing-Dependent plasticity (STDP)</a></li>
+</ul>
+</li>
+<li><a href=#spiking-models>Spiking models</a>
+<ul>
+<li><a href=#neural-responses>Neural responses</a></li>
+<li><a href=#tuning-curve>Tuning curve</a></li>
+<li><a href=#poisson-process-for-spike-firing>Poisson process for spike firing</a></li>
+<li><a href=#rate-code-vs-temporal-code>Rate code v.s. temporal code</a></li>
+</ul>
+</li>
+<li><a href=#encoding--decoding>Encoding / decoding</a></li>
+</ul>
+</li>
+<li><a href=#neural-physiology>Neural Physiology</a>
+<ul>
+<li><a href=#excitable-membrane>Excitable membrane</a></li>
+<li><a href=#action-potential>Action potential</a></li>
+<li><a href=#neurotransmitters>Neurotransmitters</a></li>
+</ul>
+</li>
+<li><a href=#neural-models>Neural models</a>
+<ul>
+<li><a href=#electrical-activity-of-neurons>Electrical activity of neurons</a></li>
+<li><a href=#hh-model>HH model</a></li>
+<li><a href=#considerations>Considerations</a></li>
+</ul>
+</li>
+<li><a href=#dynamic-system-theory>Dynamic system theory</a>
+<ul>
+<li><a href=#morris-lecar-neuron-model>Morris-Lecar neuron model</a>
+<ul>
+<li><a href=#phase-plane-analysis>Phase plane analysis</a></li>
+</ul>
+</li>
+<li><a href=#integrate-and-fire-if-model>Integrate and fire (IF) model</a></li>
+<li><a href=#izhikevich-model>Izhikevich model</a></li>
+<li><a href=#compartment-model>Compartment model</a></li>
+</ul>
+</li>
+<li><a href=#filters>Filters</a></li>
+<li><a href=#synapse-model>Synapse model</a></li>
+<li><a href=#intro-to-brain>Intro to brain</a>
+<ul>
+<li><a href=#prerequisite>Prerequisite</a></li>
+<li><a href=#reverse-enginering-the-brain>Reverse enginering the brain</a></li>
+<li><a href=#why-a-brain>Why a brain</a></li>
+<li><a href=#design-constraints>Design constraints</a></li>
+<li><a href=#evolution-of-the-brain-in-cordates>Evolution of the brain in Cordates</a></li>
+<li><a href=#central-pattern-generator>Central pattern generator</a></li>
+</ul>
+</li>
+<li><a href=#nengo-programming>nengo programming</a>
+<ul>
+<li><a href=#classes>Classes</a></li>
+<li><a href=#integrator-implementation>Integrator implementation</a></li>
+<li><a href=#oscillator-implementation>Oscillator implementation</a></li>
+</ul>
+</li>
+<li><a href=#connectivity-analysis>Connectivity analysis</a>
+<ul>
+<li><a href=#microscale-vs-macroscale>Microscale vs Macroscale</a></li>
+<li><a href=#graph-theory>Graph theory</a></li>
+<li><a href=#types-of-networks>Types of networks</a>
+<ul>
+<li><a href=#random>Random</a></li>
+<li><a href=#scale-free>Scale-free</a></li>
+<li><a href=#regular>Regular</a></li>
+<li><a href=#modular>Modular</a></li>
+<li><a href=#small-world>Small world</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#neural-engineering-framework-nef>Neural Engineering Framework (NEF)</a>
+<ul>
+<li><a href=#central-problems>Central problems</a></li>
+<li><a href=#heterogeneity-in-realistic-neurla-networks>Heterogeneity in realistic neurla networks</a></li>
+<li><a href=#building-nef-models-with-nengo>Building NEF models with nengo</a></li>
+<li><a href=#central-nef-principles>Central NEF principles</a>
+<ul>
+<li><a href=#representation>Representation</a></li>
+<li><a href=#transformation-of-encoding-information-by-neuron-clusters>Transformation of encoding information by neuron clusters</a></li>
+<li><a href=#neual-dynamics-for-an-ensemble-of-neurons>Neual dynamics for an ensemble of neurons</a></li>
+<li><a href=#ps>PS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#neuro-representation>Neuro representation</a>
+<ul>
+<li><a href=#encoding--decoding-1>Encoding / decoding</a></li>
+<li><a href=#symbols-used-when-neural-coding>Symbols used when neural coding</a></li>
+<li><a href=#populational-encoding>Populational encoding</a>
+<ul>
+<li><a href=#some-linear-algebra>Some linear algebra</a></li>
+<li><a href=#optimal-ensemble-linear-encoder>Optimal ensemble linear encoder</a></li>
+</ul>
+</li>
+<li><a href=#example-horizontal-eye-position-in-nef>Example: horizontal eye position in NEF</a></li>
+<li><a href=#vector-encoding--decoding>Vector encoding / decoding</a></li>
+</ul>
+</li>
+<li><a href=#nengo-examples>Nengo examples</a></li>
+<li><a href=#neural-transformation>Neural transformation</a>
+<ul>
+<li><a href=#multiplication>Multiplication</a></li>
+<li><a href=#communication-channel>Communication channel</a></li>
+<li><a href=#static-gain-c-multiplication-with-a-scalar>Static gain <code>c</code> (multiplication with a scalar)</a></li>
+<li><a href=#addition>Addition</a></li>
+<li><a href=#nonlinear-transformation>Nonlinear transformation</a></li>
+<li><a href=#negative-weight>Negative weight</a></li>
+</ul>
+</li>
+<li><a href=#neural-dynamics>Neural dynamics</a>
+<ul>
+<li><a href=#representation-1>Representation</a></li>
+<li><a href=#linear-control-theory>Linear control theory</a></li>
+<li><a href=#frequency-response-and-stability-analysis>Frequency response and stability analysis</a></li>
+<li><a href=#neural-population-model>Neural population model</a></li>
+<li><a href=#recurrent-connections>Recurrent connections</a></li>
+<li><a href=#equations-for-different-levels>Equations for different levels</a></li>
+</ul>
+</li>
+<li><a href=#sensation-and-perception>Sensation and Perception</a>
+<ul>
+<li><a href=#perception>Perception</a></li>
+<li><a href=#psychophysica>Psychophysica</a></li>
+</ul>
+</li>
+<li><a href=#vision>Vision</a>
+<ul>
+<li><a href=#v1-primary-visual-cortex>V1: primary visual cortex</a></li>
+<li><a href=#successively-richer-layers>Successively richer layers</a></li>
+<li><a href=#ventral-track>Ventral track</a></li>
+<li><a href=#dorsal-track>Dorsal track</a></li>
+<li><a href=#ambiguous-figures--optical-illusions>Ambiguous figures / optical illusions</a></li>
+<li><a href=#feedback>Feedback</a></li>
+<li><a href=#object-perception>Object perception</a></li>
+</ul>
+</li>
+<li><a href=#autoencoders>Autoencoders</a>
+<ul>
+<li><a href=#ewerts-central-problems>Ewert&rsquo;s central problems</a></li>
+<li><a href=#autoencoder-in-traditional-anns>Autoencoder in traditional ANNs</a></li>
+<li><a href=#basic-machine-learning>Basic machine learning</a></li>
+<li><a href=#classical-cognitive-systems-expert-system>Classical cognitive systems (expert system)</a></li>
+<li><a href=#semantic-pointer-and-spa>Semantic pointer and SPA</a></li>
+<li><a href=#encoding-information-in-the-semantic-pointer>Encoding information in the semantic pointer</a></li>
+</ul>
+</li>
+<li><a href=#action-control>Action control</a>
+<ul>
+<li><a href=#affordance-competition-hypothesis>Affordance competition hypothesis</a></li>
+<li><a href=#neural-optimal-control-hierachy-noch>Neural optimal control hierachy (NOCH)</a></li>
+<li><a href=#performing-movement-in-robot-arms>Performing movement in robot arms</a></li>
+<li><a href=#functional-level-model>Functional level model</a></li>
+<li><a href=#rules-for-manipulation>Rules for manipulation</a></li>
+<li><a href=#attention>Attention</a></li>
+<li><a href=#tower-of-hanoi-task>Tower of Hanoi task</a></li>
+<li><a href=#act-r-architecture>ACT-R architecture</a></li>
+</ul>
+</li>
+<li><a href=#learning-and-memory>Learning and memory</a>
+<ul>
+<li><a href=#learning-in-biology>Learning in biology</a></li>
+<li><a href=#machine-learning>Machine learning</a></li>
+<li><a href=#biological-memories-in-detail>Biological memories in detail</a></li>
+<li><a href=#conditioning>Conditioning</a>
+<ul>
+<li><a href=#terms>Terms</a></li>
+<li><a href=#hippocampus>Hippocampus</a></li>
+<li><a href=#inside-ltp--ltd>Inside LTP / LTD</a></li>
+</ul>
+</li>
+<li><a href=#learning-rules>Learning rules</a>
+<ul>
+<li><a href=#hebbian>Hebbian</a></li>
+<li><a href=#stdp>STDP</a></li>
+<li><a href=#hpes-rule>hPES rule</a></li>
+</ul>
+</li>
+<li><a href=#reinforcement-learning>Reinforcement learning</a>
+<ul>
+<li><a href=#value>Value</a></li>
+<li><a href=#value-function-vs-and-prediction-error>Value function V(s) and prediction error</a></li>
+<li><a href=#biological-rl>Biological RL</a></li>
+<li><a href=#decision-making>Decision making</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href=#spaun-model>SPAUN model</a></li>
+</ul>
+</nav></div>
 </div><div class=content id=content><p>Course Notes of Computational Cognitive Neuroscience by Prof. 鄭士康.</p>
 <h2 id=course-information>Course Information</h2>
 <ul>
@@ -1332,6 +1561,6 @@ $$</p>
 <i class="fas fa-comment fa-fw"></i>
 </a>
 </div><div class=assets><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/fuse/fuse.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/topbar/topbar.min.js></script><script type=text/javascript src=/lib/pjax/pjax.min.js></script><script type=text/javascript src=/js/theme.min.js></script></div>
-<div class=pjax-assets><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:15},comment:{},search:{distance:100,findAllMatches:!1,fuseIndexURL:"/index.json",highlightTag:"em",ignoreFieldNorm:!1,ignoreLocation:!1,isCaseSensitive:!1,location:0,maxResultLength:10,minMatchCharLength:2,noResultsFound:"No results found",snippetLength:30,threshold:.3,type:"fuse",useExtendedSearch:!1},sharerjs:!0}</script></div>
+<div class=pjax-assets><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/auto-render.min.js></script><script type=text/javascript src=/lib/katex/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:15},comment:{},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{distance:100,findAllMatches:!1,fuseIndexURL:"/index.json",highlightTag:"em",ignoreFieldNorm:!1,ignoreLocation:!1,isCaseSensitive:!1,location:0,maxResultLength:10,minMatchCharLength:2,noResultsFound:"No results found",snippetLength:30,threshold:.3,type:"fuse",useExtendedSearch:!1},sharerjs:!0}</script><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css></div>
 </body>
 </html>
