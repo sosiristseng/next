@@ -1,0 +1,371 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=robots content="noodp">
+<title class=pjax-title>Tran 2009 : A thermodynamic model of the cardiac sarcoplasmic/endoplasmic Ca(2+) (SERCA) pump - Something to Live</title><meta name=Description content="Tech Notes of Wen-Wei Tseng"><meta property="og:title" content="Tran 2009 : A thermodynamic model of the cardiac sarcoplasmic/endoplasmic Ca(2+) (SERCA) pump">
+<meta property="og:description" content="Sciwheel1">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sosiristseng.github.io/2020/10/23/tran-2009/"><meta property="og:image" content="https://sosiristseng.github.io/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2020-10-23T00:52:21+08:00">
+<meta property="article:modified_time" content="2021-08-15T22:37:56+08:00">
+<meta property="og:see_also" content="https://sosiristseng.github.io/2021/07/21/fridlyand-2005/"><meta property="og:see_also" content="https://sosiristseng.github.io/2021/07/20/fridlyand-2010/"><meta property="og:see_also" content="https://sosiristseng.github.io/2021/07/20/kornick-2019/"><meta property="og:see_also" content="https://sosiristseng.github.io/2021/07/15/wacquier-2016/"><meta property="og:see_also" content="https://sosiristseng.github.io/2021/07/15/hoffman-2017/"><meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/saa-2013/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/tran-2010/"><meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/sum-enz-kinetics/"><meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/smith-2004/"><meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/saa-2015/"><meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/qi-2009/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/2021/07/21/fridlyand-2005/"><meta property="og:see_also" content="https://sosiristseng.github.io/2021/07/20/fridlyand-2010/"><meta property="og:see_also" content="https://sosiristseng.github.io/2021/07/15/wacquier-2016/"><meta property="og:see_also" content="https://sosiristseng.github.io/2021/07/11/leung-2021/"><meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/wei-2012/"><meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/tran-2010/">
+<meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/yang-2018/"><meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/zhu-2016/"><meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/zhou-2014/"><meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/zhou-2012/"><meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/zhou-2009/"><meta property="og:see_also" content="https://sosiristseng.github.io/2020/10/23/zhang-2016/">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://sosiristseng.github.io/">
+<meta name=twitter:title content="Tran 2009 : A thermodynamic model of the cardiac sarcoplasmic/endoplasmic Ca(2+) (SERCA) pump">
+<meta name=twitter:description content="Sciwheel1">
+<meta name=application-name content="Los los los">
+<meta name=apple-mobile-web-app-title content="Los los los">
+<meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=parrot.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://sosiristseng.github.io/2020/10/23/tran-2009/><link rel=prev href=https://sosiristseng.github.io/2020/10/23/tomek-2018/><link rel=next href=https://sosiristseng.github.io/2020/10/23/tran-2010/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
+<noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/animate/animate.min.css>
+<noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Tran 2009 : A thermodynamic model of the cardiac sarcoplasmic/endoplasmic Ca(2+) (SERCA) pump","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/sosiristseng.github.io\/2020\/10\/23\/tran-2009\/"},"genre":"posts","wordcount":1590,"url":"https:\/\/sosiristseng.github.io\/2020\/10\/23\/tran-2009\/","datePublished":"2020-10-23T00:52:21+08:00","dateModified":"2021-08-15T22:37:56+08:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx"},"author":{"@type":"Person","name":"Tran et al."},"description":""}</script></head>
+<body header-desktop=fixed header-mobile=auto><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a)}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'auto'==='light'||'auto'==='dark'||'auto'==='black'?(setTheme('auto'),saveTheme('auto')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let themeColorMeta=getMeta('theme-color');document.body.getAttribute('theme')!='light'&&(themeColorMeta.content='#000000')</script>
+<div id=back-to-top></div>
+<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Something to Live"><span class=header-title-pre><i class="fas fa-kiwi-bird fa-fw"></i></span>Something to Live</a>
+</div>
+<div class=menu>
+<div class=menu-inner><a class=menu-item href=/posts/ title=Posts> Posts </a><a class=menu-item href=/categories/reading/ title=Reading> Reading </a><a class=menu-item href=/tags/ title=Tags> Tags </a><a class=menu-item href=/series/ title="Reading Topics"> Reading Topics </a><a class=menu-item href=/categories/ title=Categories> Categories </a><a class=menu-item href=/about/ title="About Me"> About </a><a class=menu-item href=https://github.com/sosiristseng/ title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github-alt fa-fw"></i> </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder=Search id=search-input-desktop>
+<a href=# onclick=return!1 class="search-button search-toggle" id=search-toggle-desktop title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=# onclick=return!1 class="search-button search-clear" id=search-clear-desktop title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-desktop>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</span><a href=# onclick=return!1 class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</div>
+</header><header class=mobile id=header-mobile>
+<div class=header-container>
+<div class=header-wrapper>
+<div class=header-title>
+<a href=/ title="Something to Live"><span class=header-title-pre><i class="fas fa-kiwi-bird fa-fw"></i></span>Something to Live</a>
+</div>
+<div class=menu-toggle id=menu-toggle-mobile>
+<span></span><span></span><span></span>
+</div>
+</div>
+<div class=menu id=menu-mobile><div class=search-wrapper>
+<div class="search mobile" id=search-mobile>
+<input type=text placeholder=Search id=search-input-mobile>
+<a href=# onclick=return!1 class="search-button search-toggle" id=search-toggle-mobile title=Search>
+<i class="fas fa-search fa-fw"></i>
+</a>
+<a href=# onclick=return!1 class="search-button search-clear" id=search-clear-mobile title=Clear>
+<i class="fas fa-times-circle fa-fw"></i>
+</a>
+<span class="search-button search-loading" id=search-loading-mobile>
+<i class="fas fa-spinner fa-fw fa-spin"></i>
+</span>
+</div>
+<a href=# onclick=return!1 class=search-cancel id=search-cancel-mobile>
+Cancel
+</a>
+</div><a class=menu-item href=/posts/ title=Posts>Posts</a><a class=menu-item href=/categories/reading/ title=Reading>Reading</a><a class=menu-item href=/tags/ title=Tags>Tags</a><a class=menu-item href=/series/ title="Reading Topics">Reading Topics</a><a class=menu-item href=/categories/ title=Categories>Categories</a><a class=menu-item href=/about/ title="About Me">About</a><a class=menu-item href=https://github.com/sosiristseng/ title=GitHub rel="noopener noreffer" target=_blank><i class="fab fa-github-alt fa-fw"></i></a><a href=# onclick=return!1 class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i>
+</a></div>
+</div>
+</header>
+<div class="search-dropdown desktop">
+<div id=search-dropdown-desktop></div>
+</div>
+<div class="search-dropdown mobile">
+<div id=search-dropdown-mobile></div>
+</div>
+<main class=main>
+<div class=container><div class=toc id=toc-auto>
+<h2 class=toc-title>Contents</h2>
+<div class=toc-content id=toc-content-auto></div>
+</div><script>document.getElementsByTagName("main")[0].setAttribute("pageStyle","wide")</script><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC","true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Tran 2009 : A thermodynamic model of the cardiac sarcoplasmic/endoplasmic Ca(2+) (SERCA) pump</h1><div class=post-meta>
+<div class=post-meta-line>
+<span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://sosiristseng.github.io/ title=Author target=_blank rel="noopener noreffer author" class=author>Tran et al.</a>
+</span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/reading/><i class="far fa-folder fa-fw"></i>Reading</a></span>&nbsp;<span class=post-category>and</span>&nbsp;<span class=post-series>series <a href=/series/ode/><i class="far fa-list-alt fa-fw"></i>ODE</a>&nbsp;<a href=/series/enzyme-kinetics/><i class="far fa-list-alt fa-fw"></i>enzyme kinetics</a>&nbsp;<a href=/series/calcium/><i class="far fa-list-alt fa-fw"></i>calcium</a>&nbsp;<a href=/series/cardiomyocyte/><i class="far fa-list-alt fa-fw"></i>cardiomyocyte</a></span></div>
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2020-10-23>2020-10-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2021-08-15>2021-08-15</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1590 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;8 minutes&nbsp;</div>
+</div><div class="details toc" id=toc-static kept>
+<div class="details-summary toc-title">
+<span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span>
+</div>
+<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
+<ul>
+<li><a href=#introduction>Introduction</a></li>
+<li><a href=#methods>Methods</a>
+<ul>
+<li><a href=#ca2h-counter-transport>Ca2+/H+ counter-transport</a></li>
+<li><a href=#competitive-h-binding>Competitive H+ binding</a></li>
+<li><a href=#metabolite-binding>Metabolite binding</a></li>
+<li><a href=#thermodynamic-constraints>Thermodynamic constraints</a></li>
+<li><a href=#model-simplification-rapid-equilibrium-assumptions>Model simplification: rapid equilibrium assumptions</a></li>
+<li><a href=#data-set-to-constrain-parameters>Data set to constrain parameters</a></li>
+<li><a href=#parameter-optimization>Parameter optimization</a></li>
+</ul>
+</li>
+<li><a href=#results>Results</a>
+<ul>
+<li><a href=#ca2-binding>Ca2+ binding</a></li>
+<li><a href=#ca2-h-countertransport>Ca2+/ H+ countertransport</a></li>
+<li><a href=#metabolite-dependence>Metabolite dependence</a></li>
+<li><a href=#thermodynamic-properties-of-the-model>Thermodynamic properties of the model</a></li>
+<li><a href=#simplifying-to-a-two-state-model>Simplifying to a two-state model</a></li>
+</ul>
+</li>
+<li><a href=#discussion>Discussion</a>
+<ul>
+<li><a href=#ca2-binding-1>Ca2+ binding</a></li>
+<li><a href=#variable-stoichiometry-of-ca2-transport>Variable stoichiometry of Ca2+ transport</a></li>
+<li><a href=#h-binding>H+ binding</a></li>
+<li><a href=#binding-order-of-partial-reactions>Binding order of partial reactions</a></li>
+<li><a href=#reversal-of-the-pump>Reversal of the pump</a></li>
+<li><a href=#data-selection>Data selection</a></li>
+</ul>
+</li>
+</ul>
+</nav></div>
+</div><div class=content id=content><p><a href=https://sciwheel.com/work/#/items/4996930 target=_blank rel="noopener noreffer">Sciwheel</a><sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<h2 id=introduction>Introduction</h2>
+<ul>
+<li>The SERCA pump is a P-type ATPase enzyme found in all muscle cells, and functions to sequester Ca2+ into the sarcoplasmic reticulum (SR) to facilitate muscle relaxation</li>
+<li>existing models are not designed to be energetically sensitive and consistent with the fundamental principles of free energy transduction or too complex to be integrated into a CMC model</li>
+<li>Here we present a mathematical model of the cardiac SERCA pump that consolidates a variety of experimental data, collected from a range of modalities, and the fundamental principles of free energy transduction into a consistent single framework</li>
+</ul>
+<h2 id=methods>Methods</h2>
+<ul>
+<li>based on the E1-E2 model for Ca2+ transport with the addition of H+ binding steps</li>
+<li>When the pump operates in the forward (clockwise) direction, two Ca2+ are bound from the cytoplasm and released into the SR lumen</li>
+<li>Ca2+ binding mechanism: partially cooperative
+<img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205582-c3f64880-d4ec-11eb-9e71-4ace3d933f7f.png data-srcset="https://user-images.githubusercontent.com/40054455/123205582-c3f64880-d4ec-11eb-9e71-4ace3d933f7f.png, https://user-images.githubusercontent.com/40054455/123205582-c3f64880-d4ec-11eb-9e71-4ace3d933f7f.png 1.5x, https://user-images.githubusercontent.com/40054455/123205582-c3f64880-d4ec-11eb-9e71-4ace3d933f7f.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205582-c3f64880-d4ec-11eb-9e71-4ace3d933f7f.png title=image></li>
+<li>Ca2+ binding mechanism: fully cooperative
+<img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205572-c062c180-d4ec-11eb-946a-4cd0e07136e8.png data-srcset="https://user-images.githubusercontent.com/40054455/123205572-c062c180-d4ec-11eb-946a-4cd0e07136e8.png, https://user-images.githubusercontent.com/40054455/123205572-c062c180-d4ec-11eb-946a-4cd0e07136e8.png 1.5x, https://user-images.githubusercontent.com/40054455/123205572-c062c180-d4ec-11eb-946a-4cd0e07136e8.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205572-c062c180-d4ec-11eb-946a-4cd0e07136e8.png title=image></li>
+</ul>
+<h3 id=ca2h-counter-transport>Ca2+/H+ counter-transport</h3>
+<ul>
+<li>The ejection of H+ from SR vesicles after the addition of Ca2+ and ATP has been observed by a number of experimental groups, due to the counter-transport of H+ for Ca2+</li>
+<li>The stoichiometry of H+ binding in the SERCA model was left as an adjustable parameter in the fitting process as it has been suggested that the number of H+ extruded per cycle depends on pH</li>
+</ul>
+<h3 id=competitive-h-binding>Competitive H+ binding</h3>
+<ul>
+<li>Protons also directly compete with Ca2+ in binding to the two Ca2+ -binding sites on the SERCA enzyme</li>
+<li>modeled as a side reaction at states P2 and P3</li>
+</ul>
+<h3 id=metabolite-binding>Metabolite binding</h3>
+<ul>
+<li>In the exp, MgATP and Ca can bind in any order.</li>
+</ul>
+<h3 id=thermodynamic-constraints>Thermodynamic constraints</h3>
+<ul>
+<li>Briefly, the free energy of ATP hydrolysis depends on the ratio of MgATP to its hydrolysis products as
+$$
+\Delta G_{\mathrm{MgATP}}=\Delta G_{\mathrm{MgATP}}^{o}+R T \ln \frac{[\mathrm{MgADP}][\mathrm{Pi}]\left[\mathrm{H}^{+}\right]}{[\mathrm{MgATP}]}
+$$</li>
+<li>The energy required to move two Ca2+ against a concentration gradient is given by
+$$
+\Delta G_{\mathrm{SERCA}}=2 R T \ln \frac{\left[\mathrm{Ca}^{2+}\right]_{\mathrm{sr}}}{\left[\mathrm{Ca}^{2+}\right]_{\mathrm{i}}}
+$$</li>
+<li>The SERCA pump will cycle in the forward direction when ΔGMgATP + ΔGSERCA &lt; 0, as is the case under normal physiological conditions and Ca2+ will be transported back into the SR</li>
+<li>a constraint on the kinetic rate constants of the SERCA pump model
+$$
+\frac{k_{1}^{+} k_{2}^{+} k_{3}^{+} K_{\mathrm{d}, \mathrm{Casr} 1} K_{\mathrm{d}, \mathrm{Casr} 2} K_{\mathrm{d}, \mathrm{Hsr}} K_{\mathrm{d}, \mathrm{H}}}{k_{1}^{-} k_{2}^{-} k_{3}^{-} K_{\mathrm{d}, \mathrm{Cail}} K_{\mathrm{d}, \mathrm{Cai} 2} K_{\mathrm{d}, \mathrm{Hi}}}=e^{\Delta G_{\mathrm{MgATP}}^{\mathrm{o}} / R T}
+$$</li>
+</ul>
+<h3 id=model-simplification-rapid-equilibrium-assumptions>Model simplification: rapid equilibrium assumptions</h3>
+<p><img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205614-d1133780-d4ec-11eb-8b71-bae59be2c6ec.png data-srcset="https://user-images.githubusercontent.com/40054455/123205614-d1133780-d4ec-11eb-8b71-bae59be2c6ec.png, https://user-images.githubusercontent.com/40054455/123205614-d1133780-d4ec-11eb-8b71-bae59be2c6ec.png 1.5x, https://user-images.githubusercontent.com/40054455/123205614-d1133780-d4ec-11eb-8b71-bae59be2c6ec.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205614-d1133780-d4ec-11eb-8b71-bae59be2c6ec.png title=image></p>
+<ul>
+<li>It is assumed in the model that the ionic reactions (binding of Ca2+ and H+) occur at a faster rate than the reactions involving the metabolites (MgATP, MgADP and Pi)</li>
+<li>the clockwise cycle rate per pump at steady state
+$$
+\begin{aligned}
+J_{up} &= 2 v_{cycle} \rho_{SR} A_{SR} = 2 k_{up} v_{cycle} \cr
+v_{cycle} &= \frac{\alpha_1^+\alpha_2^+\alpha_3^+ - \alpha_1^-\alpha_2^-\alpha_3^-}{\Delta_3} \cr
+\alpha_1^+ &= k_1^+ [MgATP] \cr
+\alpha_2^+ &= \frac{k_2^+ \phi_{Ca_i}^2}{\phi_{Ca_i}^2 (1 + \phi_{H_i}) + \phi_{H_i}(1 + \phi_{H_1})} \cr
+\alpha_3^+ &= \frac{k_3^+ \phi_{H_{sr}}}{\phi_{H} (1 + \phi_{Casr}^2) + \phi_{H_{sr}}(1 + \phi_{H})} \cr
+\alpha_1^- &= \frac{k_1^- \phi_{H_i}}{\phi_{Ca_i}^2 (1 + \phi_{H_i}) + \phi_{H_i}(1 + \phi_{H_1})} \cr
+\alpha_2^- &= \frac{k_2^- [MgADP] \phi_{Ca_{sr}}^2 \phi_{H_{sr}}}{\phi_{H} (1 + \phi_{Ca_{sr}}^2) + \phi_{H_{sr}}(1 + \phi_{H})} \cr
+\alpha_3^- &= k_3^- [Pi] \cr
+\phi_{Cai} &= [Ca^{2+}]_i / K_{d, Cai} \cr
+\phi_{Casr} &= [Ca^{2+}]_{sr} / K_{d, Casr} \cr
+\phi_{Hi} &= [H^+]_i^n / K_{d, Hi} \cr
+\phi_{H1} &= [H^+]_i / K_{d, H1} \cr
+\phi_{Hsr} &= [H^+]_i^n / K_{d, Hsr} \cr
+\phi_{H} &= [H^+]_i / K_{d, H} \cr
+k_1^- &= \frac{k_1^+k_2^+k_3^+K_{d, Casr}^2K_{d, Hi}K_{d, H}}{k_2^-k_3^-K_{d, Cai}^2K_{d, Hsr}e^{\Delta G^0_{MgATP} / RT}} \cr
+\Delta_3 &= \alpha_{2}^{+} \alpha_{3}^{+}+\alpha_{1}^{-} \alpha_{3}^{+}+\alpha_{1}^{-} \alpha_{2}^{-}+\alpha_{1}^{+} \alpha_{3}^{+}+\alpha_{2}^{-} \alpha_{1}^{+} +\alpha_{2}^{-} \alpha_{3}^{-}+\alpha_{1}^{+} \alpha_{2}^{+} +\alpha_{3}^- \alpha_{1}^- + \alpha_{3}^- \alpha_{2}^{+}
+\end{aligned}
+$$</li>
+<li>ΔGoMgATP = 11.9 kJ / mol, R = 8.314 J / K mol</li>
+</ul>
+<h3 id=data-set-to-constrain-parameters>Data set to constrain parameters</h3>
+<ul>
+<li>The aim was to use whole pump flux data as a function of Ca2+, H+, and each of the metabolites and, where possible</li>
+<li>The entire data set was normalized to a maximum cycle rate of 5Hz at optimal conditions, defined as [Ca2+]sr = 0, [Ca2+]i = 10 μM, [ATP] = 5 mM, [ADP] = 0, [Pi] = 0, and pH = 7.2
+<ul>
+<li>rabbit: 4.2 Hz; guinea pig: 7.5 Hz @ 37 ; canine: 5Hz @ 25</li>
+</ul>
+</li>
+</ul>
+<h3 id=parameter-optimization>Parameter optimization</h3>
+<ul>
+<li>estimated using the particle swarm optimization method</li>
+<li>then used as initial conditions in a Levenberg-Marquardt least-squares fitting procedure to refine the solution</li>
+</ul>
+<p><img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/86724499-6b1f6d00-c05b-11ea-8ef2-bf89d0cbfdee.png data-srcset="https://user-images.githubusercontent.com/40054455/86724499-6b1f6d00-c05b-11ea-8ef2-bf89d0cbfdee.png, https://user-images.githubusercontent.com/40054455/86724499-6b1f6d00-c05b-11ea-8ef2-bf89d0cbfdee.png 1.5x, https://user-images.githubusercontent.com/40054455/86724499-6b1f6d00-c05b-11ea-8ef2-bf89d0cbfdee.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/86724499-6b1f6d00-c05b-11ea-8ef2-bf89d0cbfdee.png title=tbl1></p>
+<h2 id=results>Results</h2>
+<h3 id=ca2-binding>Ca2+ binding</h3>
+<ul>
+<li>The fully cooperative Ca2+ binding model is favored over the partially cooperative Ca2+ binding model as it achieves a similar quality of fit while using three fewer parameters.
+<figure><a class=lightgallery href=https://user-images.githubusercontent.com/40054455/123205642-da9c9f80-d4ec-11eb-9e7c-d8bccd65ace5.png title=https://user-images.githubusercontent.com/40054455/123205642-da9c9f80-d4ec-11eb-9e7c-d8bccd65ace5.png data-thumbnail=https://user-images.githubusercontent.com/40054455/123205642-da9c9f80-d4ec-11eb-9e7c-d8bccd65ace5.png data-sub-html="<h2>The fit of the three-state model with fully cooperative Ca2+ binding</h2>">
+<img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205642-da9c9f80-d4ec-11eb-9e7c-d8bccd65ace5.png data-srcset="https://user-images.githubusercontent.com/40054455/123205642-da9c9f80-d4ec-11eb-9e7c-d8bccd65ace5.png, https://user-images.githubusercontent.com/40054455/123205642-da9c9f80-d4ec-11eb-9e7c-d8bccd65ace5.png 1.5x, https://user-images.githubusercontent.com/40054455/123205642-da9c9f80-d4ec-11eb-9e7c-d8bccd65ace5.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205642-da9c9f80-d4ec-11eb-9e7c-d8bccd65ace5.png>
+</a><figcaption class=image-caption>The fit of the three-state model with fully cooperative Ca2+ binding</figcaption>
+</figure></li>
+</ul>
+<h3 id=ca2-h-countertransport>Ca2+/ H+ countertransport</h3>
+<p><img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205672-e5573480-d4ec-11eb-9a53-4dccaceccc46.png data-srcset="https://user-images.githubusercontent.com/40054455/123205672-e5573480-d4ec-11eb-9a53-4dccaceccc46.png, https://user-images.githubusercontent.com/40054455/123205672-e5573480-d4ec-11eb-9a53-4dccaceccc46.png 1.5x, https://user-images.githubusercontent.com/40054455/123205672-e5573480-d4ec-11eb-9a53-4dccaceccc46.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205672-e5573480-d4ec-11eb-9a53-4dccaceccc46.png title=image></p>
+<ul>
+<li>The pump operates optimally at a pH of ∼7.1</li>
+<li>The optimal fit produced a value of 2.0, which is consistent with experimental observations of 2</li>
+</ul>
+<h3 id=metabolite-dependence>Metabolite dependence</h3>
+<p><figure><a class=lightgallery href=https://user-images.githubusercontent.com/40054455/123205717-facc5e80-d4ec-11eb-9f05-a2dbd62a015b.png title=https://user-images.githubusercontent.com/40054455/123205717-facc5e80-d4ec-11eb-9f05-a2dbd62a015b.png data-thumbnail=https://user-images.githubusercontent.com/40054455/123205717-facc5e80-d4ec-11eb-9f05-a2dbd62a015b.png data-sub-html="<h2>vSERCA vs Pi</h2>">
+<img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205717-facc5e80-d4ec-11eb-9f05-a2dbd62a015b.png data-srcset="https://user-images.githubusercontent.com/40054455/123205717-facc5e80-d4ec-11eb-9f05-a2dbd62a015b.png, https://user-images.githubusercontent.com/40054455/123205717-facc5e80-d4ec-11eb-9f05-a2dbd62a015b.png 1.5x, https://user-images.githubusercontent.com/40054455/123205717-facc5e80-d4ec-11eb-9f05-a2dbd62a015b.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205717-facc5e80-d4ec-11eb-9f05-a2dbd62a015b.png>
+</a><figcaption class=image-caption>vSERCA vs Pi</figcaption>
+</figure>
+<figure><a class=lightgallery href=https://user-images.githubusercontent.com/40054455/123205725-fe5fe580-d4ec-11eb-9630-022154bf6b6a.png title=https://user-images.githubusercontent.com/40054455/123205725-fe5fe580-d4ec-11eb-9630-022154bf6b6a.png data-thumbnail=https://user-images.githubusercontent.com/40054455/123205725-fe5fe580-d4ec-11eb-9630-022154bf6b6a.png data-sub-html="<h2>vSERCA vs MgATP</h2>">
+<img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205725-fe5fe580-d4ec-11eb-9630-022154bf6b6a.png data-srcset="https://user-images.githubusercontent.com/40054455/123205725-fe5fe580-d4ec-11eb-9630-022154bf6b6a.png, https://user-images.githubusercontent.com/40054455/123205725-fe5fe580-d4ec-11eb-9630-022154bf6b6a.png 1.5x, https://user-images.githubusercontent.com/40054455/123205725-fe5fe580-d4ec-11eb-9630-022154bf6b6a.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205725-fe5fe580-d4ec-11eb-9630-022154bf6b6a.png>
+</a><figcaption class=image-caption>vSERCA vs MgATP</figcaption>
+</figure></p>
+<ul>
+<li>MgATP binding first is better than Ca binding first</li>
+</ul>
+<h3 id=thermodynamic-properties-of-the-model>Thermodynamic properties of the model</h3>
+<p><figure><a class=lightgallery href=https://user-images.githubusercontent.com/40054455/123205733-01f36c80-d4ed-11eb-8731-efba9d3329fa.png title=https://user-images.githubusercontent.com/40054455/123205733-01f36c80-d4ed-11eb-8731-efba9d3329fa.png data-thumbnail=https://user-images.githubusercontent.com/40054455/123205733-01f36c80-d4ed-11eb-8731-efba9d3329fa.png data-sub-html="<h2>The effect of changes in the net free energy on the cycle pump rate at different luminal Ca2+ concentrations</h2>">
+<img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205733-01f36c80-d4ed-11eb-8731-efba9d3329fa.png data-srcset="https://user-images.githubusercontent.com/40054455/123205733-01f36c80-d4ed-11eb-8731-efba9d3329fa.png, https://user-images.githubusercontent.com/40054455/123205733-01f36c80-d4ed-11eb-8731-efba9d3329fa.png 1.5x, https://user-images.githubusercontent.com/40054455/123205733-01f36c80-d4ed-11eb-8731-efba9d3329fa.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205733-01f36c80-d4ed-11eb-8731-efba9d3329fa.png>
+</a><figcaption class=image-caption>The effect of changes in the net free energy on the cycle pump rate at different luminal Ca2+ concentrations</figcaption>
+</figure></p>
+<ul>
+<li>The pump stops completely at the reversal point where the net free energy is zero</li>
+</ul>
+<p><figure><a class=lightgallery href=https://user-images.githubusercontent.com/40054455/123205738-04ee5d00-d4ed-11eb-8f0d-7dcafce2d3c3.png title=https://user-images.githubusercontent.com/40054455/123205738-04ee5d00-d4ed-11eb-8f0d-7dcafce2d3c3.png data-thumbnail=https://user-images.githubusercontent.com/40054455/123205738-04ee5d00-d4ed-11eb-8f0d-7dcafce2d3c3.png data-sub-html="<h2>The effect of increasing MgADP vs Pi, to progressively reduce the available free energy</h2>">
+<img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205738-04ee5d00-d4ed-11eb-8f0d-7dcafce2d3c3.png data-srcset="https://user-images.githubusercontent.com/40054455/123205738-04ee5d00-d4ed-11eb-8f0d-7dcafce2d3c3.png, https://user-images.githubusercontent.com/40054455/123205738-04ee5d00-d4ed-11eb-8f0d-7dcafce2d3c3.png 1.5x, https://user-images.githubusercontent.com/40054455/123205738-04ee5d00-d4ed-11eb-8f0d-7dcafce2d3c3.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205738-04ee5d00-d4ed-11eb-8f0d-7dcafce2d3c3.png>
+</a><figcaption class=image-caption>The effect of increasing MgADP vs Pi, to progressively reduce the available free energy</figcaption>
+</figure></p>
+<ul>
+<li>The kinetics of MgATP binding therefore limits the maximum reversal rate of the pump</li>
+</ul>
+<h3 id=simplifying-to-a-two-state-model>Simplifying to a two-state model</h3>
+<ul>
+<li>normal MgATP concentration in a healthy myocyte is ∼5 mM while it drops by 50% after ischemia for 15 mins</li>
+<li>Using rapid equilibrium assumptions, the slow MgATP binding step is turned into a rapid binding step: Kd,ATP = k1− / k1+</li>
+<li>the two models are essentially identical when MgATP is in the mM range but begin to diverge when MgATP drops to the μM range</li>
+</ul>
+<p><img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205771-13d50f80-d4ed-11eb-89eb-8a28d01b3f9c.png data-srcset="https://user-images.githubusercontent.com/40054455/123205771-13d50f80-d4ed-11eb-89eb-8a28d01b3f9c.png, https://user-images.githubusercontent.com/40054455/123205771-13d50f80-d4ed-11eb-89eb-8a28d01b3f9c.png 1.5x, https://user-images.githubusercontent.com/40054455/123205771-13d50f80-d4ed-11eb-89eb-8a28d01b3f9c.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205771-13d50f80-d4ed-11eb-89eb-8a28d01b3f9c.png title=image>
+<img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205784-17689680-d4ed-11eb-8562-c0c7e93dc055.png data-srcset="https://user-images.githubusercontent.com/40054455/123205784-17689680-d4ed-11eb-8562-c0c7e93dc055.png, https://user-images.githubusercontent.com/40054455/123205784-17689680-d4ed-11eb-8562-c0c7e93dc055.png 1.5x, https://user-images.githubusercontent.com/40054455/123205784-17689680-d4ed-11eb-8562-c0c7e93dc055.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205784-17689680-d4ed-11eb-8562-c0c7e93dc055.png title=image>
+<img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205790-1afc1d80-d4ed-11eb-8e38-483d4415a793.png data-srcset="https://user-images.githubusercontent.com/40054455/123205790-1afc1d80-d4ed-11eb-8e38-483d4415a793.png, https://user-images.githubusercontent.com/40054455/123205790-1afc1d80-d4ed-11eb-8e38-483d4415a793.png 1.5x, https://user-images.githubusercontent.com/40054455/123205790-1afc1d80-d4ed-11eb-8e38-483d4415a793.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205790-1afc1d80-d4ed-11eb-8e38-483d4415a793.png title=image></p>
+<p>$$
+\begin{aligned}
+v_{cycle} &= \frac{\alpha_1^+\alpha_2^+ - \alpha_1^-\alpha_2^-}{\Delta_2} \cr
+\alpha_1^+ &= \frac{k_2^+\phi_{MgATP}\phi_{Cai}^2}{\phi_{MgATP}\phi_{Cai}^2 + \phi_{Hi}(1 + \phi_{MgATP}(1 + \phi_{H1} + \phi_{Cai}^2))} \cr
+\alpha_2^+ &= \frac{k_3^+\phi_{Hsr}}{\phi_{Hsr} (1 + \phi_{H}) + \phi_{H}(1 + \phi_{Casr}^2)} \cr
+\alpha_1^- &= \frac{k_2^-[MgADP]\phi_{Casr}^2\phi_{H}}{\phi_{Hsr} (1 + \phi_{H}) + \phi_{H}(1 + \phi_{Casr}^2)} \cr
+\alpha_2^- &= \frac{k_3^-[Pi]\phi_{Hi}}{\phi_{MgATP}\phi_{Cai}^2 + \phi_{Hi}(1 + \phi_{MgATP}(1 + \phi_{H1} + \phi_{Cai}^2))} \cr
+\Delta_2 &= \alpha_1^+ + \alpha_2^+ + \alpha_1^- + \alpha_2^- \cr
+\end{aligned}
+$$</p>
+<h2 id=discussion>Discussion</h2>
+<ul>
+<li>Using the approach outlined in Smith and Crampin in Na-K ATPase, we have developed a mathematical model of the cardiac SERCA pump, which is sensitive to the metabolic state of the cell as well as the luminal and cytosolic concentrations of Ca2+ and H+</li>
+<li>we have shown that this model is sufficient to describe a range of experimental data on the SERCA pump flux</li>
+</ul>
+<h3 id=ca2-binding-1>Ca2+ binding</h3>
+<ul>
+<li>Ca2+ is known to bind in a positive cooperative manner. Mathematically, the fully cooperative mechanism has three fewer parameters.</li>
+<li>For pH values close to 7, half-maximal binding of Ca2+ from the cytosol has been measured or calculated to be between 0.5 and 10 μM. Model here: 4.88 μM</li>
+<li>SR Ca2+ binding constant of 3.6 mM, consistent with values from the literature of 1.7 mM.</li>
+<li>The greater binding affinity of cytosolic Ca2+ over luminal Ca2+ of approximately three orders of magnitude is a key characteristic of the pump that facilitates the binding of Ca2+ from the cytosol</li>
+</ul>
+<h3 id=variable-stoichiometry-of-ca2-transport>Variable stoichiometry of Ca2+ transport</h3>
+<p>Coupling ratio of <strong>2 Ca2+</strong> per ATP appropriate for CMC physiological settings</p>
+<h3 id=h-binding>H+ binding</h3>
+<p>At neutral pH, the stoichiometry of the counter-transport between Ca2+ and H+ is measured to be 2:2, as in the model</p>
+<h3 id=binding-order-of-partial-reactions>Binding order of partial reactions</h3>
+<p>The order and placement of the partial reactions involving MgATP binding was shown to be an important determinant of the ability to fit the data set, where an acceptable fit was achieved only when the MgATP binding step was placed before the first Ca2+ binding step and after the release of Pi</p>
+<h3 id=reversal-of-the-pump>Reversal of the pump</h3>
+<ul>
+<li>The SERCA pump has been shown experimentally to be reversible under conditions where the concentrations of MgADP and Pi are high and MgATP is kept very low</li>
+<li>The thermodynamic constraint imposed on the model (see Methods) ensures that the pump will reverse when the net free energy is zero but the actual rate of cycling in the reverse direction is highly dependent on the kinetics of the model, particularly to the kinetics of MgATP binding
+<figure><a class=lightgallery href=https://user-images.githubusercontent.com/40054455/123205800-1fc0d180-d4ed-11eb-8cc6-bd08c253e5ae.png title=https://user-images.githubusercontent.com/40054455/123205800-1fc0d180-d4ed-11eb-8cc6-bd08c253e5ae.png data-thumbnail=https://user-images.githubusercontent.com/40054455/123205800-1fc0d180-d4ed-11eb-8cc6-bd08c253e5ae.png data-sub-html="<h2>An increase in the free [Ca2+]sr leads to a decrease in the pump rate</h2>">
+<img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/123205800-1fc0d180-d4ed-11eb-8cc6-bd08c253e5ae.png data-srcset="https://user-images.githubusercontent.com/40054455/123205800-1fc0d180-d4ed-11eb-8cc6-bd08c253e5ae.png, https://user-images.githubusercontent.com/40054455/123205800-1fc0d180-d4ed-11eb-8cc6-bd08c253e5ae.png 1.5x, https://user-images.githubusercontent.com/40054455/123205800-1fc0d180-d4ed-11eb-8cc6-bd08c253e5ae.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/123205800-1fc0d180-d4ed-11eb-8cc6-bd08c253e5ae.png>
+</a><figcaption class=image-caption>An increase in the free [Ca2+]sr leads to a decrease in the pump rate</figcaption>
+</figure></li>
+</ul>
+<h3 id=data-selection>Data selection</h3>
+<ul>
+<li>The parameters of the cardiac SERCA model were constrained to a set of data which characterizes the dependence of the pump on the metabolites MgATP, MgADP, and Pi and the ions Ca2+ and H+</li>
+<li>the pH curve and pH-dependent Ca2+ curves: mouse CMC with phospholamban effects</li>
+<li>The ATP/ADP and Pi data: rabbit skeletal muscle expressing nonnative SERCA. The presence or absence of phospholamban is not relevant here</li>
+<li>The density of cardiac SERCA pumps in mouse is estimated to be higher than that of rabbit. In the modeling process, this difference in Vmax between different data sets is accounted for by normalizing all the data to a single reference point</li>
+</ul>
+<p><figure><a class=lightgallery href=https://user-images.githubusercontent.com/40054455/86724502-6bb80380-c05b-11ea-9ab6-b529ab13cb0e.png title=tbl3 data-thumbnail=https://user-images.githubusercontent.com/40054455/86724502-6bb80380-c05b-11ea-9ab6-b529ab13cb0e.png data-sub-html="<h2>Parameter sensitivity</h2><p>tbl3</p>">
+<img class=lazyload data-src=https://user-images.githubusercontent.com/40054455/86724502-6bb80380-c05b-11ea-9ab6-b529ab13cb0e.png data-srcset="https://user-images.githubusercontent.com/40054455/86724502-6bb80380-c05b-11ea-9ab6-b529ab13cb0e.png, https://user-images.githubusercontent.com/40054455/86724502-6bb80380-c05b-11ea-9ab6-b529ab13cb0e.png 1.5x, https://user-images.githubusercontent.com/40054455/86724502-6bb80380-c05b-11ea-9ab6-b529ab13cb0e.png 2x" data-sizes=auto alt=https://user-images.githubusercontent.com/40054455/86724502-6bb80380-c05b-11ea-9ab6-b529ab13cb0e.png>
+</a><figcaption class=image-caption>Parameter sensitivity</figcaption>
+</figure></p>
+<p>The parameter with the greatest influence in the model is n, the number of H+ that are counter-transported for each Ca2+. Taking together the high sensitivity of this parameter and the prediction of n = 2 (which is consistent with the literature). This provides us with a good degree of confidence in the optimized model parameters.</p>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>Tran K, Smith NP, Loiselle DS, Crampin EJ. A thermodynamic model of the cardiac sarcoplasmic/endoplasmic Ca(2+) (SERCA) pump. Biophys J. 2009;96(5):2029-42.<a href=http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2717298 target=_blank rel="noopener noreffer">PMC2717298</a>&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section></div><div class=post-footer id=post-footer>
+<div class=post-info>
+<div class=post-info-line>
+<div class=post-info-mod>
+<span>Updated on 2021-08-15&nbsp;<a class=git-hash href=https://github.com/sosiristseng/sosiristseng.github.io/commit/49fa12fc36403fcb0fa727336c4825bda5d488ff target=_blank title="commit by Wen-Wei Tseng(sosiristseng@gmail.com) 49fa12fc36403fcb0fa727336c4825bda5d488ff: add paper reading" rel="noopener noreferrer">
+<i class="fas fa-hashtag fa-fw"></i>49fa12fc</a></span>
+</div>
+<div class=post-info-license></div>
+</div>
+<div class=post-info-line>
+<div class=post-info-md><span>
+<a class=link-to-markdown href=/2020/10/23/tran-2009/index.md target=_blank rel="noopener noreferrer">Read Markdown</a>
+</span></div>
+<div class=post-info-share>
+<span><a href=# onclick=return!1 title="Share on Twitter" data-sharer=twitter data-url=https://sosiristseng.github.io/2020/10/23/tran-2009/ data-title="Tran 2009 : A thermodynamic model of the cardiac sarcoplasmic/endoplasmic Ca(2+) (SERCA) pump" data-via=sosiristseng><i class="fab fa-twitter fa-fw"></i></a><a href=# onclick=return!1 title="Share on Facebook" data-sharer=facebook data-url=https://sosiristseng.github.io/2020/10/23/tran-2009/><i class="fab fa-facebook-square fa-fw"></i></a><a href=# onclick=return!1 title="Share on Linkedin" data-sharer=linkedin data-url=https://sosiristseng.github.io/2020/10/23/tran-2009/><i class="fab fa-linkedin fa-fw"></i></a><a href=# onclick=return!1 title="Share on Hacker News" data-sharer=hackernews data-url=https://sosiristseng.github.io/2020/10/23/tran-2009/ data-title="Tran 2009 : A thermodynamic model of the cardiac sarcoplasmic/endoplasmic Ca(2+) (SERCA) pump"><i class="fab fa-hacker-news fa-fw"></i></a><a href=# onclick=return!1 title="Share on Reddit" data-sharer=reddit data-url=https://sosiristseng.github.io/2020/10/23/tran-2009/><i class="fab fa-reddit fa-fw"></i></a><a href=# onclick=return!1 title="Share on Line" data-sharer=line data-url=https://sosiristseng.github.io/2020/10/23/tran-2009/ data-title="Tran 2009 : A thermodynamic model of the cardiac sarcoplasmic/endoplasmic Ca(2+) (SERCA) pump"><i data-svg-src=/lib/simple-icons/icons/line.min.svg></i></a></span>
+</div>
+</div>
+</div>
+<div class=post-info-more>
+<section class=post-tags></section>
+<section>
+<span><a href=# onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
+</section>
+</div>
+<div class=post-nav><a href=/2020/10/23/tomek-2018/ class=prev rel=prev title="Tomek 2018 : Modulation of Cardiac Alternans by Altered Sarcoplasmic Reticulum Calcium Release: A Simulation Study"><i class="fas fa-angle-left fa-fw"></i>Tomek 2018 : Modulation of Cardiac Alternans by Altered Sarcoplasmic Reticulum Calcium Release: A Simulation Study</a>
+<a href=/2020/10/23/tran-2010/ class=next rel=next title="Tran 2010 : A metabolite-sensitive, thermodynamically constrained model of cardiac cross-bridge cycling: implications for force development during ischemia">Tran 2010 : A metabolite-sensitive, thermodynamically constrained model of cardiac cross-bridge cycling: implications for force development during ischemia<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+</article></div>
+</main><footer class=footer>
+<div class=footer-container><div class=footer-line>Powered by <a href=https://gohugo.io/ target=_blank rel="noopener noreffer" title="Hugo 0.88.1">Hugo</a> | Theme - <a href=https://github.com/HEIGE-PCloud/DoIt target=_blank rel="noopener noreffer" title="DoIt 0.2.10"><i class="far fa-edit fa-fw"></i> DoIt</a>
+</div><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2020 - 2021</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=https://sosiristseng.github.io/ target=_blank rel="noopener noreferrer">Wen-Wei Tseng</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreferrer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div>
+</div><script>'serviceWorker'in navigator&&(navigator.serviceWorker.register('/sw.min.js',{scope:'/'}).then(function(a){}),navigator.serviceWorker.ready.then(function(a){}))</script></footer></div>
+<div id=fixed-buttons><a href=#back-to-top id=back-to-top-button class=fixed-button title="Back to Top">
+<i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments">
+<i class="fas fa-comment fa-fw"></i>
+</a>
+</div><div class=assets><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/fuse/fuse.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/topbar/topbar.min.js></script><script type=text/javascript src=/lib/pjax/pjax.min.js></script><script type=text/javascript src=/js/theme.min.js></script></div>
+<div class=pjax-assets><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/auto-render.min.js></script><script type=text/javascript src=/lib/katex/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/mhchem.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:15},comment:{},lightGallery:{actualSize:!1,exThumbImage:"data-thumbnail",hideBarsDelay:2e3,selector:".lightgallery",speed:400,thumbContHeight:80,thumbWidth:80,thumbnail:!0},math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{distance:100,findAllMatches:!1,fuseIndexURL:"/index.json",highlightTag:"em",ignoreFieldNorm:!1,ignoreLocation:!1,isCaseSensitive:!1,location:0,maxResultLength:10,minMatchCharLength:2,noResultsFound:"No results found",snippetLength:30,threshold:.3,type:"fuse",useExtendedSearch:!1},sharerjs:!0}</script><link rel=stylesheet href=/lib/lightgallery/lightgallery.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/katex/copy-tex.min.css></div>
+</body>
+</html>
